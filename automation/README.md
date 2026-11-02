@@ -43,7 +43,7 @@ credentials; secrets live in GitHub Settings.
    - `pages_manage_posts`
    - `instagram_basic`
    - `instagram_content_publish`
-6. Complete App Review for the publish permissions.
+6. Complete App Review and Business Verification for the publish permissions.
 7. Generate a **long-lived Page access token** and note the Page ID and
    Instagram Business Account ID.
 
@@ -159,6 +159,7 @@ delete `.env.tokens`. The script never writes to GitHub.
 | `Access token is invalid or expired` | Refresh the token, update the secret |
 | `Permission denied` | Complete App Review; confirm the Page role |
 | `Media URL is not accessible` | Deploy Pages; check `PUBLIC_BASE_URL` |
+| Facebook rejects `alt_text_custom` | Set `META_FB_ALT_TEXT=false` and add alt text in Business Suite |
 | `Unsupported aspect ratio` | Export at 1080×1350, 4:5 |
 | No post due | The schedule is Wednesday; use `--post` for a manual run |
 | Ledger push rejected | Re-run the workflow; it will fetch and commit again |
