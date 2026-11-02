@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+public/
+automation/state/last-run.json
+*.log
+.DS_Store
+Thumbs.db

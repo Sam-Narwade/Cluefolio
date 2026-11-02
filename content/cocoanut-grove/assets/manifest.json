@@ -1,0 +1,20 @@
+{
+  "slug": "cocoanut-grove",
+  "assets": [
+    {
+      "id": "cover",
+      "title": "Editorial reconstruction: Boston street after the Cocoanut Grove fire, 1942",
+      "archive": "Cluefolio Studio",
+      "source_url": "",
+      "file_url": "content/_sources/cocoanut-ai.jpg",
+      "creator": "Cluefolio Studio (editorial reconstruction)",
+      "date": "",
+      "license": "Original work created for this project. Not a historical photograph. Disclosed as an editorial reconstruction.",
+      "credit": "Editorial reconstruction by Cluefolio Studio. Not a historical photograph.",
+      "depicts": "An editorial reconstruction of a crowded Boston street at night in 1942, with smoke drifting between buildings and a crowd gathered outside a nightclub.",
+      "role": "cover",
+      "alt_text": "An editorial reconstruction of a crowded Boston street at night in 1942, with smoke drifting between buildings and a crowd gathered outside a nightclub.",
+      "ai_generated": true
+    }
+  ]
+}

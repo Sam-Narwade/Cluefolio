@@ -1,0 +1,20 @@
+{
+  "slug": "hinderburg",
+  "assets": [
+    {
+      "id": "hindenburg-cover",
+      "title": "Hindenburg disaster at Lakehurst, 1937",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hindenburg_disaster.jpg",
+      "file_url": "https://commons.wikimedia.org/wiki/File:Hindenburg_disaster.jpg",
+      "creator": "Unknown photographer, 1937",
+      "date": "",
+      "license": "Public domain in the United States (published 1937; copyright not renewed)",
+      "credit": "Photograph: public domain, via Wikimedia Commons",
+      "depicts": "The German airship Hindenburg, its tail engulfed in a huge ball of flame, hangs nose-up beside the Lakehurst mooring mast as tiny figures run below.",
+      "role": "cover",
+      "alt_text": "The German airship Hindenburg, its tail engulfed in a huge ball of flame, hangs nose-up beside the Lakehurst mooring mast as tiny figures run below.",
+      "ai_generated": false
+    }
+  ]
+}

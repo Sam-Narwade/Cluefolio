@@ -1,0 +1,20 @@
+{
+  "slug": "peshtigo-fire",
+  "assets": [
+    {
+      "id": "cover",
+      "title": "Ruins of Peshtigo, Wisconsin, after the 1871 fire",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_ruins_of_Peshtigo_and_the_surrounding_landscape_after_1871_fire.jpg",
+      "file_url": "https://commons.wikimedia.org/wiki/File:The_ruins_of_Peshtigo_and_the_surrounding_landscape_after_1871_fire.jpg",
+      "creator": "Unknown photographer, 1871",
+      "date": "",
+      "license": "Public domain in the United States",
+      "credit": "Photograph: public domain, via Wikimedia Commons",
+      "depicts": "A black-and-white photograph of the burned ruins of Peshtigo, Wisconsin, after the 1871 fire, with shattered trees, scattered debris, and a few figures in the distance.",
+      "role": "cover",
+      "alt_text": "A black-and-white photograph of the burned ruins of Peshtigo, Wisconsin, after the 1871 fire, with shattered trees, scattered debris, and a few figures in the distance.",
+      "ai_generated": false
+    }
+  ]
+}

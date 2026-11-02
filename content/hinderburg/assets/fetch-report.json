@@ -1,0 +1,14 @@
+[
+  {
+    "id": "hindenburg-cover",
+    "status": "failed",
+    "reason": "HTTP Error 404: Not Found",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Hindenburg_disaster.jpg"
+  },
+  {
+    "id": "hindenburg-upright",
+    "status": "failed",
+    "reason": "HTTP Error 404: Not Found",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Hindenburg_at_Lakehurst.jpg"
+  }
+]

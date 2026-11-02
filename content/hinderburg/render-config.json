@@ -1,0 +1,32 @@
+{
+  "slug": "hinderburg",
+  "rail": "POST 002",
+  "canvas": {
+    "width": 1080,
+    "height": 1350
+  },
+  "palette": {
+    "paper": "#F4EFE6",
+    "ink": "#15130F",
+    "muted": "#5B5348",
+    "rule": "#B9AE9C",
+    "accent": "#8C2F1E"
+  },
+  "cover": {
+    "asset": "hindenburg-cover",
+    "wordmark": "CLUEFOLIO",
+    "category": "DISASTERS",
+    "headline": [
+      "THE AIRSHIP",
+      "FELL FROM THE SKY"
+    ],
+    "dateline": "Lakehurst, New Jersey  ·  May 6, 1937",
+    "crop": {
+      "fx": 0.5,
+      "fy": 0.46,
+      "zoom": 1.04
+    },
+    "disclosure": ""
+  },
+  "interiors": []
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "molasses-flood",
+  "rail": "POST 008",
+  "canvas": {
+    "width": 1080,
+    "height": 1350
+  },
+  "palette": {
+    "paper": "#F4EFE6",
+    "ink": "#15130F",
+    "muted": "#5B5348",
+    "rule": "#B9AE9C",
+    "accent": "#8C2F1E"
+  },
+  "cover": {
+    "asset": "cover",
+    "wordmark": "CLUEFOLIO",
+    "category": "ENGINEERING FAILURE",
+    "headline": [
+      "THE WAVE THAT",
+      "CAME FROM A TANK"
+    ],
+    "dateline": "Boston, Massachusetts  ·  January 15, 1919",
+    "crop": {
+      "fx": 0.46,
+      "fy": 0.54,
+      "zoom": 1.02
+    },
+    "disclosure": ""
+  },
+  "interiors": []
+}

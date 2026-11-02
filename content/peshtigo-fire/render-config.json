@@ -1,0 +1,32 @@
+{
+  "slug": "peshtigo-fire",
+  "rail": "POST 003",
+  "canvas": {
+    "width": 1080,
+    "height": 1350
+  },
+  "palette": {
+    "paper": "#F4EFE6",
+    "ink": "#15130F",
+    "muted": "#5B5348",
+    "rule": "#B9AE9C",
+    "accent": "#8C2F1E"
+  },
+  "cover": {
+    "asset": "cover",
+    "wordmark": "CLUEFOLIO",
+    "category": "DISASTERS",
+    "headline": [
+      "THE FIRE THAT",
+      "WAS FORGOTTEN"
+    ],
+    "dateline": "Peshtigo, Wisconsin  ·  October 8, 1871",
+    "crop": {
+      "fx": 0.5,
+      "fy": 0.54,
+      "zoom": 1.0
+    },
+    "disclosure": ""
+  },
+  "interiors": []
+}

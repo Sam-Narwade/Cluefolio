@@ -1,0 +1,20 @@
+{
+  "slug": "molasses-flood",
+  "assets": [
+    {
+      "id": "cover",
+      "title": "Aftermath of the Great Molasses Flood, Boston, 1919",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:BostonMolassesDisaster.jpg",
+      "file_url": "https://commons.wikimedia.org/wiki/File:BostonMolassesDisaster.jpg",
+      "creator": "Unknown photographer, 1919",
+      "date": "",
+      "license": "Public domain in the United States",
+      "credit": "Photograph: public domain, via Wikimedia Commons",
+      "depicts": "An elevated view of the aftermath of the Great Molasses Flood in Boston's North End, showing collapsed buildings, wreckage, and crowds along the waterfront.",
+      "role": "cover",
+      "alt_text": "An elevated view of the aftermath of the Great Molasses Flood in Boston's North End, showing collapsed buildings, wreckage, and crowds along the waterfront.",
+      "ai_generated": false
+    }
+  ]
+}

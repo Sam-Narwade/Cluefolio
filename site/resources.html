@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resource Register · Cluefolio Studio</title>
+<meta name="description" content="What tooling Cluefolio tested, adopted, rejected, and could not access — with reasons and costs.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">CLUEFOLIO<span>.</span></a>
+    <div class="nav-links">
+      <a href="post-001.html">Post 001</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="agency.html">Agency</a>
+      <a href="brand.html">Brand</a>
+      <a href="process.html">Process</a>
+      <a href="resources.html" aria-current="page">Resources</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Resource register</p>
+    <h1>What we tested and what we refused.</h1>
+    <p class="lede">Four buckets: available, adopted, useful but inaccessible, and investigated then rejected.</p>
+  </div>
+</section>
+<section>
+  <div class="wrap prose" style="max-width:860px">
+    <h1>Resource Register</h1>
+<p>What we actually checked, what we adopted, and what we rejected. Short and actionable.</p>
+<p>Legend:</p>
+<ul>
+<li><strong>Available</strong> — already in the environment, reusable now.</li>
+<li><strong>Adopted</strong> — verified and integrated into this workflow.</li>
+<li><strong>Inaccessible</strong> — useful, but blocked by cost, auth, hardware, or terms.</li>
+<li><strong>Rejected</strong> — investigated and not worth it, with a reason.</li>
+</ul>
+<p>Last updated: 2026-10-19</p>
+<hr>
+<h2>1. Already available and reusable</h2>
+<div class="table-wrap"><table><thead><tr><th>Resource</th><th>What it does</th><th>Why it matters</th><th>License / terms</th><th>Requirements</th><th>Status</th></tr></thead><tbody><tr><td>OpenCode v2.0.26</td><td>Agent runtime, subagents, skills, permissions</td><td>Runs the whole studio</td><td>Proprietary client</td><td>Installed</td><td><strong>Available</strong> — verified</td></tr><tr><td><code>websearch</code> tool</td><td>Web search</td><td>Story discovery, source finding</td><td>Provider terms</td><td>Built in</td><td><strong>Available</strong> — used</td></tr><tr><td><code>webfetch</code> tool</td><td>Fetch pages as markdown/text/html</td><td>Reading archives, docs, catalogs</td><td>Target site terms</td><td>Built in</td><td><strong>Available</strong> — used</td></tr><tr><td>Wikimedia Commons API</td><td>Search and metadata for 100M+ media files</td><td>Primary archival image source with machine-readable licenses</td><td>CC/PD per file; API terms</td><td>HTTP</td><td><strong>Adopted</strong> — verified, used</td></tr><tr><td>Library of Congress (loc.gov)</td><td>US national archive, photo collections</td><td>Authoritative US imagery, "no known restrictions" records</td><td>Per item; many PD</td><td>HTTP</td><td><strong>Adopted</strong> — verified, used</td></tr><tr><td>National Archives (archives.gov / catalog)</td><td>Federal records and photographs</td><td>Primary-source documents and images</td><td>Mostly PD (US Gov)</td><td>HTTP</td><td><strong>Adopted</strong> — verified, used</td></tr><tr><td>Newberry Library IIIF</td><td>Chicago history collections, Eastland records</td><td>Deep local archives with open-access policy</td><td>"No Copyright – United States" per item</td><td>IIIF</td><td><strong>Available</strong> — manifest verified</td></tr><tr><td>Pillow 12.3</td><td>Image processing</td><td>Crop, grade, composite, export</td><td>HPND</td><td>Python</td><td><strong>Adopted</strong> — used</td></tr><tr><td>numpy 2.5</td><td>Array math</td><td>Grain, tone curves, fast compositing</td><td>BSD</td><td>Python</td><td><strong>Adopted</strong> — used</td></tr><tr><td>ffmpeg 9.0</td><td>Video/audio encode</td><td>Future Reels adaptation</td><td>LGPL/GPL build</td><td>Installed</td><td><strong>Available</strong> — verified</td></tr><tr><td>Playwright 1.64 + Chromium</td><td>Headless browser</td><td>Rendering HTML-based layouts, screenshotting</td><td>Apache-2.0</td><td>Installed</td><td><strong>Available</strong> — verified</td></tr><tr><td>Georgia / Segoe UI</td><td>System fonts</td><td>Brand typography</td><td>Microsoft system fonts</td><td>Windows</td><td><strong>Adopted</strong> — used</td></tr><tr><td><code>agent-reach</code> CLI</td><td>Multi-platform fetch (YouTube, RSS, Jina reader)</td><td>Supplemental research</td><td>MIT-ish; per-backend terms</td><td>Installed</td><td><strong>Available</strong> — doctor run</td></tr></tbody></table></div>
+<h2>2. Verified and adopted</h2>
+<div class="table-wrap"><table><thead><tr><th>Resource</th><th>Role in workflow</th><th>Verification performed</th><th>Limitation</th></tr></thead><tbody><tr><td>Wikimedia Commons API (<code>action=query&amp;prop=imageinfo</code>)</td><td>Image search + license extraction</td><td>Live queries returned files with <code>LicenseShortName</code>, <code>Artist</code>, <code>Credit</code>, dimensions</td><td>Rate limits (HTTP 429) under rapid automated requests; requires UA and backoff</td></tr><tr><td>NARA direct image files</td><td>High-resolution archival photos</td><td>Downloaded and inspected <code>eastlandcapsized-281841.jpg</code> (1200×956)</td><td>Some catalog endpoints are JS-rendered; direct file URLs work</td></tr><tr><td>LOC direct image CDN (<code>cdn.loc.gov</code>)</td><td>Photo downloads</td><td>Downloaded <code>3a30783r.jpg</code> (640×465, grayscale)</td><td>Small derivatives; TIFF masters exist but are large</td></tr><tr><td>Newberry IIIF Presentation API</td><td>Record metadata and rights</td><td>Manifest returned HTTP 200</td><td>Image endpoint returned 500 on one asset; use manifest metadata, not image proxy</td></tr><tr><td><code>tesseract</code> (optional)</td><td>OCR of newspaper scans</td><td>Not installed</td><td>Would help verify 1915 headlines; not required for this post</td></tr></tbody></table></div>
+<h2>3. Useful but not currently accessible</h2>
+<div class="table-wrap"><table><thead><tr><th>Resource</th><th>What it would add</th><th>Blocker</th><th>Workaround used</th></tr></thead><tbody><tr><td>Pollinations.ai image API</td><td>Free text-to-image</td><td>Now returns <strong>HTTP 402 Payment Required</strong></td><td>Not needed — authentic archival imagery is stronger</td></tr><tr><td>Hugging Face Inference API</td><td>Hosted open-weight image models</td><td>No token configured; free tier gated</td><td>Not needed for this story</td></tr><tr><td>Replicate / fal.ai / Stability</td><td>High-quality generation and upscaling</td><td>Paid; no authorization</td><td>Rejected on cost grounds</td></tr><tr><td>Local Stable Diffusion / ComfyUI</td><td>Local generation</td><td>No discrete GPU; Intel Iris Xe only, 32 GB RAM</td><td>Not practical; would take hours per usable image</td></tr><tr><td>GitHub API / <code>gh</code></td><td>Repo search, issue research</td><td><code>gh</code> not authenticated</td><td>Used public web search and raw URLs instead</td></tr><tr><td>Reddit API</td><td>Audience research</td><td>Anonymous JSON blocked; OAuth requires approval</td><td>Used public web search only; no scraping</td></tr><tr><td>Instagram / Facebook public data</td><td>Audience and format research</td><td>Login-walled; scraping violates terms</td><td>Relied on official platform specs and public documentation</td></tr><tr><td>Google Trends</td><td>Keyword demand</td><td>No accessible API without auth</td><td>Used qualitative search-term reasoning</td></tr><tr><td>Exa semantic search</td><td>Broad research</td><td>Configured in <code>mcporter</code> but not connectivity-verified</td><td>Not claimed as working; used <code>websearch</code> instead</td></tr></tbody></table></div>
+<h2>4. Investigated and rejected</h2>
+<div class="table-wrap"><table><thead><tr><th>Resource</th><th>Reason for rejection</th></tr></thead><tbody><tr><td>Pollinations.ai</td><td>Paywalled as of this run (HTTP 402). No free tier available.</td></tr><tr><td>AI-generated "historical" imagery for this story</td><td>Authentic public-domain photographs exist and are better. Generating would be both unnecessary and an authenticity risk.</td></tr><tr><td>Upscaling archival scans with AI</td><td>Would invent texture and detail not present in the record. Violates editorial standards.</td></tr><tr><td>ComfyUI / AUTOMATIC1111 local install</td><td>No suitable GPU; install size and runtime cost are disproportionate for one post.</td></tr><tr><td>Scraping Instagram/Facebook</td><td>Violates platform terms and requires bypassing access controls.</td></tr><tr><td>Paid stock libraries</td><td>Unnecessary; public-domain archives cover the story.</td></tr><tr><td>Building a database or orchestration service</td><td>Overkill for a file-based pipeline. Flat files and three scripts are sufficient.</td></tr><tr><td><code>gh</code> CLI repo search</td><td>Not authenticated; public search was sufficient for discovery.</td></tr></tbody></table></div>
+<h2>5. Cost record</h2>
+<div class="table-wrap"><table><thead><tr><th>Item</th><th>Cost</th></tr></thead><tbody><tr><td>OpenCode models used</td><td>$0 (free-tier models)</td></tr><tr><td>Image generation</td><td>$0 (not used)</td></tr><tr><td>Archives and APIs</td><td>$0</td></tr><tr><td>Fonts</td><td>$0 (system fonts)</td></tr><tr><td><strong>Total</strong></td><td><strong>$0</strong></td></tr></tbody></table></div>
+<p>No subscriptions, credits, or paid API calls were activated.</p>
+<h2>6. Reuse guidance</h2>
+<p>Reuse for future posts:</p>
+<ul>
+<li>Wikimedia Commons + LOC + NARA as the default archival triad.</li>
+<li>The <code>fetch_assets.py</code> → <code>render_post.py</code> → <code>validate_post.py</code> chain.</li>
+<li>The claim-ID ledger and G2 factual lock.</li>
+<li>The 1080×1350 archival-first visual system.</li>
+</ul>
+<p>Re-evaluate per post:</p>
+<ul>
+<li>Image count and sequence.</li>
+<li>Whether an AI reconstruction is genuinely needed (and if so, disclose it).</li>
+<li>Hashtag and timing choices.</li>
+</ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <p><strong>Cluefolio Studio</strong> — evidence-first, image-led history for Instagram and Facebook.
+    Every claim traceable, every image credited, nothing published without a human.</p>
+    <p class="small">Post 001 · October 2026 · Built locally. No AI imagery used. Total production cost: $0.</p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Image viewer">
+  <button class="close" aria-label="Close">&times;</button>
+  <img alt="">
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>

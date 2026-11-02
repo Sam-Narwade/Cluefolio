@@ -1,0 +1,20 @@
+{
+  "slug": "iroquois-theatre",
+  "assets": [
+    {
+      "id": "cover",
+      "title": "The Iroquois Theatre, Chicago, before the 1903 fire",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:IroquoisTheater.jpg",
+      "file_url": "https://commons.wikimedia.org/wiki/File:IroquoisTheater.jpg",
+      "creator": "Unknown photographer, c. 1903",
+      "date": "",
+      "license": "Public domain in the United States",
+      "credit": "Photograph: public domain, via Wikimedia Commons",
+      "depicts": "A black-and-white photograph of the Iroquois Theatre entrance in Chicago, with a striped canopy over the sidewalk and a crowd gathered outside.",
+      "role": "cover",
+      "alt_text": "A black-and-white photograph of the Iroquois Theatre entrance in Chicago, with a striped canopy over the sidewalk and a crowd gathered outside.",
+      "ai_generated": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "johnstown-flood",
+  "assets": [
+    {
+      "id": "cover",
+      "title": "A house torn from its foundation in the Johnstown Flood, 1889",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Johnstown_Tree_in_House.jpg",
+      "file_url": "https://commons.wikimedia.org/wiki/File:Johnstown_Tree_in_House.jpg",
+      "creator": "Unknown photographer, 1889",
+      "date": "",
+      "license": "Public domain in the United States",
+      "credit": "Photograph: public domain, via Wikimedia Commons",
+      "depicts": "A large wooden house stands tipped on its side amid flood debris in Johnstown, Pennsylvania, after the 1889 dam failure, with a massive tree trunk driven through its wall.",
+      "role": "cover",
+      "alt_text": "A large wooden house stands tipped on its side amid flood debris in Johnstown, Pennsylvania, after the 1889 dam failure, with a massive tree trunk driven through its wall.",
+      "ai_generated": false
+    }
+  ]
+}

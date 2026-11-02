@@ -1,0 +1,62 @@
+[
+  {
+    "id": "01-capsized-nara",
+    "status": "downloaded",
+    "http_status": 200,
+    "path": "content/first-post/assets/01-capsized-nara.jpg",
+    "bytes": 3390101,
+    "sha256": "fdeec78d18df11758c63f2743b3eb60d71dc1e61c60c7ab656cc702ea732f7e3",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Photograph_of_The_Eastland_%28upside_down%29_on_Chicago_River%2C_Chicago._-_NARA_-_281841.jpg",
+    "license": "Public domain (U.S. Government work)"
+  },
+  {
+    "id": "02-upright-nara",
+    "status": "downloaded",
+    "http_status": 200,
+    "path": "content/first-post/assets/02-upright-nara.jpg",
+    "bytes": 3005911,
+    "sha256": "42af220e4984025b800bf0ccfec841c360eef8d5063d97df18913f9ac53a27a7",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Photograph_of_The_Eastland_%28upright%29_at_port._-_NARA_-_281840.jpg",
+    "license": "Public domain (U.S. Government work)"
+  },
+  {
+    "id": "03-rescue-loc",
+    "status": "downloaded",
+    "http_status": 200,
+    "path": "content/first-post/assets/03-rescue-loc.jpg",
+    "bytes": 231043,
+    "sha256": "c30a87c3c92a3aa9ea65c4f5837ba271f233de1af0aac881f5e50443383b4c88",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/EASTLAND_disaster%3B_excurion_boat_overturned_in_Chicago_River_with_passengers_standing_on_upturned_port_side%3B_many_small_boats_assisting_in_rescue_operations_while_crowds_watch_from_shore_closeby._LCCN2017658559.jpg",
+    "license": "Public domain (no known restrictions on publication)"
+  },
+  {
+    "id": "04-firetug-postcard",
+    "status": "downloaded",
+    "http_status": 200,
+    "path": "content/first-post/assets/04-firetug-postcard.png",
+    "bytes": 5047568,
+    "sha256": "9597f43eb246775405d9f288907ba36396a265139fbf65aa27bbffb986e5d840",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Eastland_Postcard_-_View_of_Eastland_taken_from_Fire_Tug_in_river.png",
+    "license": "Public domain (published in the United States before 1930)"
+  },
+  {
+    "id": "05-satterfield",
+    "status": "downloaded",
+    "http_status": 200,
+    "path": "content/first-post/assets/05-satterfield.jpg",
+    "bytes": 942811,
+    "sha256": "a9f768570165e393d90dd63e5e7eaacd68d5fd53dbcb94830f1559afef47710e",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Capsizing_of_the_SS_Eastland%2C_as_witnessed_by_Satterfield.jpg",
+    "license": "Public domain (published in the United States before 1930)"
+  },
+  {
+    "id": "06-tribune-photo",
+    "status": "downloaded",
+    "http_status": 200,
+    "path": "content/first-post/assets/06-tribune-photo.jpg",
+    "bytes": 2214578,
+    "sha256": "9652c0ab11e8b5d197fa4bf1628fde0666a5f538d04623798d439fb839529081",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Eastland_disaster_photograph_from_the_Chicago_Tribune_%281%29.jpg",
+    "license": "Public domain (published in the United States before 1930)"
+  }
+]

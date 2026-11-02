@@ -1,0 +1,20 @@
+{
+  "slug": "hartford-circus-fire",
+  "assets": [
+    {
+      "id": "cover",
+      "title": "The Hartford circus fire, July 6, 1944",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hartford_circus_fire.jpg",
+      "file_url": "https://commons.wikimedia.org/wiki/File:Hartford_circus_fire.jpg",
+      "creator": "Unknown photographer, 1944",
+      "date": "",
+      "license": "Public domain in the United States",
+      "credit": "Photograph: public domain, via Wikimedia Commons",
+      "depicts": "A circus tent burns at the Hartford circus fire in 1944, with flames and black smoke rising above the canvas while people flee in the foreground.",
+      "role": "cover",
+      "alt_text": "A circus tent burns at the Hartford circus fire in 1944, with flames and black smoke rising above the canvas while people flee in the foreground.",
+      "ai_generated": false
+    }
+  ]
+}

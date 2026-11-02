@@ -1,0 +1,32 @@
+{
+  "slug": "radium-girls",
+  "rail": "POST 009",
+  "canvas": {
+    "width": 1080,
+    "height": 1350
+  },
+  "palette": {
+    "paper": "#F4EFE6",
+    "ink": "#15130F",
+    "muted": "#5B5348",
+    "rule": "#B9AE9C",
+    "accent": "#8C2F1E"
+  },
+  "cover": {
+    "asset": "cover",
+    "wordmark": "CLUEFOLIO",
+    "category": "LABOR / SCIENCE",
+    "headline": [
+      "THE WOMEN",
+      "WHO GLOWED"
+    ],
+    "dateline": "Orange, New Jersey  ·  1922",
+    "crop": {
+      "fx": 0.5,
+      "fy": 0.5,
+      "zoom": 1.0
+    },
+    "disclosure": ""
+  },
+  "interiors": []
+}

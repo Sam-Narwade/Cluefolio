@@ -1,0 +1,144 @@
+{
+  "post": "001",
+  "slug": "first-post",
+  "title": "The Ship That Never Left the Dock",
+  "subtitle": "The SS Eastland disaster, Chicago, July 24, 1915",
+  "category": "Disasters / Engineering failure",
+  "angle": "A steamship capsized while still secured to its dock, killing 844 people in twenty feet of water, twenty feet from shore.",
+  "audience": "US adults 25-55 following history, engineering failures, and true-story accounts",
+  "languages": ["en-US"],
+  "status": "READY FOR HUMAN PUBLISHING",
+  "created": "2026-10-19",
+  "pipeline": {
+    "stages": 11,
+    "gates": 6,
+    "revision_rounds_used": 2,
+    "revision_rounds_max": 3
+  },
+  "gates": {
+    "G1_greenlight": "PASS",
+    "G2_factual_lock": "PASS",
+    "G3_rights_clearance": "PASS",
+    "G4_story_approval": "PASS",
+    "G5_clearance": "PASS",
+    "G6_qa_signoff": "PASS"
+  },
+  "viral_readiness": {
+    "hook": 5,
+    "curiosity_gap": 4,
+    "emotional_stakes": 5,
+    "specificity": 5,
+    "visual_stopping_power": 4,
+    "shareability": 5,
+    "saveability": 5,
+    "comment_potential": 4,
+    "total": 37,
+    "max": 40,
+    "publish_floor": 32,
+    "flagship_bar": 36
+  },
+  "ai_disclosure": {
+    "required": false,
+    "reason": "Every image is an authentic historical document, 1904-1915. No generative imagery was used at any stage."
+  },
+  "images": [
+    {
+      "file": "content/first-post/images/01-cover.jpg",
+      "position": 1,
+      "asset_id": "01-capsized-nara",
+      "role": "cover",
+      "width": 1080,
+      "height": 1350,
+      "alt_text_ref": "01-cover"
+    },
+    {
+      "file": "content/first-post/images/02-upright.jpg",
+      "position": 2,
+      "asset_id": "02-upright-nara",
+      "role": "before",
+      "width": 1080,
+      "height": 1350,
+      "alt_text_ref": "02-upright"
+    },
+    {
+      "file": "content/first-post/images/03-the-moment.jpg",
+      "position": 3,
+      "asset_id": "05-satterfield",
+      "role": "witness",
+      "width": 1080,
+      "height": 1350,
+      "alt_text_ref": "03-the-moment"
+    },
+    {
+      "file": "content/first-post/images/04-the-hull.jpg",
+      "position": 4,
+      "asset_id": "04-firetug-postcard",
+      "role": "scale",
+      "width": 1080,
+      "height": 1350,
+      "alt_text_ref": "04-the-hull"
+    },
+    {
+      "file": "content/first-post/images/05-the-rescue.jpg",
+      "position": 5,
+      "asset_id": "03-rescue-loc",
+      "role": "rescue",
+      "width": 1080,
+      "height": 1350,
+      "alt_text_ref": "05-the-rescue"
+    },
+    {
+      "file": "content/first-post/images/06-the-wreck.jpg",
+      "position": 6,
+      "asset_id": "07-wreck-panorama",
+      "role": "closing-plate",
+      "width": 1080,
+      "height": 1350,
+      "alt_text_ref": "06-the-wreck"
+    }
+  ],
+  "captions": {
+    "instagram": "content/first-post/captions/instagram.md",
+    "facebook": "content/first-post/captions/facebook.md",
+    "alt_text": "content/first-post/captions/alt-text.md",
+    "instagram_char_limit": 2200,
+    "facebook_char_limit": 63206
+  },
+  "hashtags": {
+    "instagram": ["#EastlandDisaster", "#ChicagoHistory", "#GreatLakes", "#MaritimeHistory", "#ForgottenHistory"],
+    "facebook": ["#EastlandDisaster", "#ChicagoHistory", "#MaritimeHistory", "#GreatLakes"]
+  },
+  "claims_used": ["C01", "C03", "C04", "C05", "C06", "C07", "C08", "C09", "C10", "C11", "C12", "C13", "C14", "C15", "C16", "C17"],
+  "claims_excluded": [
+    {
+      "id": "C02",
+      "reason": "The circulating 812 death toll is unsupported by any primary source."
+    },
+    {
+      "id": "C18",
+      "reason": "The Titanic/Lusitania civilian-passenger comparison is true only in a narrow congressional form that a one-line caption cannot carry honestly."
+    }
+  ],
+  "quotations": {
+    "count": 0,
+    "reason": "No quotation could be verified word-for-word with a stable citation."
+  },
+  "images_unused": [
+    {
+      "asset_id": "06-mourners",
+      "reason": "Coarse newspaper halftone; fails the quality bar at the crop required, and tightens on a grieving woman's face. Dignity and quality both favor exclusion."
+    }
+  ],
+  "rights": {
+    "all_public_domain_us": true,
+    "attribution_required": false,
+    "credits_provided": true,
+    "international_caveat": "The 1915 postcard and the Satterfield drawing are public domain in the US; they may still be protected in life-plus-70 jurisdictions."
+  },
+  "cost_usd": 0,
+  "publishing": {
+    "delivery": "manual",
+    "recommended_window": "Tue/Wed 12:00-13:00 ET, or Sun 19:00-21:00 ET",
+    "paid_boost": "not planned; see 15-paid-plan.md (bench)"
+  }
+}

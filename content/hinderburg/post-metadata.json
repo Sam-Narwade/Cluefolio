@@ -1,0 +1,86 @@
+{
+  "post": "002",
+  "slug": "hinderburg",
+  "title": "The Airship That Fell From the Sky",
+  "subtitle": "The Hindenburg disaster, Lakehurst, New Jersey, May 6, 1937",
+  "category": "Disasters / Aviation failure",
+  "angle": "The Hindenburg was coming in for a landing when it caught fire and fell from the sky — 36 people died in thirty-four seconds, and the cause remains officially undetermined.",
+  "audience": "US adults 25-55 following history, aviation failures, and true-story accounts",
+  "languages": ["en-US"],
+  "status": "READY FOR HUMAN PUBLISHING",
+  "created": "2026-11-20",
+  "pipeline": {
+    "stages": 11,
+    "gates": 6,
+    "revision_rounds_used": 0,
+    "revision_rounds_max": 3
+  },
+  "gates": {
+    "G1_greenlight": "PASS",
+    "G2_factual_lock": "PASS",
+    "G3_rights_clearance": "PASS",
+    "G4_story_approval": "PASS",
+    "G5_clearance": "PASS",
+    "G6_qa_signoff": "PASS"
+  },
+  "viral_readiness": {
+    "hook": 5,
+    "curiosity_gap": 4,
+    "emotional_stakes": 5,
+    "specificity": 5,
+    "visual_stopping_power": 5,
+    "shareability": 5,
+    "saveability": 5,
+    "comment_potential": 4,
+    "total": 38,
+    "max": 40,
+    "publish_floor": 32,
+    "flagship_bar": 36
+  },
+  "hook_marker": "hindenburg",
+  "ai_disclosure": {
+    "required": false,
+    "reason": "Every image is an authentic historical document, 1937. No generative imagery was used at any stage. The cover image is the Sam Shere photograph from Wikimedia Commons, published 1937."
+  },
+  "images": [
+    {
+      "file": "content/hinderburg/images/01-cover.jpg",
+      "position": 1,
+      "asset_id": "hindenburg-cover",
+      "role": "cover",
+      "width": 1080,
+      "height": 1350,
+      "alt_text_ref": "01-cover"
+    }
+  ],
+  "captions": {
+    "instagram": "content/hinderburg/captions/instagram.md",
+    "facebook": "content/hinderburg/captions/facebook.md",
+    "alt_text": "content/hinderburg/captions/alt-text.md",
+    "instagram_char_limit": 2200,
+    "facebook_char_limit": 63206
+  },
+  "hashtags": {
+    "instagram": ["#HindenburgDisaster", "#AviationHistory", "#GreatLakes", "#MaritimeHistory", "#ForgottenHistory"],
+    "facebook": ["#HindenburgDisaster", "#AviationHistory", "#MaritimeHistory", "#GreatLakes"]
+  },
+  "claims_used": ["C01", "C02", "C03", "C04", "C05", "C06", "C07", "C08", "C09", "C10", "C11", "C12", "C13", "C14", "C15"],
+  "claims_excluded": [],
+  "quotations": {
+    "count": 0,
+    "reason": "No quotation could be verified word-for-word with a stable citation."
+  },
+  "images_unused": [],
+  "rights": {
+    "all_public_domain_us": true,
+    "attribution_required": false,
+    "credits_provided": true,
+    "international_caveat": "The Sam Shere photograph is public domain in the United States (published 1937; copyright not renewed). The 1937 NARA and LoC source images are also in the public domain. All imagery is free for US-based audience and US platforms."
+  },
+  "cost_usd": 0,
+  "publishing": {
+    "delivery": "manual",
+    "recommended_window": "Tue/Wed 12:00-13:00 ET, or Sun 19:00-21:00 ET",
+    "paid_boost": "not planned"
+  }
+}

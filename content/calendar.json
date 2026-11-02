@@ -1,0 +1,238 @@
+{
+  "season": "Season One - American Disasters & Engineering Failures",
+  "note": "Eleven posts through January 2027. Posts 001-002 are ready. Posts 003-011 are drafts until Gate 2.",
+  "cadence": "Weekly on Wednesdays, 12:00-13:00 ET. Dec 23 and Dec 30 skipped for the holidays.",
+  "posts": [
+    {
+      "number": "001",
+      "slug": "first-post",
+      "title": "The Ship That Never Left the Dock",
+      "category": "Disasters / Engineering failure",
+      "date": "2026-10-21",
+      "display_date": "Oct 21, 2026",
+      "weekday": "Wednesday",
+      "status": "ready",
+      "angle": "A steamship capsized while still secured to its dock, killing 844 people in twenty feet of water, twenty feet from shore.",
+      "why": "The strongest single story in the slate: an impossible fact in one sentence, real engineering substance, and an abundant free visual archive.",
+      "sources": [
+        "U.S. National Archives (NAID 281840, 281841)",
+        "Library of Congress, Prints & Photographs Division",
+        "H.Res. 375, 114th Congress",
+        "Eastland Disaster Historical Society"
+      ],
+      "imagery": "Excellent. Six authentic public-domain frames; renderer complete.",
+      "risks": "None outstanding. Two common false claims were removed at Gate 2.",
+      "provisional_score": 37
+    },
+    {
+      "number": "002",
+      "slug": "hinderburg",
+      "title": "The Airship That Fell From the Sky",
+      "category": "Disasters / Aviation failure",
+      "date": "2026-10-28",
+      "display_date": "Oct 28, 2026",
+      "weekday": "Wednesday",
+      "status": "ready",
+      "angle": "The Hindenburg caught fire while landing at Lakehurst, New Jersey. Thirty-six people died in about thirty-four seconds.",
+      "why": "An iconic public-domain photograph, a hook that fits in one sentence, and a cause that is still genuinely unresolved.",
+      "sources": [
+        "Wikimedia Commons, Hindenburg disaster photograph",
+        "U.S. National Archives, Hindenburg investigation file",
+        "Library of Congress, Bain Collection",
+        "Airships.net (context)"
+      ],
+      "imagery": "Excellent. Authentic 1937 photograph of the airship in flames.",
+      "risks": "Death toll must distinguish 35 on board from 36 total. Cause must stay qualified.",
+      "provisional_score": 38
+    },
+    {
+      "number": "003",
+      "slug": "peshtigo-fire",
+      "title": "The Fire That Was Forgotten",
+      "category": "Disasters / Wildfire",
+      "date": "2026-11-04",
+      "display_date": "Nov 4, 2026",
+      "weekday": "Wednesday",
+      "status": "draft",
+      "angle": "On the same night Chicago burned, a wildfire in Wisconsin killed an estimated 1,500 to 2,500 people, the deadliest in American history, and almost nobody remembers it.",
+      "why": "The Chicago comparison is a built-in hook and a genuine historical injustice. The purest 'I never knew this' story on the slate.",
+      "sources": [
+        "Wisconsin Historical Society",
+        "National Weather Service historical records",
+        "Peshtigo Fire Museum",
+        "Contemporary Wisconsin and Chicago newspapers, 1871"
+      ],
+      "imagery": "Weak. Surviving photographs are scarce and low-resolution. Consider a second visual pass or a text-forward plate.",
+      "risks": "Death toll is an estimate and ranges widely. Must be presented as an estimate, never a precise figure.",
+      "provisional_score": 36
+    },
+    {
+      "number": "004",
+      "slug": "johnstown-flood",
+      "title": "The Dam Nobody Would Fix",
+      "category": "Engineering failure",
+      "date": "2026-11-11",
+      "display_date": "Nov 11, 2026",
+      "weekday": "Wednesday",
+      "status": "draft",
+      "angle": "A private club's earthen dam failed above Johnstown, Pennsylvania, and killed 2,209 people. The club's members included some of the richest men in America.",
+      "why": "Class, negligence, and documented warnings ignored. The clearest accountability story available, and the imagery is strong.",
+      "sources": [
+        "Johnstown Flood Museum",
+        "National Park Service",
+        "American Society of Civil Engineers",
+        "Contemporary Pennsylvania press, 1889"
+      ],
+      "imagery": "Strong. Widely held period photographs, public domain.",
+      "risks": "The club's responsibility is documented but the legal outcome needs precision. Avoid a simple morality play.",
+      "provisional_score": 37
+    },
+    {
+      "number": "005",
+      "slug": "iroquois-theatre",
+      "title": "The Doors That Opened Inward",
+      "category": "Disasters / Safety",
+      "date": "2026-11-18",
+      "display_date": "Nov 18, 2026",
+      "weekday": "Wednesday",
+      "status": "draft",
+      "angle": "A Chicago theater fire killed 602 people in about fifteen minutes. Many of the exits were locked, blocked, or opened inward.",
+      "why": "A direct safety-failure story with a physical mechanism a reader can picture, and Chicago continuity with Post 001.",
+      "sources": [
+        "Chicago History Museum",
+        "National Fire Protection Association historical records",
+        "Cook County coroner's inquest, 1903",
+        "Contemporary Chicago press"
+      ],
+      "imagery": "Strong. Period photographs, postcards, and architectural images.",
+      "risks": "Graphic subject. No imagery of victims. Verify each specific exit failure before naming it.",
+      "provisional_score": 37
+    },
+    {
+      "number": "006",
+      "slug": "monongah-mine",
+      "title": "The Worst Mining Disaster in American History",
+      "category": "Labor / Disasters",
+      "date": "2026-11-25",
+      "display_date": "Nov 25, 2026",
+      "weekday": "Wednesday",
+      "status": "draft",
+      "angle": "An explosion in a West Virginia mine killed at least 362 men and boys. It led directly to the creation of the federal Bureau of Mines.",
+      "why": "Labor history with a concrete policy consequence, and a death toll that is still argued over.",
+      "sources": [
+        "Mine Safety and Health Administration (MSHA)",
+        "West Virginia State Archives",
+        "U.S. Bureau of Mines records",
+        "Contemporary West Virginia press"
+      ],
+      "imagery": "Moderate. Period photographs exist but are low-resolution or graphic. Cover is a disclosed reconstruction.",
+      "risks": "Death toll varies from 362 to over 500. Child labor is central and needs care. Dignity review required.",
+      "provisional_score": 35
+    },
+    {
+      "number": "007",
+      "slug": "halifax-explosion",
+      "title": "The Blast That Flattened a City",
+      "category": "Disasters / Maritime",
+      "date": "2026-12-02",
+      "display_date": "Dec 2, 2026",
+      "weekday": "Wednesday",
+      "status": "draft",
+      "angle": "Two ships collided in Halifax harbour and the munitions cargo detonated, killing about 2,000 people and injuring thousands more.",
+      "why": "Enormous scale, a clear chain of events, a strong human-response beat, and a warm US-Canada payoff.",
+      "sources": [
+        "Nova Scotia Archives",
+        "Canadian Museum of History",
+        "Royal Society of Canada",
+        "Contemporary Canadian and US press"
+      ],
+      "imagery": "Strong. Period photographs are public domain in Canada and the US.",
+      "risks": "Non-US story; needs a clear reason for a US audience. Verify the death toll and the Turtle Grove story.",
+      "provisional_score": 37
+    },
+    {
+      "number": "008",
+      "slug": "molasses-flood",
+      "title": "The Wave That Came From a Tank",
+      "category": "Engineering failure",
+      "date": "2026-12-09",
+      "display_date": "Dec 9, 2026",
+      "weekday": "Wednesday",
+      "status": "draft",
+      "angle": "A storage tank in Boston's North End burst and sent a wall of molasses through the streets, killing 21 people.",
+      "why": "The hook is irresistible and the underlying failure, a tank built too thin and never properly tested, is genuinely instructive.",
+      "sources": [
+        "Boston Public Library",
+        "Boston Globe archives, 1919",
+        "National Oceanic and Atmospheric Administration",
+        "Engineering case studies"
+      ],
+      "imagery": "Strong. Period photographs widely held.",
+      "risks": "Tone is the whole risk. It reads as trivia if handled lightly. Verify the claimed wave speed and the toll.",
+      "provisional_score": 36
+    },
+    {
+      "number": "009",
+      "slug": "radium-girls",
+      "title": "The Women Who Glowed",
+      "category": "Labor / Science",
+      "date": "2026-12-16",
+      "display_date": "Dec 16, 2026",
+      "weekday": "Wednesday",
+      "status": "draft",
+      "angle": "Factory workers painted watch dials with radium and were told it was safe. Their bodies became the evidence that changed American labor law.",
+      "why": "Human, scientific, and legally consequential. It broadens the season beyond disasters into science and labor.",
+      "sources": [
+        "Argonne National Laboratory",
+        "Occupational Safety and Health Administration",
+        "Illinois and New Jersey state archives",
+        "Federal court records"
+      ],
+      "imagery": "Moderate. The factory photograph is authentic but soft. Portraits are limited and rights vary.",
+      "risks": "Portrait rights need per-item verification. Avoid lurid medical detail. Verify names, dates, and legal outcomes.",
+      "provisional_score": 36
+    },
+    {
+      "number": "010",
+      "slug": "cocoanut-grove",
+      "title": "The Fire That Changed Burn Care",
+      "category": "Disasters / Medicine",
+      "date": "2027-01-06",
+      "display_date": "Jan 6, 2027",
+      "weekday": "Wednesday",
+      "status": "draft",
+      "angle": "A Boston nightclub fire killed 492 people. The treatment of its survivors produced the first modern burn protocol.",
+      "why": "Held from the Post 001 shortlist. A double payoff: the disaster and the medical legacy that came out of it.",
+      "sources": [
+        "Boston Public Library",
+        "Massachusetts General Hospital archives",
+        "National Fire Protection Association",
+        "Contemporary Boston press"
+      ],
+      "imagery": "Weak for rights. The best period photographs are still in copyright. Cover is a disclosed reconstruction.",
+      "risks": "Graphic subject; no victim imagery. Verify the toll and the specific medical claims, which are often overstated.",
+      "provisional_score": 35
+    },
+    {
+      "number": "011",
+      "slug": "hartford-circus-fire",
+      "title": "The Tent That Burned in Minutes",
+      "category": "Disasters / Safety",
+      "date": "2027-01-13",
+      "display_date": "Jan 13, 2027",
+      "weekday": "Wednesday",
+      "status": "draft",
+      "angle": "A circus tent treated with paraffin and gasoline caught fire during a matinee in Hartford, killing 167 people, most of them children.",
+      "why": "Devastating and largely forgotten, with a clear materials-failure mechanism and a direct line to modern flame-retardant rules.",
+      "sources": [
+        "Connecticut Historical Society",
+        "National Fire Protection Association",
+        "Hartford Circus Fire memorial records",
+        "Contemporary Hartford press"
+      ],
+      "imagery": "Strong. The period photograph is public domain and visually powerful.",
+      "risks": "The highest emotional content on the slate, involving children. Dignity review is mandatory. Verify the tent treatment claim.",
+      "provisional_score": 36
+    }
+  ]
+}

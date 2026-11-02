@@ -1,0 +1,20 @@
+{
+  "slug": "monongah-mine",
+  "assets": [
+    {
+      "id": "cover",
+      "title": "Editorial reconstruction: Monongah mine entrance, 1907",
+      "archive": "Cluefolio Studio",
+      "source_url": "",
+      "file_url": "content/_sources/monongah-ai.jpg",
+      "creator": "Cluefolio Studio (editorial reconstruction)",
+      "date": "",
+      "license": "Original work created for this project. Not a historical photograph. Disclosed as an editorial reconstruction.",
+      "credit": "Editorial reconstruction by Cluefolio Studio. Not a historical photograph.",
+      "depicts": "An editorial reconstruction of a West Virginia coal mine entrance in winter 1907, with dark wooden tipples, smoke, and a narrow tramway between the buildings.",
+      "role": "cover",
+      "alt_text": "An editorial reconstruction of a West Virginia coal mine entrance in winter 1907, with dark wooden tipples, smoke, and a narrow tramway between the buildings.",
+      "ai_generated": true
+    }
+  ]
+}

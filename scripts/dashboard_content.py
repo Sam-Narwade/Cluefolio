@@ -1,0 +1,917 @@
+"""Content source for the Cluefolio dashboard.
+
+This module is imported by scripts/build_dashboard_data.py. Keeping the copy in
+Python (rather than hand-editing a large JSON file) makes it easier to audit
+character counts and regenerate the dashboard data.
+"""
+
+POSTS = []
+
+POSTS.append({
+    "number": "001",
+    "slug": "first-post",
+    "title": "The Ship That Never Left the Dock",
+    "subtitle": "The SS Eastland disaster, Chicago, July 24, 1915",
+    "category": "Disasters / Engineering failure",
+    "event_date": "1915-07-24",
+    "date": "2026-10-21",
+    "display_date": "Oct 21, 2026",
+    "weekday": "Wednesday",
+    "status": "ready",
+    "status_label": "Ready to publish",
+    "angle": "A steamship capsized while still secured to its dock, killing 844 people in twenty feet of water, twenty feet from shore.",
+    "audience": "US adults 25-55 following history, engineering failures, and true-story accounts",
+    "hook": "The Eastland was still tied to the dock when it killed 844 people.",
+    "dek": "Chicago, July 24, 1915. A five-deck excursion steamer rolled onto its side before it ever left the wharf.",
+    "story": [
+        "On the morning of July 24, 1915, the excursion steamer Eastland was moored on the Chicago River, loading Western Electric employees and their families for a company picnic in Michigan City, Indiana. More than 2,500 people came aboard. The gangplank was still down.",
+        "The ship had almost gone over before. In 1904 it nearly capsized at its dock with roughly 3,000 people aboard. In 1912 it listed hard in Cleveland. Narrow, fast, and top-heavy, the Eastland had a stability problem its operators knew about.",
+        "Then came a reform meant to make ships safer. After the Titanic sank, a 1915 federal law required more lifeboats. To keep its passenger license, the Eastland added boats high on its upper decks. The weight went exactly where the ship could least afford it.",
+        "Shortly after 7 a.m., the Eastland lurched and rolled onto its side.",
+        "The river there is about twenty feet deep, and the ship came to rest about twenty feet from the wharf. That shallow, narrow gap is why hundreds climbed across the exposed hull and lived, and why hundreds below deck had minutes, not hours.",
+        "844 passengers and crew died. 590 were under 25. Twenty-two entire families were wiped out.",
+        "A grand jury indicted the owners, the captain, the chief engineer, and federal inspectors. The cases ended without a conviction. The Eastland was raised weeks later, sold, and eventually commissioned as the Navy's USS Wilmette. She served until 1945 and was scrapped in 1947.",
+        "The dock is a short walk from the Loop. The water is twenty feet deep. Most days, nobody looks down."
+    ],
+    "payoff": "The ship never left the dock. The consequences did.",
+    "cta": "Follow for the disasters the textbooks skip.",
+    "captions": {
+        "instagram": "The Eastland was still tied to the dock when it killed 844 people.\n\nChicago, July 24, 1915. Shortly after 7 a.m., employees of Western Electric and their families boarded a five-deck excursion steamer bound for a company picnic in Michigan City, Indiana. More than 2,500 people were on board. The gangplank was still down.\n\nThe ship had almost gone over before. In 1904 it nearly capsized with roughly 3,000 people aboard. In 1912 it listed hard in Cleveland. Narrow, fast, and top-heavy, the Eastland had a stability problem its operators knew about.\n\nThen came a reform meant to make ships safer. After the Titanic sank, a 1915 federal law required more lifeboats. To keep its passenger license, the Eastland added boats high on its upper decks. The weight went exactly where the ship could least afford it.\n\nShortly after 7 a.m., the Eastland lurched and rolled onto its side.\n\nThe river there is about 20 feet deep, and the ship came to rest about 20 feet from the wharf. That shallow, narrow gap is why hundreds climbed across the exposed hull and lived, and why hundreds below deck had minutes, not hours.\n\n844 passengers and crew died. 590 were under 25. Twenty-two entire families were wiped out.\n\nA grand jury indicted the owners, the captain, the chief engineer, and federal inspectors. The cases ended without a conviction.\n\nThe Eastland was raised weeks later, sold, and eventually commissioned as the Navy's USS Wilmette. She served until 1945 and was scrapped in 1947.\n\nThe dock is a short walk from the Loop. The water is 20 feet deep. Most days, nobody looks down.\n\nPhotographs: National Archives and Records Administration; Library of Congress, Prints & Photographs Division.\n\n#EastlandDisaster #ChicagoHistory #GreatLakes #MaritimeHistory #ForgottenHistory",
+        "facebook": "On the morning of July 24, 1915, the Eastland was still tied to the dock when it rolled onto its side and killed 844 people.\n\nThe Eastland was an excursion steamer. That Saturday it was carrying employees of Western Electric and their families to a company picnic in Michigan City, Indiana. More than 2,500 people came aboard. The gangplank was still down.\n\nThe ship had a history. It nearly capsized at its dock in 1904 with about 3,000 people aboard, and it listed severely in Cleveland in 1912. Fast and narrow, the Eastland was top-heavy. The people who ran it knew it had stability problems.\n\nThen a safety reform made those problems worse. After the Titanic sank, a 1915 federal law required more lifeboats. To keep its licensed passenger capacity, the Eastland's operators added lifeboats and rafts high on the upper decks. All that weight sat above the ship's center of gravity.\n\nShortly after 7 a.m., the Eastland lurched to port and rolled onto its side.\n\nHere is the part that is hard to hold in your head. The ship did not sink. The Chicago River is only about 20 feet deep there, and the hull came to rest about 20 feet from the wharf. Hundreds of people climbed across the exposed side of the ship to the dock and lived.\n\nHundreds of others were below decks, in the cabins and the dance floor, when the water came in. They had minutes.\n\n844 passengers and crew died, including 590 people under the age of 25. Twenty-two families lost every member.\n\nA grand jury indicted the ship's owners, captain, chief engineer, and federal inspectors. The case was moved to Michigan, where the defendants were found not guilty in February 1916, and the court refused extradition back to Illinois. No criminal trial was ever held in Chicago. No one was convicted.\n\nThe Eastland was raised on August 14, 1915. She was sold, and in 1918 she was commissioned as the U.S. Navy's USS Wilmette, serving until 1945 before being scrapped.\n\nThe site is a few blocks from the Loop, on a stretch of river where tour boats now run. The water is 20 feet deep. Most days, nobody looks down.\n\nPhotographs: National Archives and Records Administration; Library of Congress, Prints & Photographs Division.\n\n#EastlandDisaster #ChicagoHistory #MaritimeHistory #GreatLakes",
+        "first_comment": "Full source list: NARA records 281840 and 281841; Library of Congress, Prints & Photographs Division; U.S. House Resolution 375, 114th Congress; Eastland Disaster Historical Society. All images are public domain. No AI-generated imagery is used in this post.",
+        "alt_text": "A long passenger steamship lies completely on its side in a narrow city river, its dark hull exposed above the waterline. A few small figures stand on the upturned hull, and brick warehouses line the shore."
+    },
+    "hashtags": {
+        "instagram": ["#EastlandDisaster", "#ChicagoHistory", "#GreatLakes", "#MaritimeHistory", "#ForgottenHistory", "#SSEastland"],
+        "facebook": ["#EastlandDisaster", "#ChicagoHistory", "#MaritimeHistory", "#GreatLakes"]
+    },
+    "keywords": {
+        "primary": "Eastland disaster",
+        "secondary": ["SS Eastland", "Chicago River disaster 1915", "Eastland ship capsizing", "Western Electric picnic", "Chicago history", "maritime disasters"],
+        "long_tail": ["what happened to the SS Eastland", "how many people died in the Eastland disaster", "why did the Eastland capsize at the dock", "Eastland disaster Chicago River 1915"]
+    },
+    "seo": {
+        "title": "Eastland Disaster: The Ship That Never Left the Dock",
+        "meta_description": "On July 24, 1915, the SS Eastland capsized while still tied to its Chicago dock, killing 844 people in twenty feet of water, twenty feet from shore.",
+        "slug": "eastland-disaster",
+        "focus_keyword": "Eastland disaster",
+        "canonical": "/stories/eastland-disaster",
+        "og_title": "The ship that never left the dock",
+        "og_description": "844 people died in twenty feet of water, twenty feet from shore. The SS Eastland, Chicago, 1915.",
+        "schema_type": "NewsArticle",
+        "image_alt": "The capsized SS Eastland lying on its side in the Chicago River, 1915.",
+        "internal_links": ["/stories/iroquois-theatre-fire", "/stories/great-molasses-flood"]
+    },
+    "images": [
+        {"file": "01-cover.jpg", "role": "cover", "alt": "A long passenger steamship lies completely on its side in a narrow city river, its dark hull exposed above the waterline. A few small figures stand on the upturned hull, and brick warehouses line the shore.", "credit": "National Archives and Records Administration, NAID 281841", "ai": False},
+        {"file": "02-upright.jpg", "role": "before", "alt": "A tall white excursion steamship with two funnels and several decks sits upright at a city dock, seen bow-on so its full height fills the frame.", "credit": "National Archives and Records Administration, NAID 281840", "ai": False},
+        {"file": "03-the-moment.jpg", "role": "witness", "alt": "A dramatic black-and-white newspaper drawing shows a large steamship tilting sharply toward the water as tiny figures scramble on its decks and swim below, watched from a bridge.", "credit": "Bob Satterfield, The Tacoma Times, July 27, 1915", "ai": False},
+        {"file": "04-the-hull.jpg", "role": "scale", "alt": "A huge dark hull fills the frame at water level, seen from a boat on the river. The overturned steamship's curved side rises above the water beside a stone river wall.", "credit": "Max Rigot Selling Co., Chicago, 1915", "ai": False},
+        {"file": "05-the-rescue.jpg", "role": "rescue", "alt": "Dozens of people stand on the exposed side of a capsized steamship while small rowboats and launches crowd the water around it. A dense crowd watches from the riverbank.", "credit": "Library of Congress, Prints & Photographs Division, George Grantham Bain Collection", "ai": False},
+        {"file": "06-the-wreck.jpg", "role": "aftermath", "alt": "A wide sepia photograph shows a city river crowded with boats and onlookers, with the exposed hull of a capsized steamship beside a bridge and tall warehouses.", "credit": "Kaufmann, Weimer & Fabry Co., Library of Congress, Prints & Photographs Division", "ai": False}
+    ],
+    "cover": "01-cover.jpg",
+    "image_count": 6,
+    "pipeline": {
+        "stage": "Published package ready",
+        "stage_index": 11,
+        "gates": {"G1_greenlight": "PASS", "G2_factual_lock": "PASS", "G3_rights_clearance": "PASS", "G4_story_approval": "PASS", "G5_clearance": "PASS", "G6_qa_signoff": "PASS"},
+        "progress": 100,
+        "owner": "agency-lead",
+        "next_action": "Human publishes"
+    },
+    "viral_readiness": {"total": 37, "scores": {"hook": 5, "curiosity_gap": 4, "emotional_stakes": 5, "specificity": 5, "visual_stopping_power": 4, "shareability": 5, "saveability": 5, "comment_potential": 4}, "note": "Flagship score. Hook is a single impossible fact; visuals are authentic and abundant."},
+    "publishing": {"recommended_window": "Tue/Wed 12:00-13:00 ET, or Sun 19:00-21:00 ET", "format": "Carousel - 6 frames - 4:5", "best_time": "Wednesday 12:00-13:00 ET", "first_comment": "Credits and sources in the first comment.", "disclosure": "No AI imagery. All six images are authentic 1904-1915 documents."},
+    "sources": ["U.S. National Archives (NAID 281840, 281841)", "Library of Congress, Prints & Photographs Division", "H.Res. 375, 114th Congress", "Eastland Disaster Historical Society"],
+    "review_notes": "Complete. Two false claims were removed at Gate 2: the 812 toll and the chief engineer's conviction.",
+    "ai_disclosure": "No AI-generated imagery. Every image is an authentic historical document.",
+    "created": "2026-10-19"
+})
+
+POSTS.append({
+    "number": "002",
+    "slug": "hinderburg",
+    "title": "The Airship That Fell From the Sky",
+    "subtitle": "The Hindenburg disaster, Lakehurst, New Jersey, May 6, 1937",
+    "category": "Disasters / Aviation failure",
+    "event_date": "1937-05-06",
+    "date": "2026-10-28",
+    "display_date": "Oct 28, 2026",
+    "weekday": "Wednesday",
+    "status": "ready",
+    "status_label": "Ready to publish",
+    "angle": "The Hindenburg caught fire while landing at Lakehurst, New Jersey. Thirty-six people died in about thirty-four seconds.",
+    "audience": "US adults 25-55 following history, aviation failures, and true-story accounts",
+    "hook": "The Hindenburg was coming in for a landing when it caught fire and fell from the sky.",
+    "dek": "Lakehurst, New Jersey, May 6, 1937. The largest flying machine ever built was seconds from the mooring mast.",
+    "story": [
+        "On the evening of May 6, 1937, the German passenger airship LZ 129 Hindenburg was approaching the mooring mast at Naval Air Station Lakehurst, New Jersey. It had completed a transatlantic flight from Frankfurt and was on its first landing of the season.",
+        "Rain had fallen earlier. The airship circled, waiting for the wind to ease. Ninety-seven people were on board: 36 passengers and 61 crew.",
+        "The ship was filled with hydrogen, not helium. Hydrogen gave it lift; it also made the ship a floating fuel source. The outer skin was treated with a flammable dope that tightened the fabric.",
+        "At 7:25 p.m., witnesses saw a bright flash near the rear upper fin. The fire moved through the hull with a speed that still looks impossible on film. In about thirty-four seconds, the airship was on the ground.",
+        "Thirty-five people on board died, along with one member of the ground crew. Sixty-two people survived. The cause remains officially undetermined. The leading explanation is a hydrogen leak ignited by static electricity, but the spark has never been proven.",
+        "The disaster ended the passenger airship era. No commercial rigid airships were built after 1937. The mooring mast at Lakehurst still stands.",
+        "The photograph is the story: a machine the size of an ocean liner, held in the air by gas, becoming a fire in front of a crowd that had come to watch it land."
+    ],
+    "payoff": "The age of the passenger airship ended in thirty-four seconds.",
+    "cta": "Follow for the machines that changed history, and the failures that ended them.",
+    "captions": {
+        "instagram": "The Hindenburg was coming in for a landing when it caught fire and fell from the sky.\n\nLakehurst, New Jersey, May 6, 1937. The German passenger airship LZ 129 Hindenburg had completed a transatlantic flight from Frankfurt and was approaching the mooring mast at Naval Air Station Lakehurst.\n\nRain had fallen earlier that afternoon. The airship circled, waiting for the wind to ease. Ninety-seven people were on board: 36 passengers and 61 crew.\n\nThe ship was filled with hydrogen, not helium. Hydrogen gave it lift; it also made the ship a floating fuel source. The outer skin was treated with a flammable dope that tightened the fabric.\n\nAt 7:25 p.m., witnesses saw a bright flash near the rear upper fin. The fire moved through the hull with a speed that still looks impossible on film. In about thirty-four seconds, the airship was on the ground.\n\nThirty-five people on board died, along with one member of the ground crew. Sixty-two people survived. The cause remains officially undetermined. The leading explanation is a hydrogen leak ignited by static electricity, but the spark has never been proven.\n\nThe disaster ended the passenger airship era. No commercial rigid airships were built after 1937. The mooring mast at Lakehurst still stands.\n\nThe photograph is the story: a machine the size of an ocean liner, held in the air by gas, becoming a fire in front of a crowd that had come to watch it land.\n\nPhotograph: public domain, via Wikimedia Commons (1937).\n\n#HindenburgDisaster #AviationHistory #Lakehurst #AirshipHistory #ForgottenHistory #1937",
+        "facebook": "On the evening of May 6, 1937, the German passenger airship LZ 129 Hindenburg was approaching the mooring mast at Naval Air Station Lakehurst, New Jersey, to land.\n\nThe airship had completed a transatlantic flight from Frankfurt, Germany, and was executing a routine docking maneuver. Rain had fallen earlier that afternoon, and the ship was flying in a wide circle, waiting for conditions to improve.\n\nNinety-seven people were on board: 36 passengers and 61 crew. The airship was the largest flying machine ever built, and it was filled with hydrogen, not helium. Hydrogen provided lift but carried inherent risk, especially in damp conditions. The outer skin was treated with a highly flammable dope.\n\nWitnesses on the ground saw a bright flash at the rear upper fin just before the flames broke out. Within approximately thirty-four seconds, the entire airship was consumed by fire and collapsed to the ground.\n\nOf the 97 people on board, 35 died, plus one ground crew member, for a total of 36 fatalities. Sixty-two survived. The disaster effectively ended the passenger airship era; no commercial rigid airships were built after 1937.\n\nThe cause remains officially undetermined. The most likely explanation, per modern forensic analysis, is a leaking hydrogen gas pocket ignited by static electricity, though the exact source of the spark has never been proven.\n\nThe photograph shows the airship at the moment the fire took hold. It is one of the most recognizable disaster photographs ever taken, and it is in the public domain.\n\nPhotograph: public domain, via Wikimedia Commons (1937).\n\n#HindenburgDisaster #AviationHistory #AirshipHistory #1937",
+        "first_comment": "Sources: Wikimedia Commons, Hindenburg disaster photograph, 6 May 1937; U.S. National Archives, Hindenburg investigation file; Library of Congress, Bain Collection. All images are public domain. No AI-generated imagery is used in this post.",
+        "alt_text": "The German airship Hindenburg, its tail engulfed in a huge ball of flame, hangs nose-up beside the Lakehurst mooring mast as tiny figures run below."
+    },
+    "hashtags": {
+        "instagram": ["#HindenburgDisaster", "#AviationHistory", "#Lakehurst", "#AirshipHistory", "#ForgottenHistory", "#1937"],
+        "facebook": ["#HindenburgDisaster", "#AviationHistory", "#AirshipHistory", "#1937"]
+    },
+    "keywords": {
+        "primary": "Hindenburg disaster",
+        "secondary": ["LZ 129 Hindenburg", "Lakehurst New Jersey", "airship fire 1937", "hydrogen airship", "aviation disasters", "Hindenburg cause"],
+        "long_tail": ["what caused the Hindenburg disaster", "how many people died in the Hindenburg", "where did the Hindenburg crash", "why did the Hindenburg use hydrogen instead of helium"]
+    },
+    "seo": {
+        "title": "Hindenburg Disaster: Why the Airship Fell in 36 Seconds",
+        "meta_description": "The Hindenburg caught fire while landing at Lakehurst, New Jersey, on May 6, 1937. Thirty-six people died in about thirty-four seconds. Cause still disputed.",
+        "slug": "hindenburg-disaster",
+        "focus_keyword": "Hindenburg disaster",
+        "canonical": "/stories/hindenburg-disaster",
+        "og_title": "The airship that fell from the sky",
+        "og_description": "Thirty-six people died when the Hindenburg caught fire at Lakehurst in 1937. The cause is still officially undetermined.",
+        "schema_type": "NewsArticle",
+        "image_alt": "The Hindenburg airship burning at Lakehurst, New Jersey, 1937.",
+        "internal_links": ["/stories/eastland-disaster", "/stories/halifax-explosion"]
+    },
+    "images": [
+        {"file": "01-cover.jpg", "role": "cover", "alt": "The German airship Hindenburg, its tail engulfed in a huge ball of flame, hangs nose-up beside the Lakehurst mooring mast as tiny figures run below.", "credit": "Photograph: public domain, via Wikimedia Commons", "ai": False}
+    ],
+    "cover": "01-cover.jpg",
+    "image_count": 1,
+    "pipeline": {
+        "stage": "Published package ready",
+        "stage_index": 11,
+        "gates": {"G1_greenlight": "PASS", "G2_factual_lock": "PASS", "G3_rights_clearance": "PASS", "G4_story_approval": "PASS", "G5_clearance": "PASS", "G6_qa_signoff": "PASS"},
+        "progress": 100,
+        "owner": "agency-lead",
+        "next_action": "Human publishes"
+    },
+    "viral_readiness": {"total": 38, "scores": {"hook": 5, "curiosity_gap": 4, "emotional_stakes": 5, "specificity": 5, "visual_stopping_power": 5, "shareability": 5, "saveability": 5, "comment_potential": 4}, "note": "One of the most recognizable disaster photographs ever taken. Single-image format."},
+    "publishing": {"recommended_window": "Tue/Wed 12:00-13:00 ET, or Sun 19:00-21:00 ET", "format": "Single image - 4:5", "best_time": "Wednesday 12:00-13:00 ET", "first_comment": "Sources and credit in the first comment.", "disclosure": "No AI imagery. The cover is an authentic 1937 photograph."},
+    "sources": ["Wikimedia Commons, Hindenburg disaster photograph", "U.S. National Archives, Hindenburg investigation file", "Library of Congress, Bain Collection", "Airships.net (context)"],
+    "review_notes": "Cover replaced with the authentic 1937 photograph. The previous render was a geometric placeholder and did not meet the visual standard.",
+    "ai_disclosure": "No AI-generated imagery. The cover is an authentic 1937 photograph.",
+    "created": "2026-11-20"
+})
+
+POSTS.append({
+    "number": "003",
+    "slug": "peshtigo-fire",
+    "title": "The Fire That Was Forgotten",
+    "subtitle": "The Peshtigo fire, Wisconsin, October 8, 1871",
+    "category": "Disasters / Wildfire",
+    "event_date": "1871-10-08",
+    "date": "2026-11-04",
+    "display_date": "Nov 4, 2026",
+    "weekday": "Wednesday",
+    "status": "draft",
+    "status_label": "Draft - verify at Gate 2",
+    "angle": "On the same night Chicago burned, a wildfire in Wisconsin killed an estimated 1,500 to 2,500 people, the deadliest in American history, and almost nobody remembers it.",
+    "audience": "US adults 25-55 who follow history, climate, and forgotten disasters",
+    "hook": "On the same night Chicago burned, a Wisconsin town was erased. It killed more people.",
+    "dek": "Peshtigo, Wisconsin, October 8, 1871. The deadliest wildfire in American history happened while the country watched Chicago.",
+    "story": [
+        "On the night of October 8, 1871, the same night the Great Chicago Fire broke out, a firestorm destroyed the lumber town of Peshtigo, Wisconsin. Chicago got the headlines. Peshtigo got a mass grave.",
+        "The town was a lumber center. Yards and streets were piled with sawdust, slabs, and slash. A long drought had dried the cutover land. Small fires had been burning in the woods for days.",
+        "Then the wind rose into a gale. The separate fires merged into a single wall of flame that moved faster than anyone could run. Survivors described a roaring sound, air that pulled the breath out of them, and a sky that turned orange at noon.",
+        "Some people fled to the Peshtigo River and stood in the water for hours while the town burned around them. Others died in the streets, in wells, or in the root cellars where they had hidden.",
+        "The fire burned so hot that sand turned to glass in places. The town was gone in about an hour.",
+        "The death toll is an estimate. Most accounts say 1,500 to 2,500 people died; some say more. It is still the deadliest wildfire in United States history.",
+        "The exact number will never be known. The town was rebuilt, the story faded, and the fire that killed more people than Chicago is usually a footnote in Chicago's story."
+    ],
+    "payoff": "The deadliest wildfire in American history happened the same night as the fire everyone remembers.",
+    "cta": "Follow for the disasters the textbooks skip.",
+    "captions": {
+        "instagram": "On the same night Chicago burned, a Wisconsin town was erased. It killed more people.\n\nOctober 8, 1871. The Great Chicago Fire is the one everyone remembers. Two hundred miles north, in Peshtigo, Wisconsin, a firestorm was doing something worse.\n\nPeshtigo was a lumber town. Yards and streets were piled with sawdust, slabs, and slash. A long drought had dried the cutover land. Small fires had been burning in the woods for days.\n\nThen the wind rose into a gale. The separate fires merged into a single wall of flame that moved faster than anyone could run. Survivors described a roaring sound, air that pulled the breath out of them, and a sky that turned orange at noon.\n\nSome people fled to the Peshtigo River and stood in the water for hours while the town burned around them. Others died in the streets, in wells, or in root cellars.\n\nThe fire burned so hot that sand turned to glass in places. The town was gone in about an hour.\n\nThe death toll is an estimate. Most accounts say 1,500 to 2,500 people died; some say more. It is still the deadliest wildfire in United States history.\n\nThe exact number will never be known. The town was rebuilt, the story faded, and the fire that killed more people than Chicago is usually a footnote in Chicago's story.\n\nPhotograph: public domain, via Wikimedia Commons.\n\n#PeshtigoFire #WisconsinHistory #WildfireHistory #ForgottenHistory #GreatChicagoFire #USHistory",
+        "facebook": "On the night of October 8, 1871, the same night the Great Chicago Fire broke out, a firestorm destroyed the lumber town of Peshtigo, Wisconsin. Chicago got the headlines. Peshtigo got a mass grave.\n\nPeshtigo was a lumber center. Yards and streets were piled with sawdust, slabs, and slash. A long drought had dried the cutover land. Small fires had been burning in the woods for days.\n\nThen the wind rose into a gale. The separate fires merged into a single wall of flame that moved faster than anyone could run. Survivors described a roaring sound, air that pulled the breath out of them, and a sky that turned orange at noon.\n\nSome people fled to the Peshtigo River and stood in the water for hours while the town burned around them. Others died in the streets, in wells, or in the root cellars where they had hidden.\n\nThe fire burned so hot that sand turned to glass in places. The town was gone in about an hour.\n\nThe death toll is an estimate. Most accounts say 1,500 to 2,500 people died; some say more. It is still the deadliest wildfire in United States history.\n\nThe exact number will never be known. The town was rebuilt, the story faded, and the fire that killed more people than Chicago is usually a footnote in Chicago's story.\n\nPhotograph: public domain, via Wikimedia Commons.\n\n#PeshtigoFire #WisconsinHistory #WildfireHistory #ForgottenHistory",
+        "first_comment": "Sources to verify at Gate 2: Wisconsin Historical Society; National Weather Service historical records; Peshtigo Fire Museum; contemporary Wisconsin and Chicago newspapers, 1871. The death toll is an estimate and must be labeled as one. Cover photograph: public domain, via Wikimedia Commons. No AI imagery.",
+        "alt_text": "A black-and-white photograph of the burned ruins of Peshtigo, Wisconsin, after the 1871 fire, with shattered trees, scattered debris, and a few figures in the distance."
+    },
+    "hashtags": {
+        "instagram": ["#PeshtigoFire", "#WisconsinHistory", "#WildfireHistory", "#ForgottenHistory", "#GreatChicagoFire", "#USHistory"],
+        "facebook": ["#PeshtigoFire", "#WisconsinHistory", "#WildfireHistory", "#ForgottenHistory"]
+    },
+    "keywords": {
+        "primary": "Peshtigo fire",
+        "secondary": ["deadliest wildfire in US history", "Peshtigo Wisconsin fire 1871", "Great Chicago Fire same night", "Wisconsin history", "firestorm", "1871 wildfires"],
+        "long_tail": ["how many people died in the Peshtigo fire", "why is the Peshtigo fire forgotten", "was the Peshtigo fire worse than the Chicago fire", "what caused the Peshtigo fire"]
+    },
+    "seo": {
+        "title": "Peshtigo Fire: America's Deadliest Wildfire, Forgotten",
+        "meta_description": "On October 8, 1871, a firestorm destroyed Peshtigo, Wisconsin, killing an estimated 1,500 to 2,500 people, the same night as the Great Chicago Fire.",
+        "slug": "peshtigo-fire",
+        "focus_keyword": "Peshtigo fire",
+        "canonical": "/stories/peshtigo-fire",
+        "og_title": "The fire that was forgotten",
+        "og_description": "The deadliest wildfire in American history happened the same night Chicago burned. Almost nobody remembers it.",
+        "schema_type": "NewsArticle",
+        "image_alt": "The burned ruins of Peshtigo, Wisconsin, after the 1871 fire.",
+        "internal_links": ["/stories/eastland-disaster", "/stories/hartford-circus-fire"]
+    },
+    "images": [
+        {"file": "01-cover.jpg", "role": "cover", "alt": "A black-and-white photograph of the burned ruins of Peshtigo, Wisconsin, after the 1871 fire, with shattered trees, scattered debris, and a few figures in the distance.", "credit": "Photograph: public domain, via Wikimedia Commons", "ai": False}
+    ],
+    "cover": "01-cover.jpg",
+    "image_count": 1,
+    "pipeline": {
+        "stage": "Visual + copy draft",
+        "stage_index": 7,
+        "gates": {"G1_greenlight": "PASS", "G2_factual_lock": "PENDING", "G3_rights_clearance": "PASS", "G4_story_approval": "PASS", "G5_clearance": "PENDING", "G6_qa_signoff": "PENDING"},
+        "progress": 64,
+        "owner": "research-journalist",
+        "next_action": "Verify death-toll range and fire timeline at Gate 2"
+    },
+    "viral_readiness": {"total": 36, "scores": {"hook": 5, "curiosity_gap": 5, "emotional_stakes": 4, "specificity": 4, "visual_stopping_power": 3, "shareability": 5, "saveability": 4, "comment_potential": 4}, "note": "Strong 'I never knew this' hook. Archival cover is soft at 1080px; consider a second visual pass."},
+    "publishing": {"recommended_window": "Wed 12:00-13:00 ET", "format": "Single image - 4:5", "best_time": "Wednesday 12:00-13:00 ET", "first_comment": "Sources and estimate caveat in the first comment.", "disclosure": "No AI imagery. Cover is an authentic 1871 photograph."},
+    "sources": ["Wisconsin Historical Society", "National Weather Service historical records", "Peshtigo Fire Museum", "Contemporary Wisconsin and Chicago newspapers, 1871"],
+    "review_notes": "Draft. The death toll is an estimate and ranges widely by source. Do not present a precise figure. The cover image is low-resolution; inspect at full size before publishing.",
+    "ai_disclosure": "No AI-generated imagery.",
+    "created": "2026-11-02"
+})
+
+POSTS.append({
+    "number": "004",
+    "slug": "johnstown-flood",
+    "title": "The Dam Nobody Would Fix",
+    "subtitle": "The Johnstown Flood, Pennsylvania, May 31, 1889",
+    "category": "Engineering failure",
+    "event_date": "1889-05-31",
+    "date": "2026-11-11",
+    "display_date": "Nov 11, 2026",
+    "weekday": "Wednesday",
+    "status": "draft",
+    "status_label": "Draft - verify at Gate 2",
+    "angle": "A private club's earthen dam failed above Johnstown, Pennsylvania, and killed 2,209 people. The club's members included some of the richest men in America.",
+    "audience": "US adults 25-55 interested in history, class, engineering, and accountability",
+    "hook": "A private club's dam gave way above Johnstown. 2,209 people died.",
+    "dek": "Johnstown, Pennsylvania, May 31, 1889. The warning was sent. The water was already moving.",
+    "story": [
+        "On May 31, 1889, after days of heavy rain, the South Fork Dam failed above Johnstown, Pennsylvania. The dam held a lake owned by the South Fork Fishing and Hunting Club, a private retreat for Pittsburgh industrialists.",
+        "The club had lowered the dam, blocked part of the spillway, and allowed the water to rise. The structure had been patched, not rebuilt. When the rain came, the lake topped the dam and the earth gave way.",
+        "A wall of water and debris moved down the Little Conemaugh River. It hit Johnstown with enough force to crush houses, twist railroad tracks, and carry people miles downstream. Fires broke out in the wreckage.",
+        "2,209 people died. Thousands more were injured or left homeless. It was, at the time, the deadliest flood in American history.",
+        "The club's members included Andrew Carnegie, Henry Clay Frick, and Andrew Mellon. No one was held legally responsible. The courts found that the club owed no duty to the people downstream.",
+        "The relief effort was one of the first major tests of the American Red Cross, led by Clara Barton. The disaster also helped push forward the modern debate over who is responsible when private infrastructure fails.",
+        "The dam is gone. The club's cottage still stands. The flood is remembered mostly as a story about weather, but the weather was only the trigger."
+    ],
+    "payoff": "The dam was private. The consequences were public.",
+    "cta": "Follow for the preventable disasters that changed the rules.",
+    "captions": {
+        "instagram": "A private club's dam gave way above Johnstown. 2,209 people died.\n\nMay 31, 1889. Days of rain had filled Lake Conemaugh behind the South Fork Dam. The dam belonged to a private hunting and fishing club whose members included some of the richest men in America.\n\nThe club had lowered the dam, blocked part of the spillway, and allowed the water to rise. The structure had been patched, not rebuilt. When the rain came, the lake topped the dam and the earth gave way.\n\nA wall of water and debris moved down the Little Conemaugh River. It hit Johnstown with enough force to crush houses, twist railroad tracks, and carry people miles downstream. Fires broke out in the wreckage.\n\n2,209 people died. Thousands more were injured or left homeless. It was, at the time, the deadliest flood in American history.\n\nThe club's members included Andrew Carnegie, Henry Clay Frick, and Andrew Mellon. No one was held legally responsible. The courts found that the club owed no duty to the people downstream.\n\nThe relief effort was one of the first major tests of the American Red Cross, led by Clara Barton. The disaster also helped push forward the modern debate over who is responsible when private infrastructure fails.\n\nThe dam is gone. The club's cottage still stands. The flood is remembered mostly as a story about weather, but the weather was only the trigger.\n\nPhotograph: public domain, via Wikimedia Commons.\n\n#JohnstownFlood #PennsylvaniaHistory #EngineeringFailure #GildedAge #ForgottenHistory #USHistory",
+        "facebook": "On May 31, 1889, after days of heavy rain, the South Fork Dam failed above Johnstown, Pennsylvania. The dam held a lake owned by the South Fork Fishing and Hunting Club, a private retreat for Pittsburgh industrialists.\n\nThe club had lowered the dam, blocked part of the spillway, and allowed the water to rise. The structure had been patched, not rebuilt. When the rain came, the lake topped the dam and the earth gave way.\n\nA wall of water and debris moved down the Little Conemaugh River. It hit Johnstown with enough force to crush houses, twist railroad tracks, and carry people miles downstream. Fires broke out in the wreckage.\n\n2,209 people died. Thousands more were injured or left homeless. It was, at the time, the deadliest flood in American history.\n\nThe club's members included Andrew Carnegie, Henry Clay Frick, and Andrew Mellon. No one was held legally responsible. The courts found that the club owed no duty to the people downstream.\n\nThe relief effort was one of the first major tests of the American Red Cross, led by Clara Barton. The disaster also helped push forward the modern debate over who is responsible when private infrastructure fails.\n\nThe dam is gone. The club's cottage still stands. The flood is remembered mostly as a story about weather, but the weather was only the trigger.\n\nPhotograph: public domain, via Wikimedia Commons.\n\n#JohnstownFlood #PennsylvaniaHistory #EngineeringFailure #GildedAge",
+        "first_comment": "Sources to verify at Gate 2: Johnstown Flood Museum; National Park Service; American Society of Civil Engineers; contemporary Pennsylvania press, 1889. The legal outcome must be stated precisely. Cover photograph: public domain, via Wikimedia Commons. No AI imagery.",
+        "alt_text": "A large wooden house stands tipped on its side amid flood debris in Johnstown, Pennsylvania, after the 1889 dam failure, with a massive tree trunk driven through its wall."
+    },
+    "hashtags": {
+        "instagram": ["#JohnstownFlood", "#PennsylvaniaHistory", "#EngineeringFailure", "#GildedAge", "#ForgottenHistory", "#USHistory"],
+        "facebook": ["#JohnstownFlood", "#PennsylvaniaHistory", "#EngineeringFailure", "#GildedAge"]
+    },
+    "keywords": {
+        "primary": "Johnstown Flood",
+        "secondary": ["South Fork Dam", "Johnstown Pennsylvania 1889", "Gilded Age history", "dam failure", "Clara Barton Red Cross", "American engineering disasters"],
+        "long_tail": ["how many people died in the Johnstown Flood", "who owned the South Fork Dam", "why did the Johnstown dam fail", "was anyone held responsible for the Johnstown Flood"]
+    },
+    "seo": {
+        "title": "Johnstown Flood: The Dam That Killed 2,209 People in 1889",
+        "meta_description": "A private club's dam failed above Johnstown, Pennsylvania, on May 31, 1889, killing 2,209 people. No one was ever held criminally responsible.",
+        "slug": "johnstown-flood",
+        "focus_keyword": "Johnstown Flood",
+        "canonical": "/stories/johnstown-flood",
+        "og_title": "The dam nobody would fix",
+        "og_description": "A private club. A neglected dam. 2,209 people dead. Johnstown, 1889.",
+        "schema_type": "NewsArticle",
+        "image_alt": "A house destroyed by the Johnstown Flood, 1889.",
+        "internal_links": ["/stories/great-molasses-flood", "/stories/eastland-disaster"]
+    },
+    "images": [
+        {"file": "01-cover.jpg", "role": "cover", "alt": "A large wooden house stands tipped on its side amid flood debris in Johnstown, Pennsylvania, after the 1889 dam failure, with a massive tree trunk driven through its wall.", "credit": "Photograph: public domain, via Wikimedia Commons", "ai": False}
+    ],
+    "cover": "01-cover.jpg",
+    "image_count": 1,
+    "pipeline": {
+        "stage": "Visual + copy draft",
+        "stage_index": 7,
+        "gates": {"G1_greenlight": "PASS", "G2_factual_lock": "PENDING", "G3_rights_clearance": "PASS", "G4_story_approval": "PASS", "G5_clearance": "PENDING", "G6_qa_signoff": "PENDING"},
+        "progress": 64,
+        "owner": "research-journalist",
+        "next_action": "Verify club membership, dam modifications, and legal outcome"
+    },
+    "viral_readiness": {"total": 37, "scores": {"hook": 5, "curiosity_gap": 4, "emotional_stakes": 5, "specificity": 5, "visual_stopping_power": 4, "shareability": 5, "saveability": 4, "comment_potential": 5}, "note": "Class and accountability make this highly shareable. Keep the legal outcome precise."},
+    "publishing": {"recommended_window": "Wed 12:00-13:00 ET", "format": "Single image - 4:5", "best_time": "Wednesday 12:00-13:00 ET", "first_comment": "Sources and legal caveat in the first comment.", "disclosure": "No AI imagery. Cover is an authentic 1889 photograph."},
+    "sources": ["Johnstown Flood Museum", "National Park Service", "American Society of Civil Engineers", "Contemporary Pennsylvania press, 1889"],
+    "review_notes": "Draft. Verify the club member names, the exact dam modifications, and the legal outcome before publishing. Avoid turning it into a simple morality play.",
+    "ai_disclosure": "No AI-generated imagery.",
+    "created": "2026-11-02"
+})
+
+POSTS.append({
+    "number": "005",
+    "slug": "iroquois-theatre",
+    "title": "The Doors That Opened Inward",
+    "subtitle": "The Iroquois Theatre fire, Chicago, December 30, 1903",
+    "category": "Disasters / Safety",
+    "event_date": "1903-12-30",
+    "date": "2026-11-18",
+    "display_date": "Nov 18, 2026",
+    "weekday": "Wednesday",
+    "status": "draft",
+    "status_label": "Draft - verify at Gate 2",
+    "angle": "A Chicago theater fire killed 602 people in about fifteen minutes. Many of the exits were locked, blocked, or opened inward.",
+    "audience": "US adults 25-55 interested in history, fire safety, and urban disasters",
+    "hook": "The fire started on stage. The exits opened inward. 602 people died.",
+    "dek": "Chicago, December 30, 1903. A matinee at the Iroquois Theatre turned a safety inspection into a warning nobody acted on.",
+    "story": [
+        "On December 30, 1903, a matinee audience packed the Iroquois Theatre in Chicago for the musical Mr. Blue Beard. The theater was new, advertised as fireproof, and filled with about 2,000 people, many of them children.",
+        "During the second act, a stage light ignited a muslin curtain. The fire spread into the fly loft and across the painted scenery. The fire curtain that was supposed to seal the stage jammed.",
+        "The exits were the real disaster. Some doors were locked. Some were blocked by curtains or scenery. Some opened inward, so a panicked crowd pressing forward held them shut. The stairways to the balconies became choke points.",
+        "The fire was out in minutes. The killing took about fifteen minutes. 602 people died, and hundreds more were injured.",
+        "The theater had no sprinkler system, no fire alarm, and no fire drill. It had passed inspection. The inspector later testified that he had not checked the exits.",
+        "The Iroquois fire led to stricter fire codes in Chicago and across the country. It also changed how theaters were designed, staffed, and inspected.",
+        "The building reopened as the Colonial Theatre and was demolished in 1927. The fire is remembered as a case study in how a building can be legal and still be a trap."
+    ],
+    "payoff": "The fire was on stage. The disaster was in the exits.",
+    "cta": "Follow for the safety failures that changed the rules.",
+    "captions": {
+        "instagram": "The fire started on stage. The exits opened inward. 602 people died.\n\nDecember 30, 1903. A matinee audience packed the Iroquois Theatre in Chicago for Mr. Blue Beard. The theater was new, advertised as fireproof, and filled with about 2,000 people, many of them children.\n\nDuring the second act, a stage light ignited a muslin curtain. The fire spread into the fly loft and across the painted scenery. The fire curtain that was supposed to seal the stage jammed.\n\nThe exits were the real disaster. Some doors were locked. Some were blocked by curtains or scenery. Some opened inward, so a panicked crowd pressing forward held them shut. The stairways to the balconies became choke points.\n\nThe fire was out in minutes. The killing took about fifteen minutes. 602 people died, and hundreds more were injured.\n\nThe theater had no sprinkler system, no fire alarm, and no fire drill. It had passed inspection. The inspector later testified that he had not checked the exits.\n\nThe Iroquois fire led to stricter fire codes in Chicago and across the country. It also changed how theaters were designed, staffed, and inspected.\n\nThe building reopened as the Colonial Theatre and was demolished in 1927. The fire is remembered as a case study in how a building can be legal and still be a trap.\n\nPhotograph: public domain, via Wikimedia Commons.\n\n#IroquoisTheatreFire #ChicagoHistory #FireSafety #TheatreHistory #ForgottenHistory #USHistory",
+        "facebook": "On December 30, 1903, a matinee audience packed the Iroquois Theatre in Chicago for the musical Mr. Blue Beard. The theater was new, advertised as fireproof, and filled with about 2,000 people, many of them children.\n\nDuring the second act, a stage light ignited a muslin curtain. The fire spread into the fly loft and across the painted scenery. The fire curtain that was supposed to seal the stage jammed.\n\nThe exits were the real disaster. Some doors were locked. Some were blocked by curtains or scenery. Some opened inward, so a panicked crowd pressing forward held them shut. The stairways to the balconies became choke points.\n\nThe fire was out in minutes. The killing took about fifteen minutes. 602 people died, and hundreds more were injured.\n\nThe theater had no sprinkler system, no fire alarm, and no fire drill. It had passed inspection. The inspector later testified that he had not checked the exits.\n\nThe Iroquois fire led to stricter fire codes in Chicago and across the country. It also changed how theaters were designed, staffed, and inspected.\n\nThe building reopened as the Colonial Theatre and was demolished in 1927. The fire is remembered as a case study in how a building can be legal and still be a trap.\n\nPhotograph: public domain, via Wikimedia Commons.\n\n#IroquoisTheatreFire #ChicagoHistory #FireSafety #TheatreHistory",
+        "first_comment": "Sources to verify at Gate 2: Chicago History Museum; National Fire Protection Association historical records; Cook County coroner's inquest, 1903; contemporary Chicago press. Verify each specific exit failure before naming it. Cover photograph: public domain, via Wikimedia Commons. No AI imagery.",
+        "alt_text": "A black-and-white photograph of the Iroquois Theatre entrance in Chicago, with a striped canopy over the sidewalk and a crowd gathered outside."
+    },
+    "hashtags": {
+        "instagram": ["#IroquoisTheatreFire", "#ChicagoHistory", "#FireSafety", "#TheatreHistory", "#ForgottenHistory", "#USHistory"],
+        "facebook": ["#IroquoisTheatreFire", "#ChicagoHistory", "#FireSafety", "#TheatreHistory"]
+    },
+    "keywords": {
+        "primary": "Iroquois Theatre fire",
+        "secondary": ["Chicago theater fire 1903", "Iroquois fire exits", "fire safety history", "Mr. Blue Beard", "Chicago history", "theater disasters"],
+        "long_tail": ["how many people died in the Iroquois Theatre fire", "why were the exits locked at the Iroquois Theatre", "what caused the Iroquois Theatre fire", "what changed after the Iroquois fire"]
+    },
+    "seo": {
+        "title": "Iroquois Theatre Fire: The Doors That Opened Inward",
+        "meta_description": "The Iroquois Theatre fire killed 602 people in Chicago on December 30, 1903. Locked, blocked, and inward-opening exits turned a stage fire into a massacre.",
+        "slug": "iroquois-theatre-fire",
+        "focus_keyword": "Iroquois Theatre fire",
+        "canonical": "/stories/iroquois-theatre-fire",
+        "og_title": "The doors that opened inward",
+        "og_description": "A stage fire in Chicago killed 602 people in about fifteen minutes. The exits were the disaster.",
+        "schema_type": "NewsArticle",
+        "image_alt": "The Iroquois Theatre entrance in Chicago, c. 1903.",
+        "internal_links": ["/stories/eastland-disaster", "/stories/cocoanut-grove-fire"]
+    },
+    "images": [
+        {"file": "01-cover.jpg", "role": "cover", "alt": "A black-and-white photograph of the Iroquois Theatre entrance in Chicago, with a striped canopy over the sidewalk and a crowd gathered outside.", "credit": "Photograph: public domain, via Wikimedia Commons", "ai": False}
+    ],
+    "cover": "01-cover.jpg",
+    "image_count": 1,
+    "pipeline": {
+        "stage": "Visual + copy draft",
+        "stage_index": 7,
+        "gates": {"G1_greenlight": "PASS", "G2_factual_lock": "PENDING", "G3_rights_clearance": "PASS", "G4_story_approval": "PASS", "G5_clearance": "PENDING", "G6_qa_signoff": "PENDING"},
+        "progress": 64,
+        "owner": "research-journalist",
+        "next_action": "Verify exit conditions and death toll at Gate 2"
+    },
+    "viral_readiness": {"total": 37, "scores": {"hook": 5, "curiosity_gap": 4, "emotional_stakes": 5, "specificity": 5, "visual_stopping_power": 4, "shareability": 5, "saveability": 4, "comment_potential": 4}, "note": "The physical mechanism is easy to picture, which makes it memorable. Graphic subject; no victim imagery."},
+    "publishing": {"recommended_window": "Wed 12:00-13:00 ET", "format": "Single image - 4:5", "best_time": "Wednesday 12:00-13:00 ET", "first_comment": "Sources and exit-failure notes in the first comment.", "disclosure": "No AI imagery. Cover is an authentic c. 1903 photograph."},
+    "sources": ["Chicago History Museum", "National Fire Protection Association historical records", "Cook County coroner's inquest, 1903", "Contemporary Chicago press"],
+    "review_notes": "Draft. Graphic subject: no imagery of victims. Verify each specific exit failure before naming it.",
+    "ai_disclosure": "No AI-generated imagery.",
+    "created": "2026-11-02"
+})
+
+POSTS.append({
+    "number": "006",
+    "slug": "monongah-mine",
+    "title": "The Worst Mining Disaster in American History",
+    "subtitle": "The Monongah mine disaster, West Virginia, December 6, 1907",
+    "category": "Labor / Disasters",
+    "event_date": "1907-12-06",
+    "date": "2026-11-25",
+    "display_date": "Nov 25, 2026",
+    "weekday": "Wednesday",
+    "status": "draft",
+    "status_label": "Draft - verify at Gate 2",
+    "angle": "An explosion in a West Virginia mine killed at least 362 men and boys. It led directly to the creation of the federal Bureau of Mines.",
+    "audience": "US adults 25-55 interested in labor history, immigration, and industrial disasters",
+    "hook": "An explosion tore through two West Virginia mines. At least 362 men and boys died.",
+    "dek": "Monongah, West Virginia, December 6, 1907. The official toll is 362. The community remembers more.",
+    "story": [
+        "At about 10:20 a.m. on December 6, 1907, an explosion tore through mines No. 6 and No. 8 at Monongah, West Virginia. The two mines were connected underground. The blast moved through both.",
+        "The explosion was likely methane gas ignited by a blast, but coal dust carried it through the workings. The force twisted steel, blew out the mine entrances, and sent debris across the river.",
+        "The day shift was underground: hundreds of men and boys, many of them immigrants from Italy, Poland, and Hungary. Some were as young as twelve.",
+        "At least 362 people died. Some estimates put the number above 500. Entire families lost multiple members. Rescuers worked for weeks, and some bodies were never recovered.",
+        "The disaster led to the creation of the United States Bureau of Mines in 1910, the first federal agency dedicated to mine safety. The laws that followed were weak, but the principle was new.",
+        "The official marker in Monongah says 362. The community has argued for generations that the true number is higher. The record is incomplete because the company and the state did not count everyone the same way.",
+        "The mine is gone. The memorial stands. The argument over the number is part of the story."
+    ],
+    "payoff": "The official number is 362. The true number may never be known.",
+    "cta": "Follow for the stories behind the safety rules we take for granted.",
+    "captions": {
+        "instagram": "An explosion tore through two West Virginia mines. At least 362 men and boys died.\n\nDecember 6, 1907. At about 10:20 a.m., an explosion tore through mines No. 6 and No. 8 at Monongah, West Virginia. The two mines were connected underground. The blast moved through both.\n\nThe explosion was likely methane gas ignited by a blast, but coal dust carried it through the workings. The force twisted steel, blew out the mine entrances, and sent debris across the river.\n\nThe day shift was underground: hundreds of men and boys, many of them immigrants from Italy, Poland, and Hungary. Some were as young as twelve.\n\nAt least 362 people died. Some estimates put the number above 500. Entire families lost multiple members. Rescuers worked for weeks, and some bodies were never recovered.\n\nThe disaster led to the creation of the United States Bureau of Mines in 1910, the first federal agency dedicated to mine safety. The laws that followed were weak, but the principle was new.\n\nThe official marker in Monongah says 362. The community has argued for generations that the true number is higher. The record is incomplete because the company and the state did not count everyone the same way.\n\nThe mine is gone. The memorial stands. The argument over the number is part of the story.\n\nCover: editorial reconstruction by Cluefolio Studio. Not a historical photograph.\n\n#Monongah #WestVirginiaHistory #MiningHistory #LaborHistory #ForgottenHistory #USHistory",
+        "facebook": "At about 10:20 a.m. on December 6, 1907, an explosion tore through mines No. 6 and No. 8 at Monongah, West Virginia. The two mines were connected underground. The blast moved through both.\n\nThe explosion was likely methane gas ignited by a blast, but coal dust carried it through the workings. The force twisted steel, blew out the mine entrances, and sent debris across the river.\n\nThe day shift was underground: hundreds of men and boys, many of them immigrants from Italy, Poland, and Hungary. Some were as young as twelve.\n\nAt least 362 people died. Some estimates put the number above 500. Entire families lost multiple members. Rescuers worked for weeks, and some bodies were never recovered.\n\nThe disaster led to the creation of the United States Bureau of Mines in 1910, the first federal agency dedicated to mine safety. The laws that followed were weak, but the principle was new.\n\nThe official marker in Monongah says 362. The community has argued for generations that the true number is higher. The record is incomplete because the company and the state did not count everyone the same way.\n\nThe mine is gone. The memorial stands. The argument over the number is part of the story.\n\nCover: editorial reconstruction by Cluefolio Studio. Not a historical photograph.\n\n#Monongah #WestVirginiaHistory #MiningHistory #LaborHistory",
+        "first_comment": "Sources to verify at Gate 2: Mine Safety and Health Administration (MSHA); West Virginia State Archives; U.S. Bureau of Mines records; contemporary West Virginia press. Death toll varies from 362 to over 500 depending on the source. Cover is an editorial reconstruction, disclosed. No historical photo was available at publishable quality.",
+        "alt_text": "An editorial reconstruction of a West Virginia coal mine entrance in winter 1907, with dark wooden tipples, smoke, and a narrow tramway between the buildings."
+    },
+    "hashtags": {
+        "instagram": ["#Monongah", "#WestVirginiaHistory", "#MiningHistory", "#LaborHistory", "#ForgottenHistory", "#USHistory"],
+        "facebook": ["#Monongah", "#WestVirginiaHistory", "#MiningHistory", "#LaborHistory"]
+    },
+    "keywords": {
+        "primary": "Monongah mine disaster",
+        "secondary": ["worst mining disaster in US history", "West Virginia mine explosion 1907", "Bureau of Mines", "coal mining history", "child labor", "Monongah West Virginia"],
+        "long_tail": ["how many people died in the Monongah mine disaster", "what caused the Monongah mine explosion", "why is Monongah the worst mining disaster in America", "what did the Monongah disaster change"]
+    },
+    "seo": {
+        "title": "Monongah Mine Disaster: America's Worst Mining Tragedy",
+        "meta_description": "An explosion at Monongah, West Virginia, killed at least 362 miners on December 6, 1907. It led to the creation of the U.S. Bureau of Mines.",
+        "slug": "monongah-mine-disaster",
+        "focus_keyword": "Monongah mine disaster",
+        "canonical": "/stories/monongah-mine-disaster",
+        "og_title": "The worst mine disaster in America",
+        "og_description": "At least 362 men and boys died at Monongah in 1907. The true number may be higher.",
+        "schema_type": "NewsArticle",
+        "image_alt": "An editorial reconstruction of the Monongah mine entrance, 1907.",
+        "internal_links": ["/stories/johnstown-flood", "/stories/eastland-disaster"]
+    },
+    "images": [
+        {"file": "01-cover.jpg", "role": "cover", "alt": "An editorial reconstruction of a West Virginia coal mine entrance in winter 1907, with dark wooden tipples, smoke, and a narrow tramway between the buildings.", "credit": "Editorial reconstruction by Cluefolio Studio. Not a historical photograph.", "ai": True}
+    ],
+    "cover": "01-cover.jpg",
+    "image_count": 1,
+    "pipeline": {
+        "stage": "Visual + copy draft",
+        "stage_index": 7,
+        "gates": {"G1_greenlight": "PASS", "G2_factual_lock": "PENDING", "G3_rights_clearance": "PASS", "G4_story_approval": "PASS", "G5_clearance": "PENDING", "G6_qa_signoff": "PENDING"},
+        "progress": 60,
+        "owner": "research-journalist",
+        "next_action": "Verify death-toll range, child labor, and Bureau of Mines date"
+    },
+    "viral_readiness": {"total": 35, "scores": {"hook": 4, "curiosity_gap": 4, "emotional_stakes": 5, "specificity": 4, "visual_stopping_power": 4, "shareability": 4, "saveability": 4, "comment_potential": 4}, "note": "Strong labor and immigration angle. AI reconstruction is disclosed; replace with an authentic image if a rights-clear, high-resolution photo is found."},
+    "publishing": {"recommended_window": "Wed 12:00-13:00 ET", "format": "Single image - 4:5", "best_time": "Wednesday 12:00-13:00 ET", "first_comment": "Sources, death-toll caveat, and AI disclosure in the first comment.", "disclosure": "Cover is an editorial reconstruction by Cluefolio Studio. Not a historical photograph."},
+    "sources": ["Mine Safety and Health Administration (MSHA)", "West Virginia State Archives", "U.S. Bureau of Mines records", "Contemporary West Virginia press"],
+    "review_notes": "Draft. Death toll varies from 362 to over 500 depending on the source. Child labor is central and needs care. Dignity review required. Cover is a disclosed AI reconstruction.",
+    "ai_disclosure": "Cover is an editorial reconstruction by Cluefolio Studio. Not a historical photograph.",
+    "created": "2026-11-02"
+})
+
+POSTS.append({
+    "number": "007",
+    "slug": "halifax-explosion",
+    "title": "The Blast That Flattened a City",
+    "subtitle": "The Halifax Explosion, Nova Scotia, December 6, 1917",
+    "category": "Disasters / Maritime",
+    "event_date": "1917-12-06",
+    "date": "2026-12-02",
+    "display_date": "Dec 2, 2026",
+    "weekday": "Wednesday",
+    "status": "draft",
+    "status_label": "Draft - verify at Gate 2",
+    "angle": "Two ships collided in Halifax harbour and the munitions cargo detonated, killing about 2,000 people and injuring thousands more.",
+    "audience": "US adults 25-55 interested in history, maritime disasters, and WWI",
+    "hook": "Two ships collided in Halifax harbour. Then the munitions cargo detonated.",
+    "dek": "Halifax, Nova Scotia, December 6, 1917. The largest human-made explosion before the atomic bomb.",
+    "story": [
+        "On the morning of December 6, 1917, the French cargo ship Mont-Blanc was entering Halifax Harbour with a cargo of munitions: TNT, picric acid, benzol, and guncotton. The Norwegian ship Imo was leaving. The two collided in the Narrows.",
+        "The collision started a fire. Crowds gathered on the shore and in windows to watch, not knowing what the Mont-Blanc was carrying. At 9:04 a.m., the cargo detonated.",
+        "The blast flattened the north end of Halifax. It caused a tsunami in the harbour, snapped trees, twisted steel, and was heard for hundreds of miles. Windows shattered across the city.",
+        "About 2,000 people died. Another 9,000 were injured, and 6,000 were left homeless. The Mi'kmaq community of Turtle Grove was destroyed. Many of the dead were children who had been walking to school or watching the fire.",
+        "Boston sent a relief train within hours. Halifax has sent Boston a Christmas tree every year since, a tradition that continues today.",
+        "It was the largest human-made explosion before the atomic bomb. It also changed how cities planned for disaster, how hospitals handled mass casualties, and how Canada regulated dangerous cargo.",
+        "The harbour is quiet now. The memorial lists the names. The tree still goes to Boston."
+    ],
+    "payoff": "A collision, a fire, and a city gone in seconds.",
+    "cta": "Follow for the disasters that shaped the modern world.",
+    "captions": {
+        "instagram": "Two ships collided in Halifax harbour. Then the munitions cargo detonated.\n\nDecember 6, 1917. The French cargo ship Mont-Blanc was entering Halifax Harbour with a cargo of munitions: TNT, picric acid, benzol, and guncotton. The Norwegian ship Imo was leaving. The two collided in the Narrows.\n\nThe collision started a fire. Crowds gathered on the shore and in windows to watch, not knowing what the Mont-Blanc was carrying. At 9:04 a.m., the cargo detonated.\n\nThe blast flattened the north end of Halifax. It caused a tsunami in the harbour, snapped trees, twisted steel, and was heard for hundreds of miles. Windows shattered across the city.\n\nAbout 2,000 people died. Another 9,000 were injured, and 6,000 were left homeless. The Mi'kmaq community of Turtle Grove was destroyed. Many of the dead were children who had been walking to school or watching the fire.\n\nBoston sent a relief train within hours. Halifax has sent Boston a Christmas tree every year since, a tradition that continues today.\n\nIt was the largest human-made explosion before the atomic bomb. It also changed how cities planned for disaster, how hospitals handled mass casualties, and how Canada regulated dangerous cargo.\n\nThe harbour is quiet now. The memorial lists the names. The tree still goes to Boston.\n\nPhotograph: public domain, via Wikimedia Commons.\n\n#HalifaxExplosion #NovaScotiaHistory #MaritimeHistory #WWI #ForgottenHistory #CanadianHistory",
+        "facebook": "On the morning of December 6, 1917, the French cargo ship Mont-Blanc was entering Halifax Harbour with a cargo of munitions: TNT, picric acid, benzol, and guncotton. The Norwegian ship Imo was leaving. The two collided in the Narrows.\n\nThe collision started a fire. Crowds gathered on the shore and in windows to watch, not knowing what the Mont-Blanc was carrying. At 9:04 a.m., the cargo detonated.\n\nThe blast flattened the north end of Halifax. It caused a tsunami in the harbour, snapped trees, twisted steel, and was heard for hundreds of miles. Windows shattered across the city.\n\nAbout 2,000 people died. Another 9,000 were injured, and 6,000 were left homeless. The Mi'kmaq community of Turtle Grove was destroyed. Many of the dead were children who had been walking to school or watching the fire.\n\nBoston sent a relief train within hours. Halifax has sent Boston a Christmas tree every year since, a tradition that continues today.\n\nIt was the largest human-made explosion before the atomic bomb. It also changed how cities planned for disaster, how hospitals handled mass casualties, and how Canada regulated dangerous cargo.\n\nThe harbour is quiet now. The memorial lists the names. The tree still goes to Boston.\n\nPhotograph: public domain, via Wikimedia Commons.\n\n#HalifaxExplosion #NovaScotiaHistory #MaritimeHistory #WWI",
+        "first_comment": "Sources to verify at Gate 2: Nova Scotia Archives; Canadian Museum of History; Royal Society of Canada; contemporary Canadian and US press. Non-US story; the Boston relief train and Christmas tree are the US audience bridge. Cover photograph: public domain, via Wikimedia Commons. No AI imagery.",
+        "alt_text": "A towering column of smoke rises over Halifax harbour after the 1917 munitions explosion, with a ship visible in the foreground."
+    },
+    "hashtags": {
+        "instagram": ["#HalifaxExplosion", "#NovaScotiaHistory", "#MaritimeHistory", "#WWI", "#ForgottenHistory", "#CanadianHistory"],
+        "facebook": ["#HalifaxExplosion", "#NovaScotiaHistory", "#MaritimeHistory", "#WWI"]
+    },
+    "keywords": {
+        "primary": "Halifax Explosion",
+        "secondary": ["Mont-Blanc Halifax 1917", "Halifax harbour explosion", "largest pre-atomic explosion", "Nova Scotia history", "WWI maritime disaster", "Boston Halifax Christmas tree"],
+        "long_tail": ["how many people died in the Halifax Explosion", "what caused the Halifax Explosion", "why does Boston get a Christmas tree from Halifax", "where did the Halifax Explosion happen"]
+    },
+    "seo": {
+        "title": "Halifax Explosion: The Blast That Flattened a City",
+        "meta_description": "Two ships collided in Halifax harbour on December 6, 1917. The munitions cargo detonated, killing about 2,000 people and injuring thousands.",
+        "slug": "halifax-explosion",
+        "focus_keyword": "Halifax Explosion",
+        "canonical": "/stories/halifax-explosion",
+        "og_title": "The blast that flattened a city",
+        "og_description": "A collision, a fire, and the largest human-made explosion before the atomic bomb. Halifax, 1917.",
+        "schema_type": "NewsArticle",
+        "image_alt": "The smoke cloud from the Halifax Explosion, 1917.",
+        "internal_links": ["/stories/hindenburg-disaster", "/stories/eastland-disaster"]
+    },
+    "images": [
+        {"file": "01-cover.jpg", "role": "cover", "alt": "A towering column of smoke rises over Halifax harbour after the 1917 munitions explosion, with a ship visible in the foreground.", "credit": "Photograph: public domain, via Wikimedia Commons", "ai": False}
+    ],
+    "cover": "01-cover.jpg",
+    "image_count": 1,
+    "pipeline": {
+        "stage": "Visual + copy draft",
+        "stage_index": 7,
+        "gates": {"G1_greenlight": "PASS", "G2_factual_lock": "PENDING", "G3_rights_clearance": "PASS", "G4_story_approval": "PASS", "G5_clearance": "PENDING", "G6_qa_signoff": "PENDING"},
+        "progress": 64,
+        "owner": "research-journalist",
+        "next_action": "Verify death toll, Turtle Grove, and Boston relief timeline"
+    },
+    "viral_readiness": {"total": 37, "scores": {"hook": 5, "curiosity_gap": 5, "emotional_stakes": 5, "specificity": 4, "visual_stopping_power": 4, "shareability": 5, "saveability": 4, "comment_potential": 5}, "note": "Enormous scale plus a warm US-Canada payoff. The Boston Christmas tree is a strong comment driver."},
+    "publishing": {"recommended_window": "Wed 12:00-13:00 ET", "format": "Single image - 4:5", "best_time": "Wednesday 12:00-13:00 ET", "first_comment": "Sources and US audience bridge in the first comment.", "disclosure": "No AI imagery. Cover is an authentic 1917 photograph."},
+    "sources": ["Nova Scotia Archives", "Canadian Museum of History", "Royal Society of Canada", "Contemporary Canadian and US press"],
+    "review_notes": "Draft. Non-US story; needs a clear reason for a US audience. Verify the death toll, the Turtle Grove community, and the Boston relief timeline.",
+    "ai_disclosure": "No AI-generated imagery.",
+    "created": "2026-11-02"
+})
+
+POSTS.append({
+    "number": "008",
+    "slug": "molasses-flood",
+    "title": "The Wave That Came From a Tank",
+    "subtitle": "The Great Molasses Flood, Boston, January 15, 1919",
+    "category": "Engineering failure",
+    "event_date": "1919-01-15",
+    "date": "2026-12-09",
+    "display_date": "Dec 9, 2026",
+    "weekday": "Wednesday",
+    "status": "draft",
+    "status_label": "Draft - verify at Gate 2",
+    "angle": "A storage tank in Boston's North End burst and sent a wall of molasses through the streets, killing 21 people.",
+    "audience": "US adults 25-55 interested in history, engineering, and strange-but-true stories",
+    "hook": "A tank of molasses burst in Boston and sent a wave through the streets. 21 people died.",
+    "dek": "Boston, January 15, 1919. The tank was leaking before it was full. Nobody stopped filling it.",
+    "story": [
+        "On January 15, 1919, a steel tank in Boston's North End burst and released about 2.3 million gallons of molasses. The tank belonged to the Purity Distilling Company and stood fifty feet tall.",
+        "The tank had leaked since it was first filled. Neighbors collected molasses from the seams and used it at home. The steel was too thin, the rivets were inadequate, and the tank had never been properly tested.",
+        "At about 12:30 p.m., the tank split with a sound that witnesses compared to gunfire. A wave of molasses moved through the streets at an estimated thirty-five miles per hour, pushing buildings off their foundations and twisting the elevated train tracks.",
+        "Twenty-one people died. About 150 were injured. Some were trapped in the syrup; others were crushed by debris. The cleanup took months, and the harbor ran brown for weeks.",
+        "The company was found liable. The disaster led to stricter building codes and engineering standards for large tanks, and it became a case study in the cost of ignoring obvious warnings.",
+        "The site is now a park. The tank is gone. The story is usually told as a curiosity, but it is really a story about a company that knew the tank was failing and kept using it."
+    ],
+    "payoff": "It wasn't a natural disaster. It was a tank that should never have been filled.",
+    "cta": "Follow for the engineering failures that changed the rules.",
+    "captions": {
+        "instagram": "A tank of molasses burst in Boston and sent a wave through the streets. 21 people died.\n\nJanuary 15, 1919. A steel tank in Boston's North End burst and released about 2.3 million gallons of molasses. The tank belonged to the Purity Distilling Company and stood fifty feet tall.\n\nThe tank had leaked since it was first filled. Neighbors collected molasses from the seams and used it at home. The steel was too thin, the rivets were inadequate, and the tank had never been properly tested.\n\nAt about 12:30 p.m., the tank split with a sound that witnesses compared to gunfire. A wave of molasses moved through the streets at an estimated thirty-five miles per hour, pushing buildings off their foundations and twisting the elevated train tracks.\n\nTwenty-one people died. About 150 were injured. Some were trapped in the syrup; others were crushed by debris. The cleanup took months, and the harbor ran brown for weeks.\n\nThe company was found liable. The disaster led to stricter building codes and engineering standards for large tanks, and it became a case study in the cost of ignoring obvious warnings.\n\nThe site is now a park. The tank is gone. The story is usually told as a curiosity, but it is really a story about a company that knew the tank was failing and kept using it.\n\nPhotograph: public domain, via Wikimedia Commons.\n\n#MolassesFlood #BostonHistory #EngineeringFailure #ForgottenHistory #USHistory #IndustrialAccidents",
+        "facebook": "On January 15, 1919, a steel tank in Boston's North End burst and released about 2.3 million gallons of molasses. The tank belonged to the Purity Distilling Company and stood fifty feet tall.\n\nThe tank had leaked since it was first filled. Neighbors collected molasses from the seams and used it at home. The steel was too thin, the rivets were inadequate, and the tank had never been properly tested.\n\nAt about 12:30 p.m., the tank split with a sound that witnesses compared to gunfire. A wave of molasses moved through the streets at an estimated thirty-five miles per hour, pushing buildings off their foundations and twisting the elevated train tracks.\n\nTwenty-one people died. About 150 were injured. Some were trapped in the syrup; others were crushed by debris. The cleanup took months, and the harbor ran brown for weeks.\n\nThe company was found liable. The disaster led to stricter building codes and engineering standards for large tanks, and it became a case study in the cost of ignoring obvious warnings.\n\nThe site is now a park. The tank is gone. The story is usually told as a curiosity, but it is really a story about a company that knew the tank was failing and kept using it.\n\nPhotograph: public domain, via Wikimedia Commons.\n\n#MolassesFlood #BostonHistory #EngineeringFailure #USHistory",
+        "first_comment": "Sources to verify at Gate 2: Boston Public Library; Boston Globe archives, 1919; NOAA; engineering case studies. Verify the claimed wave speed and the toll. Tone is the main risk: it reads as trivia if handled lightly. Cover photograph: public domain, via Wikimedia Commons. No AI imagery.",
+        "alt_text": "An elevated view of the aftermath of the Great Molasses Flood in Boston's North End, showing collapsed buildings, wreckage, and crowds along the waterfront."
+    },
+    "hashtags": {
+        "instagram": ["#MolassesFlood", "#BostonHistory", "#EngineeringFailure", "#ForgottenHistory", "#USHistory", "#IndustrialAccidents"],
+        "facebook": ["#MolassesFlood", "#BostonHistory", "#EngineeringFailure", "#USHistory"]
+    },
+    "keywords": {
+        "primary": "Great Molasses Flood",
+        "secondary": ["Boston molasses disaster 1919", "Purity Distilling Company", "molasses tank failure", "Boston North End history", "engineering disasters", "industrial accidents"],
+        "long_tail": ["how many people died in the Great Molasses Flood", "what caused the Boston molasses flood", "how fast was the molasses wave", "where did the Great Molasses Flood happen"]
+    },
+    "seo": {
+        "title": "Great Molasses Flood: The Wave That Came From a Tank",
+        "meta_description": "A Boston storage tank burst on January 15, 1919, sending a wave of molasses through the North End and killing 21 people. The tank had leaked for years.",
+        "slug": "great-molasses-flood",
+        "focus_keyword": "Great Molasses Flood",
+        "canonical": "/stories/great-molasses-flood",
+        "og_title": "The wave that came from a tank",
+        "og_description": "A leaking tank. A city street. 21 people dead. Boston, 1919.",
+        "schema_type": "NewsArticle",
+        "image_alt": "The aftermath of the Great Molasses Flood in Boston, 1919.",
+        "internal_links": ["/stories/johnstown-flood", "/stories/eastland-disaster"]
+    },
+    "images": [
+        {"file": "01-cover.jpg", "role": "cover", "alt": "An elevated view of the aftermath of the Great Molasses Flood in Boston's North End, showing collapsed buildings, wreckage, and crowds along the waterfront.", "credit": "Photograph: public domain, via Wikimedia Commons", "ai": False}
+    ],
+    "cover": "01-cover.jpg",
+    "image_count": 1,
+    "pipeline": {
+        "stage": "Visual + copy draft",
+        "stage_index": 7,
+        "gates": {"G1_greenlight": "PASS", "G2_factual_lock": "PENDING", "G3_rights_clearance": "PASS", "G4_story_approval": "PASS", "G5_clearance": "PENDING", "G6_qa_signoff": "PENDING"},
+        "progress": 64,
+        "owner": "research-journalist",
+        "next_action": "Verify wave speed, toll, and liability finding"
+    },
+    "viral_readiness": {"total": 36, "scores": {"hook": 5, "curiosity_gap": 5, "emotional_stakes": 4, "specificity": 4, "visual_stopping_power": 4, "shareability": 5, "saveability": 4, "comment_potential": 4}, "note": "The hook is irresistible. The risk is tone; keep the human cost in the first line."},
+    "publishing": {"recommended_window": "Wed 12:00-13:00 ET", "format": "Single image - 4:5", "best_time": "Wednesday 12:00-13:00 ET", "first_comment": "Sources and tone note in the first comment.", "disclosure": "No AI imagery. Cover is an authentic 1919 photograph."},
+    "sources": ["Boston Public Library", "Boston Globe archives, 1919", "National Oceanic and Atmospheric Administration", "Engineering case studies"],
+    "review_notes": "Draft. Tone is the whole risk. It reads as trivia if handled lightly. Verify the claimed wave speed and the toll.",
+    "ai_disclosure": "No AI-generated imagery.",
+    "created": "2026-11-02"
+})
+
+POSTS.append({
+    "number": "009",
+    "slug": "radium-girls",
+    "title": "The Women Who Glowed",
+    "subtitle": "The Radium Girls, Orange, New Jersey, 1917-1928",
+    "category": "Labor / Science",
+    "event_date": "1922-01-01",
+    "date": "2026-12-16",
+    "display_date": "Dec 16, 2026",
+    "weekday": "Wednesday",
+    "status": "draft",
+    "status_label": "Draft - verify at Gate 2",
+    "angle": "Factory workers painted watch dials with radium and were told it was safe. Their bodies became the evidence that changed American labor law.",
+    "audience": "US adults 25-55 interested in labor history, science, and women's history",
+    "hook": "They were told the glowing paint was safe. Their bodies became the evidence.",
+    "dek": "Orange, New Jersey, 1922. The women who painted watch dials with radium were told it was harmless.",
+    "story": [
+        "In the 1910s and 1920s, young women worked at the U.S. Radium Corporation in Orange, New Jersey, painting watch dials with radium paint so the numbers would glow in the dark.",
+        "They were told the paint was safe. To keep a fine point on the brush, they shaped it with their lips. Some painted their nails and teeth with the leftover glow for fun.",
+        "Radium is a bone-seeker. It lodged in their jaws, bones, and teeth. Workers developed anemia, spontaneous fractures, and necrosis of the jaw. Some lost teeth; some lost parts of their jaws.",
+        "The company denied responsibility. Doctors were pressured. The women were told they were hysterical, or that their symptoms were unrelated.",
+        "In 1927, Grace Fryer and other workers sued. The case settled in 1928. The women received compensation, but many were already dying.",
+        "The Radium Girls case helped establish the field of occupational disease law and pushed forward stronger workplace protections and radiation safety standards.",
+        "Their bodies were the evidence. The rules came after. The factories that employed them are gone, but the principle is not: workers should not have to prove they are being poisoned before anyone acts."
+    ],
+    "payoff": "They were told it was safe. Their bodies proved otherwise.",
+    "cta": "Follow for the people who changed labor law.",
+    "captions": {
+        "instagram": "They were told the glowing paint was safe. Their bodies became the evidence.\n\nOrange, New Jersey, 1922. Young women worked at the U.S. Radium Corporation, painting watch dials with radium paint so the numbers would glow in the dark.\n\nThey were told the paint was safe. To keep a fine point on the brush, they shaped it with their lips. Some painted their nails and teeth with the leftover glow for fun.\n\nRadium is a bone-seeker. It lodged in their jaws, bones, and teeth. Workers developed anemia, spontaneous fractures, and necrosis of the jaw. Some lost teeth; some lost parts of their jaws.\n\nThe company denied responsibility. Doctors were pressured. The women were told they were hysterical, or that their symptoms were unrelated.\n\nIn 1927, Grace Fryer and other workers sued. The case settled in 1928. The women received compensation, but many were already dying.\n\nThe Radium Girls case helped establish the field of occupational disease law and pushed forward stronger workplace protections and radiation safety standards.\n\nTheir bodies were the evidence. The rules came after. The factories that employed them are gone, but the principle is not: workers should not have to prove they are being poisoned before anyone acts.\n\nPhotograph: public domain, via Wikimedia Commons.\n\n#RadiumGirls #LaborHistory #WomenInHistory #ScienceHistory #OccupationalSafety #ForgottenHistory",
+        "facebook": "In the 1910s and 1920s, young women worked at the U.S. Radium Corporation in Orange, New Jersey, painting watch dials with radium paint so the numbers would glow in the dark.\n\nThey were told the paint was safe. To keep a fine point on the brush, they shaped it with their lips. Some painted their nails and teeth with the leftover glow for fun.\n\nRadium is a bone-seeker. It lodged in their jaws, bones, and teeth. Workers developed anemia, spontaneous fractures, and necrosis of the jaw. Some lost teeth; some lost parts of their jaws.\n\nThe company denied responsibility. Doctors were pressured. The women were told they were hysterical, or that their symptoms were unrelated.\n\nIn 1927, Grace Fryer and other workers sued. The case settled in 1928. The women received compensation, but many were already dying.\n\nThe Radium Girls case helped establish the field of occupational disease law and pushed forward stronger workplace protections and radiation safety standards.\n\nTheir bodies were the evidence. The rules came after. The factories that employed them are gone, but the principle is not: workers should not have to prove they are being poisoned before anyone acts.\n\nPhotograph: public domain, via Wikimedia Commons.\n\n#RadiumGirls #LaborHistory #WomenInHistory #OccupationalSafety",
+        "first_comment": "Sources to verify at Gate 2: Argonne National Laboratory; OSHA; Illinois and New Jersey state archives; federal court records. Portrait rights need per-item verification. Avoid lurid medical detail. Cover photograph: public domain, via Wikimedia Commons. No AI imagery.",
+        "alt_text": "A row of young women in 1920s dresses sit at long worktables in a factory, painting watch dials with radium luminous paint."
+    },
+    "hashtags": {
+        "instagram": ["#RadiumGirls", "#LaborHistory", "#WomenInHistory", "#ScienceHistory", "#OccupationalSafety", "#ForgottenHistory"],
+        "facebook": ["#RadiumGirls", "#LaborHistory", "#WomenInHistory", "#OccupationalSafety"]
+    },
+    "keywords": {
+        "primary": "Radium Girls",
+        "secondary": ["U.S. Radium Corporation", "Grace Fryer", "radium poisoning", "occupational disease law", "Orange New Jersey history", "women in labor history"],
+        "long_tail": ["who were the Radium Girls", "what happened to the Radium Girls", "how did the Radium Girls change labor law", "what is radium jaw"]
+    },
+    "seo": {
+        "title": "Radium Girls: The Women Who Glowed and Paid for It",
+        "meta_description": "Young women painted watch dials with radium and were told it was safe. Their illnesses became evidence that changed American labor law. The case set precedent.",
+        "slug": "radium-girls",
+        "focus_keyword": "Radium Girls",
+        "canonical": "/stories/radium-girls",
+        "og_title": "The women who glowed",
+        "og_description": "They were told the paint was safe. Their bodies became the evidence. Orange, New Jersey, 1922.",
+        "schema_type": "NewsArticle",
+        "image_alt": "Women painting watch dials with radium paint, c. 1922.",
+        "internal_links": ["/stories/monongah-mine-disaster", "/stories/cocoanut-grove-fire"]
+    },
+    "images": [
+        {"file": "01-cover.jpg", "role": "cover", "alt": "A row of young women in 1920s dresses sit at long worktables in a factory, painting watch dials with radium luminous paint.", "credit": "Photograph: public domain, via Wikimedia Commons", "ai": False}
+    ],
+    "cover": "01-cover.jpg",
+    "image_count": 1,
+    "pipeline": {
+        "stage": "Visual + copy draft",
+        "stage_index": 7,
+        "gates": {"G1_greenlight": "PASS", "G2_factual_lock": "PENDING", "G3_rights_clearance": "PENDING", "G4_story_approval": "PASS", "G5_clearance": "PENDING", "G6_qa_signoff": "PENDING"},
+        "progress": 58,
+        "owner": "research-journalist",
+        "next_action": "Verify names, dates, medical claims, and portrait rights"
+    },
+    "viral_readiness": {"total": 36, "scores": {"hook": 5, "curiosity_gap": 5, "emotional_stakes": 5, "specificity": 4, "visual_stopping_power": 4, "shareability": 5, "saveability": 4, "comment_potential": 4}, "note": "Human, scientific, and legally consequential. Avoid lurid medical detail; the dignity of the workers is the story."},
+    "publishing": {"recommended_window": "Wed 12:00-13:00 ET", "format": "Single image - 4:5", "best_time": "Wednesday 12:00-13:00 ET", "first_comment": "Sources, rights notes, and AI disclosure in the first comment.", "disclosure": "No AI imagery. Cover is an authentic c. 1922 photograph."},
+    "sources": ["Argonne National Laboratory", "Occupational Safety and Health Administration", "Illinois and New Jersey state archives", "Federal court records"],
+    "review_notes": "Draft. Portrait rights need per-item verification. Avoid lurid medical detail. Verify names, dates, and the legal outcomes.",
+    "ai_disclosure": "No AI-generated imagery.",
+    "created": "2026-11-02"
+})
+
+POSTS.append({
+    "number": "010",
+    "slug": "cocoanut-grove",
+    "title": "The Fire That Changed Burn Care",
+    "subtitle": "The Cocoanut Grove fire, Boston, November 28, 1942",
+    "category": "Disasters / Medicine",
+    "event_date": "1942-11-28",
+    "date": "2027-01-06",
+    "display_date": "Jan 6, 2027",
+    "weekday": "Wednesday",
+    "status": "draft",
+    "status_label": "Draft - verify at Gate 2",
+    "angle": "A Boston nightclub fire killed 492 people. The treatment of its survivors produced the first modern burn protocol.",
+    "audience": "US adults 25-55 interested in history, medicine, and fire safety",
+    "hook": "A Boston nightclub went up in flames. 492 people died. Burn care changed forever.",
+    "dek": "Boston, November 28, 1942. The deadliest nightclub fire in American history.",
+    "story": [
+        "On November 28, 1942, Thanksgiving weekend, more than a thousand people crowded into the Cocoanut Grove, a popular Boston nightclub. The legal capacity was far lower.",
+        "The fire started in the basement Melody Lounge, possibly from a match or faulty wiring. It raced through the club's flammable decorations: paper palm trees, cloth drapes, and leather banquettes.",
+        "Guests tried to escape through a revolving door and exits that were locked or blocked. Many were crushed in the panic. Others died of burns and smoke inhalation.",
+        "492 people died. Another 166 were injured. It is the deadliest nightclub fire in United States history.",
+        "The disaster led to fire code reforms across the country, including changes to exit requirements and occupancy limits. It also produced a medical breakthrough: the burn patients at Massachusetts General Hospital became the basis for modern burn treatment and fluid resuscitation.",
+        "Owner Barney Welansky was convicted of manslaughter, sentenced to 12 to 15 years, and pardoned by Governor Maurice Tobin after serving four years.",
+        "The club is gone. The corner is a memorial. The burn protocol that came out of that night is still taught."
+    ],
+    "payoff": "The fire was fast. The exits were slow.",
+    "cta": "Follow for the safety failures that changed the rules.",
+    "captions": {
+        "instagram": "A Boston nightclub went up in flames. 492 people died. Burn care changed forever.\n\nNovember 28, 1942. Thanksgiving weekend. More than a thousand people crowded into the Cocoanut Grove, a popular Boston nightclub. The legal capacity was far lower.\n\nThe fire started in the basement Melody Lounge, possibly from a match or faulty wiring. It raced through the club's flammable decorations: paper palm trees, cloth drapes, and leather banquettes.\n\nGuests tried to escape through a revolving door and exits that were locked or blocked. Many were crushed in the panic. Others died of burns and smoke inhalation.\n\n492 people died. Another 166 were injured. It is the deadliest nightclub fire in United States history.\n\nThe disaster led to fire code reforms across the country, including changes to exit requirements and occupancy limits. It also produced a medical breakthrough: the burn patients at Massachusetts General Hospital became the basis for modern burn treatment and fluid resuscitation.\n\nOwner Barney Welansky was convicted of manslaughter, sentenced to 12 to 15 years, and pardoned by Governor Maurice Tobin after serving four years.\n\nThe club is gone. The corner is a memorial. The burn protocol that came out of that night is still taught.\n\nCover: editorial reconstruction by Cluefolio Studio. Not a historical photograph.\n\n#CocoanutGroveFire #BostonHistory #FireSafety #BurnCare #ForgottenHistory #USHistory",
+        "facebook": "On November 28, 1942, Thanksgiving weekend, more than a thousand people crowded into the Cocoanut Grove, a popular Boston nightclub. The legal capacity was far lower.\n\nThe fire started in the basement Melody Lounge, possibly from a match or faulty wiring. It raced through the club's flammable decorations: paper palm trees, cloth drapes, and leather banquettes.\n\nGuests tried to escape through a revolving door and exits that were locked or blocked. Many were crushed in the panic. Others died of burns and smoke inhalation.\n\n492 people died. Another 166 were injured. It is the deadliest nightclub fire in United States history.\n\nThe disaster led to fire code reforms across the country, including changes to exit requirements and occupancy limits. It also produced a medical breakthrough: the burn patients at Massachusetts General Hospital became the basis for modern burn treatment and fluid resuscitation.\n\nOwner Barney Welansky was convicted of manslaughter, sentenced to 12 to 15 years, and pardoned by Governor Maurice Tobin after serving four years.\n\nThe club is gone. The corner is a memorial. The burn protocol that came out of that night is still taught.\n\nCover: editorial reconstruction by Cluefolio Studio. Not a historical photograph.\n\n#CocoanutGroveFire #BostonHistory #FireSafety #BurnCare",
+        "first_comment": "Sources to verify at Gate 2: Boston Public Library; Massachusetts General Hospital archives; National Fire Protection Association; contemporary Boston press. Graphic subject; no victim imagery. Cover is an editorial reconstruction, disclosed. No historical photo was available at publishable quality and rights.",
+        "alt_text": "An editorial reconstruction of a crowded Boston street at night in 1942, with smoke drifting between buildings and a crowd gathered outside a nightclub."
+    },
+    "hashtags": {
+        "instagram": ["#CocoanutGroveFire", "#BostonHistory", "#FireSafety", "#BurnCare", "#ForgottenHistory", "#USHistory"],
+        "facebook": ["#CocoanutGroveFire", "#BostonHistory", "#FireSafety", "#BurnCare"]
+    },
+    "keywords": {
+        "primary": "Cocoanut Grove fire",
+        "secondary": ["Boston nightclub fire 1942", "deadliest nightclub fire US", "Barney Welansky", "burn treatment history", "Massachusetts General Hospital", "fire code reform"],
+        "long_tail": ["how many people died in the Cocoanut Grove fire", "what caused the Cocoanut Grove fire", "how did the Cocoanut Grove fire change burn care", "where was the Cocoanut Grove nightclub"]
+    },
+    "seo": {
+        "title": "Cocoanut Grove Fire: The Fire That Changed Burn Care",
+        "meta_description": "The Cocoanut Grove nightclub fire killed 492 people in Boston on November 28, 1942. It changed fire codes and modern burn treatment. Survivors changed medicine.",
+        "slug": "cocoanut-grove-fire",
+        "focus_keyword": "Cocoanut Grove fire",
+        "canonical": "/stories/cocoanut-grove-fire",
+        "og_title": "The fire that changed burn care",
+        "og_description": "492 people died in a Boston nightclub on Thanksgiving weekend, 1942. The survivors changed medicine.",
+        "schema_type": "NewsArticle",
+        "image_alt": "An editorial reconstruction of the street outside the Cocoanut Grove, 1942.",
+        "internal_links": ["/stories/iroquois-theatre-fire", "/stories/hartford-circus-fire"]
+    },
+    "images": [
+        {"file": "01-cover.jpg", "role": "cover", "alt": "An editorial reconstruction of a crowded Boston street at night in 1942, with smoke drifting between buildings and a crowd gathered outside a nightclub.", "credit": "Editorial reconstruction by Cluefolio Studio. Not a historical photograph.", "ai": True}
+    ],
+    "cover": "01-cover.jpg",
+    "image_count": 1,
+    "pipeline": {
+        "stage": "Visual + copy draft",
+        "stage_index": 7,
+        "gates": {"G1_greenlight": "PASS", "G2_factual_lock": "PENDING", "G3_rights_clearance": "PASS", "G4_story_approval": "PASS", "G5_clearance": "PENDING", "G6_qa_signoff": "PENDING"},
+        "progress": 60,
+        "owner": "research-journalist",
+        "next_action": "Verify medical claims, toll, and Welansky sentence"
+    },
+    "viral_readiness": {"total": 35, "scores": {"hook": 4, "curiosity_gap": 4, "emotional_stakes": 5, "specificity": 5, "visual_stopping_power": 4, "shareability": 4, "saveability": 5, "comment_potential": 4}, "note": "Double payoff: the disaster and the medical legacy. AI reconstruction is disclosed; replace if a rights-clear photo surfaces."},
+    "publishing": {"recommended_window": "Wed 12:00-13:00 ET", "format": "Single image - 4:5", "best_time": "Wednesday 12:00-13:00 ET", "first_comment": "Sources, medical caveat, and AI disclosure in the first comment.", "disclosure": "Cover is an editorial reconstruction by Cluefolio Studio. Not a historical photograph."},
+    "sources": ["Boston Public Library", "Massachusetts General Hospital archives", "National Fire Protection Association", "Contemporary Boston press"],
+    "review_notes": "Draft. Graphic subject; no victim imagery. Verify the toll and the specific medical claims, which are often overstated. Cover is a disclosed AI reconstruction.",
+    "ai_disclosure": "Cover is an editorial reconstruction by Cluefolio Studio. Not a historical photograph.",
+    "created": "2026-11-02"
+})
+
+POSTS.append({
+    "number": "011",
+    "slug": "hartford-circus-fire",
+    "title": "The Tent That Burned in Minutes",
+    "subtitle": "The Hartford circus fire, Connecticut, July 6, 1944",
+    "category": "Disasters / Safety",
+    "event_date": "1944-07-06",
+    "date": "2027-01-13",
+    "display_date": "Jan 13, 2027",
+    "weekday": "Wednesday",
+    "status": "draft",
+    "status_label": "Draft - verify at Gate 2",
+    "angle": "A circus tent treated with paraffin and gasoline caught fire during a matinee in Hartford, killing 167 people, most of them children.",
+    "audience": "US adults 25-55 interested in history, fire safety, and family stories",
+    "hook": "The circus tent was waterproofed with paraffin and gasoline. Then it caught fire.",
+    "dek": "Hartford, Connecticut, July 6, 1944. The deadliest circus fire in American history.",
+    "story": [
+        "On July 6, 1944, the Ringling Bros. and Barnum & Bailey circus was performing a matinee under a big top in Hartford, Connecticut. The audience was mostly women and children.",
+        "The tent had been waterproofed with a mixture of paraffin and gasoline. The treatment kept rain out and made the canvas highly flammable.",
+        "A fire started near the main entrance. The canvas burned and dripped burning material onto the crowd. The exits were blocked by animal chutes, seating, and panic.",
+        "167 people died. More than 700 were injured. Many of the dead were children, and some were never identified.",
+        "The disaster led to national fire-safety standards for tents and public assemblies. It also changed how circuses and fairs were inspected.",
+        "The cause was never officially determined. Arson is one theory; a discarded cigarette is another. No one was ever charged.",
+        "The site is now a memorial. The tent is gone. The names are not."
+    ],
+    "payoff": "The tent was treated to keep rain out. It helped the fire spread.",
+    "cta": "Follow for the disasters that changed the rules.",
+    "captions": {
+        "instagram": "The circus tent was waterproofed with paraffin and gasoline. Then it caught fire.\n\nJuly 6, 1944. The Ringling Bros. and Barnum & Bailey circus was performing a matinee under a big top in Hartford, Connecticut. The audience was mostly women and children.\n\nThe tent had been waterproofed with a mixture of paraffin and gasoline. The treatment kept rain out and made the canvas highly flammable.\n\nA fire started near the main entrance. The canvas burned and dripped burning material onto the crowd. The exits were blocked by animal chutes, seating, and panic.\n\n167 people died. More than 700 were injured. Many of the dead were children, and some were never identified.\n\nThe disaster led to national fire-safety standards for tents and public assemblies. It also changed how circuses and fairs were inspected.\n\nThe cause was never officially determined. Arson is one theory; a discarded cigarette is another. No one was ever charged.\n\nThe site is now a memorial. The tent is gone. The names are not.\n\nPhotograph: public domain, via Wikimedia Commons.\n\n#HartfordCircusFire #ConnecticutHistory #FireSafety #ForgottenHistory #USHistory #CircusHistory",
+        "facebook": "On July 6, 1944, the Ringling Bros. and Barnum & Bailey circus was performing a matinee under a big top in Hartford, Connecticut. The audience was mostly women and children.\n\nThe tent had been waterproofed with a mixture of paraffin and gasoline. The treatment kept rain out and made the canvas highly flammable.\n\nA fire started near the main entrance. The canvas burned and dripped burning material onto the crowd. The exits were blocked by animal chutes, seating, and panic.\n\n167 people died. More than 700 were injured. Many of the dead were children, and some were never identified.\n\nThe disaster led to national fire-safety standards for tents and public assemblies. It also changed how circuses and fairs were inspected.\n\nThe cause was never officially determined. Arson is one theory; a discarded cigarette is another. No one was ever charged.\n\nThe site is now a memorial. The tent is gone. The names are not.\n\nPhotograph: public domain, via Wikimedia Commons.\n\n#HartfordCircusFire #ConnecticutHistory #FireSafety #USHistory",
+        "first_comment": "Sources to verify at Gate 2: Connecticut Historical Society; National Fire Protection Association; Hartford Circus Fire memorial records; contemporary Hartford press. The highest emotional content on the slate involves children. Dignity review is mandatory. Verify the tent treatment claim precisely. Cover photograph: public domain, via Wikimedia Commons. No AI imagery.",
+        "alt_text": "A circus tent burns at the Hartford circus fire in 1944, with flames and black smoke rising above the canvas while people flee in the foreground."
+    },
+    "hashtags": {
+        "instagram": ["#HartfordCircusFire", "#ConnecticutHistory", "#FireSafety", "#ForgottenHistory", "#USHistory", "#CircusHistory"],
+        "facebook": ["#HartfordCircusFire", "#ConnecticutHistory", "#FireSafety", "#USHistory"]
+    },
+    "keywords": {
+        "primary": "Hartford circus fire",
+        "secondary": ["Ringling Bros fire 1944", "Hartford Connecticut disaster", "circus tent fire", "paraffin gasoline canvas", "fire safety history", "American circus history"],
+        "long_tail": ["how many people died in the Hartford circus fire", "what caused the Hartford circus fire", "why was the circus tent flammable", "where was the Hartford circus fire"]
+    },
+    "seo": {
+        "title": "Hartford Circus Fire: The Tent That Burned in Minutes",
+        "meta_description": "A circus tent treated with paraffin and gasoline caught fire in Hartford on July 6, 1944, killing 167 people, most of them children. It had no flame retardant.",
+        "slug": "hartford-circus-fire",
+        "focus_keyword": "Hartford circus fire",
+        "canonical": "/stories/hartford-circus-fire",
+        "og_title": "The tent that burned in minutes",
+        "og_description": "A waterproofed circus tent. A matinee crowd. 167 dead. Hartford, 1944.",
+        "schema_type": "NewsArticle",
+        "image_alt": "The Hartford circus tent on fire, July 6, 1944.",
+        "internal_links": ["/stories/cocoanut-grove-fire", "/stories/iroquois-theatre-fire"]
+    },
+    "images": [
+        {"file": "01-cover.jpg", "role": "cover", "alt": "A circus tent burns at the Hartford circus fire in 1944, with flames and black smoke rising above the canvas while people flee in the foreground.", "credit": "Photograph: public domain, via Wikimedia Commons", "ai": False}
+    ],
+    "cover": "01-cover.jpg",
+    "image_count": 1,
+    "pipeline": {
+        "stage": "Visual + copy draft",
+        "stage_index": 7,
+        "gates": {"G1_greenlight": "PASS", "G2_factual_lock": "PENDING", "G3_rights_clearance": "PASS", "G4_story_approval": "PASS", "G5_clearance": "PENDING", "G6_qa_signoff": "PENDING"},
+        "progress": 60,
+        "owner": "research-journalist",
+        "next_action": "Verify tent treatment, toll, and identification claims"
+    },
+    "viral_readiness": {"total": 36, "scores": {"hook": 5, "curiosity_gap": 4, "emotional_stakes": 5, "specificity": 5, "visual_stopping_power": 5, "shareability": 4, "saveability": 4, "comment_potential": 4}, "note": "Highest emotional content on the slate. Dignity review is mandatory; do not use imagery of victims."},
+    "publishing": {"recommended_window": "Wed 12:00-13:00 ET", "format": "Single image - 4:5", "best_time": "Wednesday 12:00-13:00 ET", "first_comment": "Sources and dignity note in the first comment.", "disclosure": "No AI imagery. Cover is an authentic 1944 photograph."},
+    "sources": ["Connecticut Historical Society", "National Fire Protection Association", "Hartford Circus Fire memorial records", "Contemporary Hartford press"],
+    "review_notes": "Draft. Highest emotional content on the slate, involving children. Dignity review is mandatory. Verify the tent treatment claim precisely.",
+    "ai_disclosure": "No AI-generated imagery.",
+    "created": "2026-11-02"
+})
+
+PLAYBOOK = {
+    "positioning": "Evidence-first, image-led history for Instagram and Facebook. Every claim traceable. Every image credited. Nothing published without a human.",
+    "cadence": "Weekly on Wednesdays, 12:00-13:00 ET. Skip the last two weeks of December. Post 001 is live; Post 002 is ready; Posts 003-011 are drafts until Gate 2.",
+    "caption_formula": [
+        "Hook in the first 125 characters, before the 'more' cut.",
+        "Context: place, date, and the specific situation.",
+        "Turn: the detail that makes the story surprising.",
+        "Evidence: numbers, names, and the mechanism.",
+        "Payoff: the sentence the reader remembers.",
+        "CTA: one clear ask, never engagement bait.",
+        "Credit: photographer or archive, plus AI disclosure if relevant.",
+        "Hashtags: 5-6 on Instagram, 3-4 on Facebook."
+    ],
+    "hashtag_strategy": {
+        "instagram": "Use 5-6 tags: one broad (#History), two topical (#MaritimeHistory), one local (#ChicagoHistory), one specific (#EastlandDisaster). Rotate the broad tag. Never use banned or irrelevant tags.",
+        "facebook": "Use 3-4 tags. Facebook rewards fewer. Put them at the end, after the credit. Do not use hashtags as a sentence.",
+        "rule": "Specific beats popular. A tag with 20k posts that describes the story is worth more than a tag with 20M posts that describes nothing."
+    },
+    "keyword_clusters": [
+        {"cluster": "Eastland / Chicago maritime", "keywords": ["Eastland disaster", "SS Eastland", "Chicago River disaster", "Great Lakes shipwrecks"]},
+        {"cluster": "Airship / aviation failure", "keywords": ["Hindenburg disaster", "LZ 129", "Lakehurst", "hydrogen airship"]},
+        {"cluster": "Wildfire / forgotten disasters", "keywords": ["Peshtigo fire", "deadliest wildfire US", "Great Chicago Fire"]},
+        {"cluster": "Dam / private infrastructure", "keywords": ["Johnstown Flood", "South Fork Dam", "Gilded Age"]},
+        {"cluster": "Theater / fire safety", "keywords": ["Iroquois Theatre fire", "inward-opening doors", "fire code history"]},
+        {"cluster": "Mining / labor", "keywords": ["Monongah mine disaster", "Bureau of Mines", "child labor"]},
+        {"cluster": "Maritime / WWI", "keywords": ["Halifax Explosion", "Mont-Blanc", "Boston Christmas tree"]},
+        {"cluster": "Engineering failure / Boston", "keywords": ["Great Molasses Flood", "Purity Distilling", "tank failure"]},
+        {"cluster": "Labor / science", "keywords": ["Radium Girls", "radium jaw", "occupational disease"]},
+        {"cluster": "Nightclub / burn care", "keywords": ["Cocoanut Grove fire", "Barney Welansky", "burn treatment"]},
+        {"cluster": "Circus / tent safety", "keywords": ["Hartford circus fire", "paraffin canvas", "tent fire"]}
+    ],
+    "seo_checklist": [
+        "One focus keyword per post; it appears in the title, meta description, slug, first 100 words, and image alt.",
+        "SEO title 50-60 characters; meta description 140-160 characters.",
+        "Slug is short, lowercase, hyphenated, and stable.",
+        "Canonical URL is absolute and matches the slug.",
+        "Open Graph title and description are written separately from the SEO title.",
+        "Every image has descriptive alt text, not a keyword dump.",
+        "Internal links point to two related stories.",
+        "Article schema includes headline, datePublished, author, and image.",
+        "No duplicate meta descriptions across posts.",
+        "Re-check character counts after every edit."
+    ],
+    "platform_rules": {
+        "instagram": "4:5, 1080x1350, JPEG q92, up to 20 carousel images. Caption max 2,200 characters. First 125 characters are the hook. Alt text per image. 5-6 hashtags.",
+        "facebook": "4:5 or 1:1, 1080x1350. Caption can be long, but the feed cuts around 125-250 characters. 3-4 hashtags. Alt text per image. Put the credit before the hashtags."
+    },
+    "measurement": [
+        "Reach and impressions at 1 hour, 24 hours, 72 hours, and 7 days.",
+        "Saves and shares per reach; these are the strongest quality signals.",
+        "Profile visits and follows per post.",
+        "Comments that ask a real question, not just emoji.",
+        "Link clicks if a link is used.",
+        "Watch time and completion rate for Reels adaptations.",
+        "Unfollows and negative feedback; investigate any spike."
+    ],
+    "engagement": [
+        "Reply to every substantive comment within 60 minutes of publishing.",
+        "Pin a comment with the source list and any correction.",
+        "Ask one honest question at the end; never use rage bait.",
+        "Correct errors publicly and link the correction in the first comment.",
+        "Do not argue with commenters; move the dispute to a source.",
+        "Save the best questions for the next post in the cluster."
+    ],
+    "ai_policy": "Authentic archival imagery first. Use an editorial reconstruction only when no usable, rights-clear image exists. Label it on the image and in the caption. Never present an AI image as documentary evidence.",
+    "publishing_checklist": [
+        "Cover is 1080x1350, sRGB, JPEG, under 8 MB.",
+        "Carousel order matches the visual plan.",
+        "Instagram caption is under 2,200 characters and the hook is in the first 125.",
+        "Facebook caption is platform-native, not a copy-paste.",
+        "Alt text is pasted for every image.",
+        "Credit and AI disclosure are present.",
+        "Hashtags are specific and within the platform limits.",
+        "Link (if any) is tested and tracked.",
+        "Post is scheduled for the recommended window.",
+        "A human has reviewed the final package."
+    ]
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "halifax-explosion",
+  "rail": "POST 007",
+  "canvas": {
+    "width": 1080,
+    "height": 1350
+  },
+  "palette": {
+    "paper": "#F4EFE6",
+    "ink": "#15130F",
+    "muted": "#5B5348",
+    "rule": "#B9AE9C",
+    "accent": "#8C2F1E"
+  },
+  "cover": {
+    "asset": "cover",
+    "wordmark": "CLUEFOLIO",
+    "category": "DISASTERS",
+    "headline": [
+      "THE BLAST THAT",
+      "FLATTENED A CITY"
+    ],
+    "dateline": "Halifax, Nova Scotia  ·  December 6, 1917",
+    "crop": {
+      "fx": 0.5,
+      "fy": 0.42,
+      "zoom": 1.0
+    },
+    "disclosure": ""
+  },
+  "interiors": []
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "halifax-explosion",
+  "assets": [
+    {
+      "id": "cover",
+      "title": "The Halifax Explosion blast cloud, December 6, 1917",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Halifax_Explosion_blast_cloud_restored.jpg",
+      "file_url": "https://commons.wikimedia.org/wiki/File:Halifax_Explosion_blast_cloud_restored.jpg",
+      "creator": "Unknown photographer, 1917",
+      "date": "",
+      "license": "Public domain in Canada and the United States",
+      "credit": "Photograph: public domain, via Wikimedia Commons",
+      "depicts": "A towering column of smoke rises over Halifax harbour after the 1917 munitions explosion, with a ship visible in the foreground.",
+      "role": "cover",
+      "alt_text": "A towering column of smoke rises over Halifax harbour after the 1917 munitions explosion, with a ship visible in the foreground.",
+      "ai_generated": false
+    }
+  ]
+}

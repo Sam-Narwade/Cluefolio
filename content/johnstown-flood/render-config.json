@@ -1,0 +1,32 @@
+{
+  "slug": "johnstown-flood",
+  "rail": "POST 004",
+  "canvas": {
+    "width": 1080,
+    "height": 1350
+  },
+  "palette": {
+    "paper": "#F4EFE6",
+    "ink": "#15130F",
+    "muted": "#5B5348",
+    "rule": "#B9AE9C",
+    "accent": "#8C2F1E"
+  },
+  "cover": {
+    "asset": "cover",
+    "wordmark": "CLUEFOLIO",
+    "category": "ENGINEERING FAILURE",
+    "headline": [
+      "THE DAM",
+      "NOBODY WOULD FIX"
+    ],
+    "dateline": "Johnstown, Pennsylvania  ·  May 31, 1889",
+    "crop": {
+      "fx": 0.53,
+      "fy": 0.5,
+      "zoom": 1.02
+    },
+    "disclosure": ""
+  },
+  "interiors": []
+}

@@ -1,0 +1,111 @@
+name: Publish to Meta
+
+on:
+  schedule:
+    # Wednesday 17:00 UTC = 12:00 ET (13:00 during daylight time).
+    - cron: "0 17 * * 3"
+  workflow_dispatch:
+    inputs:
+      post:
+        description: "Post number or slug (blank = the post due today)"
+        required: false
+        type: string
+      date:
+        description: "Publish the post scheduled for YYYY-MM-DD (blank = today)"
+        required: false
+        type: string
+      dry_run:
+        description: "Validate only; do not publish"
+        required: false
+        type: boolean
+        default: true
+      force:
+        description: "Publish again even if the ledger says it is done"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-meta
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # Configure required reviewers on this environment for a human approval gate.
+    environment: production
+    env:
+      META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+      META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
+      META_PAGE_ACCESS_TOKEN: ${{ secrets.META_PAGE_ACCESS_TOKEN }}
+      PUBLIC_BASE_URL: ${{ secrets.PUBLIC_BASE_URL }}
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      META_GRAPH_VERSION: ${{ vars.META_GRAPH_VERSION || 'v23.0' }}
+      PYTHONUNBUFFERED: "1"
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Verify Meta setup and public images
+        if: ${{ inputs.dry_run != true }}
+        run: python -m automation.doctor
+
+      - name: Publish
+        shell: bash
+        env:
+          INPUT_POST: ${{ inputs.post }}
+          INPUT_DATE: ${{ inputs.date }}
+          INPUT_DRY_RUN: ${{ inputs.dry_run }}
+          INPUT_FORCE: ${{ inputs.force }}
+        run: |
+          ARGS=(--ledger automation/state/published.json)
+          if [ -n "$INPUT_POST" ]; then
+            ARGS+=(--post "$INPUT_POST")
+          elif [ -n "$INPUT_DATE" ]; then
+            ARGS+=(--date "$INPUT_DATE")
+          else
+            ARGS+=(--due)
+          fi
+          if [ "$INPUT_DRY_RUN" = "true" ]; then
+            ARGS+=(--dry-run)
+          fi
+          if [ "$INPUT_FORCE" = "true" ]; then
+            ARGS+=(--force)
+          fi
+          python -m automation.publish "${ARGS[@]}"
+
+      - name: Commit publish ledger
+        if: always()
+        shell: bash
+        run: |
+          git add automation/state/published.json
+          if git diff --cached --quiet; then
+            echo "Ledger unchanged."
+            exit 0
+          fi
+          git config user.name "cluefolio-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git commit -m "chore: record Meta publish [skip ci]"
+          git push
+
+      - name: Upload run report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: publish-report
+          path: automation/state/last-run.json
+          if-no-files-found: ignore

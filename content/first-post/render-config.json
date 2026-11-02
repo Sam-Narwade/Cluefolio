@@ -1,0 +1,60 @@
+{
+  "slug": "first-post",
+  "rail": "POST 001",
+  "canvas": { "width": 1080, "height": 1350 },
+  "palette": {
+    "paper": "#F4EFE6",
+    "ink": "#15130F",
+    "muted": "#5B5348",
+    "rule": "#B9AE9C",
+    "accent": "#8C2F1E"
+  },
+  "cover": {
+    "asset": "01-capsized-nara",
+    "wordmark": "CLUEFOLIO",
+    "category": "DISASTERS",
+    "headline": ["THE SHIP THAT", "NEVER LEFT THE DOCK"],
+    "dateline": "Chicago  ·  July 24, 1915",
+    "crop": { "fx": 0.50, "fy": 0.50, "zoom": 1.06 }
+  },
+  "interiors": [
+    {
+      "asset": "02-upright-nara",
+      "out": "02-upright.jpg",
+      "line": "The Eastland, a 265-foot excursion steamer, at her Chicago dock.",
+      "crop": { "fx": 0.50, "fy": 0.52, "zoom": 1.02 },
+      "grain": 0.030
+    },
+    {
+      "asset": "05-satterfield",
+      "out": "03-the-moment.jpg",
+      "line": "Eyewitness drawing of the capsizing, seen from the Clark Street Bridge.",
+      "crop": { "fx": 0.46, "fy": 0.50, "zoom": 1.00 },
+      "grain": 0.012
+    },
+    {
+      "asset": "04-firetug-postcard",
+      "out": "04-the-hull.jpg",
+      "line": "The hull at water level, photographed from a fire tug.",
+      "crop": { "fx": 0.40, "fy": 0.58, "zoom": 1.00 },
+      "grain": 0.028
+    },
+    {
+      "asset": "03-rescue-loc",
+      "out": "05-the-rescue.jpg",
+      "line": "Crowds on the riverbank as boats converged on the wreck.",
+      "crop": { "fx": 0.56, "fy": 0.58, "zoom": 1.25 },
+      "grain": 0.028,
+      "contrast": 1.35
+    },
+    {
+      "asset": "07-wreck-panorama",
+      "out": "06-the-wreck.jpg",
+      "template": "plate",
+      "headline": "The river kept the evidence.",
+      "body": "The Eastland was raised on August 14, 1915. She was later commissioned as the U.S. Navy's USS Wilmette, served until 1945, and was scrapped in 1947.",
+      "crop": { "fx": 0.50, "fy": 0.50, "zoom": 1.00 },
+      "grain": 0.020
+    }
+  ]
+}
