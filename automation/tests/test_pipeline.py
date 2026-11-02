@@ -1,7 +1,11 @@
 from __future__ import annotations
 
 import json
+import os
+import tempfile
 import unittest
+from pathlib import Path
+from unittest.mock import patch
 
 from automation.content import (
     build_plan,
@@ -11,6 +15,7 @@ from automation.content import (
     select_due,
     validate_plan,
 )
+from automation.publish import main as publish_main
 from automation.publisher import publish_facebook, publish_instagram
 
 
@@ -123,6 +128,70 @@ class PipelineTests(unittest.TestCase):
         publish_instagram(graph, "ig-1", plan)
         self.assertEqual(sum(1 for c in graph.calls if c[1].endswith("/media")), 1)
         self.assertEqual(sum(1 for c in graph.calls if c[1].endswith("/media_publish")), 1)
+
+
+class PublishCliTests(unittest.TestCase):
+    ENV = {
+        "META_PAGE_ID": "page-1",
+        "META_IG_USER_ID": "ig-1",
+        "META_PAGE_ACCESS_TOKEN": "test-token",
+        "PUBLIC_BASE_URL": "https://example.github.io/Cluefolio",
+        "META_GRAPH_VERSION": "v23.0",
+    }
+
+    def test_full_publish_writes_ledger(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            ledger = Path(temp) / "published.json"
+            report = Path(temp) / "last-run.json"
+            with patch.dict(os.environ, self.ENV, clear=False), \
+                 patch("automation.publish.GraphClient", return_value=FakeGraph()):
+                code = publish_main([
+                    "--post", "002",
+                    "--ledger", str(ledger),
+                    "--report", str(report),
+                    "--no-notify",
+                ])
+
+            self.assertEqual(code, 0)
+            data = json.loads(ledger.read_text(encoding="utf-8"))
+            entry = data["published"]["002"]
+            self.assertEqual(entry["status"], "published")
+            self.assertEqual(entry["instagram"]["media_id"], "media-1")
+            self.assertEqual(entry["facebook"]["post_id"], "post-1")
+            self.assertEqual(entry["first_comment"]["instagram"]["comment_id"], "comment-1")
+            self.assertEqual(json.loads(report.read_text(encoding="utf-8"))["ok"], True)
+
+    def test_partial_run_resumes_at_facebook(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            ledger = Path(temp) / "published.json"
+            report = Path(temp) / "last-run.json"
+            ledger.write_text(json.dumps({
+                "version": 1,
+                "published": {
+                    "002": {
+                        "number": "002",
+                        "status": "partial",
+                        "instagram": {"media_id": "media-existing", "permalink": None},
+                    },
+                },
+            }), encoding="utf-8")
+
+            graph = FakeGraph()
+            with patch.dict(os.environ, self.ENV, clear=False), \
+                 patch("automation.publish.GraphClient", return_value=graph):
+                code = publish_main([
+                    "--post", "002",
+                    "--ledger", str(ledger),
+                    "--report", str(report),
+                    "--no-notify",
+                ])
+
+            self.assertEqual(code, 0)
+            self.assertFalse(any(c[1].endswith("/media") for c in graph.calls))
+            self.assertTrue(any(c[1].endswith("/feed") for c in graph.calls))
+            entry = json.loads(ledger.read_text(encoding="utf-8"))["published"]["002"]
+            self.assertEqual(entry["instagram"]["media_id"], "media-existing")
+            self.assertEqual(entry["status"], "published")
 
 
 if __name__ == "__main__":

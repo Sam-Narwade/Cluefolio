@@ -1,0 +1,42 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Unit tests
+        run: python -m unittest discover -s automation/tests -v
+
+      - name: Dry-run the first package
+        run: >-
+          python -m automation.publish
+          --post 001
+          --dry-run
+          --no-notify
+          --base-url https://example.github.io/Cluefolio
+
+      - name: Build site and Pages artifact
+        run: |
+          python scripts/build_site.py
+          python scripts/build_public.py

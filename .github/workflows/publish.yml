@@ -61,7 +61,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Verify Meta setup and public images
-        if: ${{ inputs.dry_run != true }}
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.dry_run != true }}
         run: python -m automation.doctor
 
       - name: Publish
