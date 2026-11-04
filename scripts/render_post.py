@@ -512,26 +512,36 @@ def render_cta(cfg, item, out_path: Path) -> None:
     canvas = paper_texture(Image.new("RGB", (W, H), ink), 0.008, seed=5)
     draw = ImageDraw.Draw(canvas)
 
-    # Brand mark. Falls back to a drawn ring if the asset is missing.
-    logo_path = ROOT / "brand" / "logo-mark-light.png"
-    mark_size = 188
+    # Brand logo. The primary asset is brand/logo.png (the studio mark, with a
+    # black background knocked out). Fall back to the generated ring mark.
+    logo_path = ROOT / "brand" / "logo.png"
+    fallback_path = ROOT / "brand" / "logo-mark-light.png"
+    headline_top = 420
     if logo_path.exists():
-        mark = Image.open(logo_path).convert("RGBA").resize((mark_size, mark_size), Image.LANCZOS)
+        logo = Image.open(logo_path).convert("RGBA")
+        logo_w = 480
+        logo_h = round(logo.height * logo_w / logo.width)
+        logo = logo.resize((logo_w, logo_h), Image.LANCZOS)
+        canvas.paste(logo, ((W - logo_w) // 2, 96), logo)
+        headline_top = 96 + logo_h + 84
+    elif fallback_path.exists():
+        mark_size = 188
+        mark = Image.open(fallback_path).convert("RGBA").resize((mark_size, mark_size), Image.LANCZOS)
         canvas.paste(mark, ((W - mark_size) // 2, 128), mark)
+        f_mark = load_font(SEGOE_SEMI, 34)
+        wordmark = "CLUEFOLIO"
+        ww = tracked_width(draw, wordmark, f_mark, tracking=9.0)
+        draw_tracked(draw, (W // 2 - ww / 2, 348), wordmark, f_mark, paper, tracking=9.0)
+        headline_top = 420
     else:
         cx, cy, r = W // 2, 222, 62
         draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline=accent, width=6)
         draw.ellipse([cx - 13, cy - 13, cx + 13, cy + 13], fill=paper)
 
-    f_mark = load_font(SEGOE_SEMI, 34)
-    wordmark = "CLUEFOLIO"
-    ww = tracked_width(draw, wordmark, f_mark, tracking=9.0)
-    draw_tracked(draw, (W // 2 - ww / 2, 348), wordmark, f_mark, paper, tracking=9.0)
-
     f_head = load_font(GEORGIA_BOLD, 62)
     headline = item.get("headline", "Follow for the disasters the textbooks skip.")
     lines = wrap_to_width(draw, headline, f_head, W - 240)
-    y = 420
+    y = headline_top
     for line in lines[:4]:
         lw = draw.textlength(line, font=f_head)
         draw.text((W // 2 - lw / 2, y), line, font=f_head, fill=paper)
