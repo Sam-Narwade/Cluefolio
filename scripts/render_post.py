@@ -338,29 +338,17 @@ def paper_texture(canvas: Image.Image, amount: float = 0.012, seed: int = 3) -> 
 
 
 def render_plate(cfg, manifest, item, out_path: Path) -> None:
-    """Closing page: paper background, a full-width photographic band, and a short close."""
+    """Editorial plate: paper background, optional photographic band, a stat or headline.
+
+    `asset` is optional. Without it the slide is pure type, which is how a story
+    with one great photograph still becomes a seven-slide carousel.
+    """
     palette = cfg["palette"]
     paper = hex_rgb(palette["paper"])
     ink = hex_rgb(palette["ink"])
     muted = hex_rgb(palette["muted"])
     rule = hex_rgb(palette["rule"])
     accent = hex_rgb(palette["accent"])
-
-    asset = next(a for a in manifest["assets"] if a["id"] == item["asset"])
-    src_path = ROOT / "content" / cfg["slug"] / "assets" / (asset["id"] + Path(asset["file_url"]).suffix)
-    if not src_path.exists():
-        candidates = list(src_path.parent.glob(asset["id"] + ".*"))
-        if not candidates:
-            raise FileNotFoundError(src_path)
-        src_path = candidates[0]
-
-    src = ImageOps.exif_transpose(Image.open(src_path).convert("RGB"))
-    crop = item.get("crop", {})
-    band_h = 500
-    band = crop_to_ratio(src, W, band_h, crop.get("fx", 0.5), crop.get("fy", 0.5), crop.get("zoom", 1.0))
-    band = apply_contrast(band, item.get("contrast", 1.0))
-    band = warm_duotone(band, 0.52)
-    band = add_grain(band, item.get("grain", 0.02), seed=23)
 
     canvas = paper_texture(Image.new("RGB", (W, H), paper), 0.010)
     draw = ImageDraw.Draw(canvas)
@@ -371,47 +359,146 @@ def render_plate(cfg, manifest, item, out_path: Path) -> None:
     draw_tracked(draw, (margin, 62), tag, f_tag, muted, tracking=2.4)
     draw.line([(margin, 98), (W - margin, 98)], fill=rule, width=2)
 
-    # Headline
+    y = 156
+    kicker = item.get("kicker")
+    if kicker:
+        f_kick = load_font(SEGOE_SEMI, 24)
+        draw_tracked(draw, (margin, y), kicker.upper(), f_kick, accent, tracking=3.0)
+        y += 58
+
     head_lines = wrap_to_width(draw, item.get("headline", ""), load_font(GEORGIA_BOLD, 60), W - margin * 2)
     f_head, head_size = fit_headline(draw, head_lines, W - margin * 2, 60, 40, GEORGIA_BOLD)
     head_lines = wrap_to_width(draw, item.get("headline", ""), f_head, W - margin * 2)
     lh = int(head_size * 1.14)
-    y = 172
     for line in head_lines:
         draw.text((margin, y), line, font=f_head, fill=ink)
         y += lh
 
-    # Photographic band
-    y = max(y + 44, 300)
-    canvas.paste(band, (0, y))
-    draw.line([(0, y), (W, y)], fill=rule, width=1)
-    draw.line([(0, y + band_h), (W, y + band_h)], fill=rule, width=1)
-    y += band_h
+    band_item = item if item.get("asset") else None
+    stat = item.get("stat")
+    if stat:
+        f_stat, stat_size = fit_headline(draw, [stat], W - margin * 2, 210, 110, GEORGIA_BOLD)
+        y += 26
+        draw.text((margin, y), stat, font=f_stat, fill=accent)
+        y += int(stat_size * 0.98)
+        if item.get("stat_label"):
+            f_lab = load_font(SEGOE_SEMI, 26)
+            draw_tracked(draw, (margin, y), item["stat_label"].upper(), f_lab, muted, tracking=2.6)
+            y += 46
 
-    # Accent rule
-    y += 52
-    draw.rectangle([margin, y, margin + 120, y + 4], fill=accent)
-    y += 4 + 34
+    if band_item:
+        asset = next(a for a in manifest["assets"] if a["id"] == band_item["asset"])
+        src_path = ROOT / "content" / cfg["slug"] / "assets" / (asset["id"] + Path(asset["file_url"]).suffix)
+        if not src_path.exists():
+            candidates = list(src_path.parent.glob(asset["id"] + ".*"))
+            if not candidates:
+                raise FileNotFoundError(src_path)
+            src_path = candidates[0]
 
-    # Body
-    f_body = load_font(GEORGIA, 30)
-    body_lh = int(30 * 1.5)
+        src = ImageOps.exif_transpose(Image.open(src_path).convert("RGB"))
+        crop = band_item.get("crop", {})
+        band_h = 460
+        band = crop_to_ratio(src, W, band_h, crop.get("fx", 0.5), crop.get("fy", 0.5), crop.get("zoom", 1.0))
+        band = apply_contrast(band, band_item.get("contrast", 1.0))
+        band = warm_duotone(band, 0.52)
+        band = add_grain(band, band_item.get("grain", 0.02), seed=23)
+
+        y = max(y + 40, 460)
+        canvas.paste(band, (0, y))
+        draw.line([(0, y), (W, y)], fill=rule, width=1)
+        draw.line([(0, y + band_h), (W, y + band_h)], fill=rule, width=1)
+        y += band_h + 40
+
+        f_cred = load_font(SEGOE, 19)
+        for line in wrap_to_width(draw, asset.get("credit", ""), f_cred, W - margin * 2)[:1]:
+            draw.text((margin, y), line, font=f_cred, fill=muted)
+            y += 30
+    else:
+        y += 40
+        draw.rectangle([margin, y, margin + 120, y + 4], fill=accent)
+        y += 4 + 34
+
+    f_body = load_font(GEORGIA, 31)
+    body_lh = int(31 * 1.5)
     for line in wrap_to_width(draw, item.get("body", ""), f_body, W - margin * 2):
         draw.text((margin, y), line, font=f_body, fill=ink)
         y += body_lh
 
-    # Credit
-    y += 30
-    f_cred = load_font(SEGOE, 19)
-    for line in wrap_to_width(draw, asset.get("credit", ""), f_cred, W - margin * 2)[:1]:
-        draw.text((margin, y), line, font=f_cred, fill=muted)
-
-    # Bottom rail
     draw.line([(margin, 1244), (W - margin, 1244)], fill=rule, width=2)
     draw_tracked(draw, (margin, 1266), "CLUEFOLIO", f_tag, muted, tracking=2.4)
     right = cfg.get("rail", "POST 001")
     rw = tracked_width(draw, right, f_tag, tracking=2.4)
     draw_tracked(draw, (W - margin - rw, 1266), right, f_tag, muted, tracking=2.4)
+
+    canvas.save(out_path, "JPEG", quality=JPEG_QUALITY, progressive=True, optimize=True, subsampling=1)
+
+
+def render_cta(cfg, item, out_path: Path) -> None:
+    """Closing card: wordmark, reason to follow, and the follow button."""
+    palette = cfg["palette"]
+    paper = hex_rgb(palette["paper"])
+    ink = hex_rgb(palette["ink"])
+    accent = hex_rgb(palette["accent"])
+    muted = hex_rgb(palette["muted"])
+
+    canvas = paper_texture(Image.new("RGB", (W, H), ink), 0.008, seed=5)
+    draw = ImageDraw.Draw(canvas)
+
+    # Brand mark: a ring with a paper dot, drawn once, used everywhere.
+    cx, cy, r = W // 2, 236, 62
+    draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline=accent, width=6)
+    draw.ellipse([cx - 13, cy - 13, cx + 13, cy + 13], fill=paper)
+
+    f_mark = load_font(SEGOE_SEMI, 34)
+    wordmark = "CLUEFOLIO"
+    ww = tracked_width(draw, wordmark, f_mark, tracking=9.0)
+    draw_tracked(draw, (W // 2 - ww / 2, 330), wordmark, f_mark, paper, tracking=9.0)
+
+    f_head = load_font(GEORGIA_BOLD, 62)
+    headline = item.get("headline", "Follow for the disasters the textbooks skip.")
+    lines = wrap_to_width(draw, headline, f_head, W - 240)
+    y = 420
+    for line in lines[:4]:
+        lw = draw.textlength(line, font=f_head)
+        draw.text((W // 2 - lw / 2, y), line, font=f_head, fill=paper)
+        y += int(62 * 1.18)
+
+    y += 28
+    f_sub = load_font(GEORGIA_ITALIC, 30)
+    for line in wrap_to_width(draw, item.get("sub", ""), f_sub, W - 260)[:2]:
+        lw = draw.textlength(line, font=f_sub)
+        draw.text((W // 2 - lw / 2, y), line, font=f_sub, fill=(206, 196, 180))
+        y += int(30 * 1.5)
+
+    # Button sits on a fixed anchor so long copy can never push it off-canvas.
+    label = item.get("button", "FOLLOW @CLUEFOLIO")
+    f_btn = load_font(SEGOE_SEMI, 34)
+    bw = tracked_width(draw, label, f_btn, tracking=2.6)
+    pad_x, pad_y = 56, 30
+    bx0 = (W - bw) / 2 - pad_x
+    bx1 = (W + bw) / 2 + pad_x
+    by0 = 990
+    by1 = by0 + f_btn.size + pad_y * 2
+    draw.rounded_rectangle([bx0, by0, bx1, by1], radius=(by1 - by0) / 2, fill=accent)
+    draw_tracked(
+        draw,
+        ((W - bw) / 2, by0 + pad_y - 2),
+        label,
+        f_btn,
+        paper,
+        tracking=2.6,
+    )
+
+    handle = item.get("handle", "@cluefolio")
+    f_handle = load_font(SEGOE_SEMI, 26)
+    hw = tracked_width(draw, handle, f_handle, tracking=2.4)
+    draw_tracked(draw, (W // 2 - hw / 2, 1140), handle, f_handle, muted, tracking=2.4)
+
+    draw.line([(120, 1244), (W - 120, 1244)], fill=(*paper, 40), width=1)
+    f_foot = load_font(SEGOE, 19)
+    foot = item.get("footnote", "Authentic archival imagery. Sources in every caption.")
+    fw = tracked_width(draw, foot, f_foot, tracking=1.4)
+    draw_tracked(draw, (W // 2 - fw / 2, 1266), foot, f_foot, muted, tracking=1.4)
 
     canvas.save(out_path, "JPEG", quality=JPEG_QUALITY, progressive=True, optimize=True, subsampling=1)
 
@@ -435,6 +522,11 @@ def main() -> int:
             jobs.append((item["out"], lambda p, it=item: render_plate(cfg, manifest, it, p)))
         else:
             jobs.append((item["out"], lambda p, it=item: render_interior(cfg, manifest, it, p)))
+
+    cta = cfg.get("cta")
+    if cta:
+        out_name = cta.get("out") or f"{len(jobs) + 1:02d}-cta.jpg"
+        jobs.append((out_name, lambda p: render_cta(cfg, cta, p)))
 
     made = 0
     for name, fn in jobs:

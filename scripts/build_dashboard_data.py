@@ -97,6 +97,12 @@ BRIEFS = {
 
 def enrich(post: dict) -> dict:
     p = dict(post)
+    slides_path = ROOT / "content" / p["slug"] / "slides.json"
+    if slides_path.exists():
+        slides = json.loads(slides_path.read_text(encoding="utf-8"))["slides"]
+        p["images"] = slides
+        p["image_count"] = len(slides)
+        p["cover"] = slides[0]["file"]
     p["ig_chars"] = len(p["captions"]["instagram"])
     p["fb_chars"] = len(p["captions"]["facebook"])
     p["ig_tags"] = len(p["hashtags"]["instagram"])

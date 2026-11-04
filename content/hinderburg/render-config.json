@@ -28,5 +28,51 @@
     },
     "disclosure": ""
   },
-  "interiors": []
+  "interiors": [
+    {
+      "template": "plate",
+      "out": "02-the-ship.jpg",
+      "kicker": "Lakehurst, New Jersey",
+      "headline": "97 people were on board.",
+      "body": "36 passengers and 61 crew, on the last leg of a transatlantic crossing from Frankfurt. Rain had passed. The airship circled, waiting for the wind to ease."
+    },
+    {
+      "template": "plate",
+      "out": "03-the-gas.jpg",
+      "kicker": "The mechanism",
+      "headline": "It was filled with hydrogen.",
+      "body": "Hydrogen gave the ship its lift. It also turned the hull into a fuel source, and the outer skin was treated with a flammable dope to keep the fabric tight."
+    },
+    {
+      "template": "plate",
+      "out": "04-the-flash.jpg",
+      "kicker": "7:25 p.m.",
+      "headline": "Then the rear fin flashed.",
+      "stat": "34",
+      "stat_label": "Seconds from first flame to the ground",
+      "body": "Witnesses saw the flash near the upper fin. The fire ran forward through the hull faster than anyone below could move."
+    },
+    {
+      "template": "plate",
+      "out": "05-the-cost.jpg",
+      "kicker": "The cost",
+      "headline": "Thirty-six people died.",
+      "body": "Thirty-five aboard and one on the ground. Sixty-two survived. The official cause is still undetermined: a hydrogen leak, ignited by static, with the spark never proven."
+    },
+    {
+      "template": "plate",
+      "out": "06-aftermath.jpg",
+      "kicker": "Aftermath",
+      "headline": "It ended the airship era.",
+      "body": "No commercial rigid airships were built after 1937. The mooring mast at Lakehurst is still standing."
+    }
+  ],
+  "cta": {
+    "out": "07-follow.jpg",
+    "headline": "Follow for the machines that changed history, and the failures that ended them.",
+    "sub": "One story a day. Real archival photographs. Sources in every caption.",
+    "button": "FOLLOW @CLUEFOLIO",
+    "handle": "@cluefolio",
+    "footnote": "Authentic archival imagery. Sources in every caption."
+  }
 }

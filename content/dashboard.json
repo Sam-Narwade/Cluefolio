@@ -7,7 +7,7 @@
     "total_posts": 11,
     "ready": 2,
     "draft": 9,
-    "total_images": 16,
+    "total_images": 22,
     "total_story_words": 2305,
     "avg_viral_score": 36.4,
     "ready_numbers": [
@@ -287,10 +287,52 @@
           "alt": "The German airship Hindenburg, its tail engulfed in a huge ball of flame, hangs nose-up beside the Lakehurst mooring mast as tiny figures run below.",
           "credit": "Photograph: public domain, via Wikimedia Commons",
           "ai": false
+        },
+        {
+          "file": "02-the-ship.jpg",
+          "role": "plate",
+          "alt": "Editorial slide headlined '97 people were on board', noting 36 passengers and 61 crew on a transatlantic crossing from Frankfurt.",
+          "credit": "",
+          "ai": false
+        },
+        {
+          "file": "03-the-gas.jpg",
+          "role": "plate",
+          "alt": "Editorial slide headlined 'It was filled with hydrogen', explaining that the gas provided lift and the outer skin was treated with a flammable dope.",
+          "credit": "",
+          "ai": false
+        },
+        {
+          "file": "04-the-flash.jpg",
+          "role": "plate",
+          "alt": "Editorial slide showing the number 34 and the line 'Seconds from first flame to the ground', with the note that the fire began near the rear upper fin at 7:25 p.m.",
+          "credit": "",
+          "ai": false
+        },
+        {
+          "file": "05-the-cost.jpg",
+          "role": "plate",
+          "alt": "Editorial slide headlined 'Thirty-six people died', noting thirty-five aboard and one on the ground, with sixty-two survivors and a cause still officially undetermined.",
+          "credit": "",
+          "ai": false
+        },
+        {
+          "file": "06-aftermath.jpg",
+          "role": "plate",
+          "alt": "Editorial slide headlined 'It ended the airship era', noting no commercial rigid airships were built after 1937 and the Lakehurst mooring mast still stands.",
+          "credit": "",
+          "ai": false
+        },
+        {
+          "file": "07-follow.jpg",
+          "role": "cta",
+          "alt": "Dark closing card with the Cluefolio wordmark, the message 'Follow for the machines that changed history, and the failures that ended them', and a button reading FOLLOW @CLUEFOLIO.",
+          "credit": "",
+          "ai": false
         }
       ],
       "cover": "01-cover.jpg",
-      "image_count": 1,
+      "image_count": 7,
       "pipeline": {
         "stage": "Published package ready",
         "stage_index": 11,
