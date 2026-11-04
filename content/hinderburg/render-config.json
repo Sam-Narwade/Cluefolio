@@ -30,41 +30,44 @@
   },
   "interiors": [
     {
-      "template": "plate",
+      "template": "photo",
       "out": "02-the-ship.jpg",
-      "kicker": "Lakehurst, New Jersey",
-      "headline": "97 people were on board.",
-      "body": "36 passengers and 61 crew, on the last leg of a transatlantic crossing from Frankfurt. Rain had passed. The airship circled, waiting for the wind to ease."
+      "asset": "hindenburg-arrival",
+      "headline": ["97 PEOPLE", "ON BOARD"],
+      "kicker": "36 passengers, 61 crew, and a ship the size of an ocean liner",
+      "crop": { "fx": 0.50, "fy": 0.55, "zoom": 1.05 }
     },
     {
-      "template": "plate",
+      "template": "photo",
       "out": "03-the-gas.jpg",
-      "kicker": "The mechanism",
-      "headline": "It was filled with hydrogen.",
-      "body": "Hydrogen gave the ship its lift. It also turned the hull into a fuel source, and the outer skin was treated with a flammable dope to keep the fabric tight."
+      "asset": "hindenburg-interior",
+      "headline": ["FILLED WITH", "HYDROGEN"],
+      "kicker": "The gas that gave it lift also fed the fire",
+      "crop": { "fx": 0.52, "fy": 0.50, "zoom": 1.10 }
     },
     {
-      "template": "plate",
+      "template": "photo",
       "out": "04-the-flash.jpg",
-      "kicker": "7:25 p.m.",
-      "headline": "Then the rear fin flashed.",
-      "stat": "34",
-      "stat_label": "Seconds from first flame to the ground",
-      "body": "Witnesses saw the flash near the upper fin. The fire ran forward through the hull faster than anyone below could move."
+      "asset": "hindenburg-burning",
+      "headline": ["34 SECONDS"],
+      "kicker": "From the first flame to the ground, 7:25 p.m.",
+      "crop": { "fx": 0.50, "fy": 0.45, "zoom": 1.02 }
     },
     {
-      "template": "plate",
+      "template": "photo",
       "out": "05-the-cost.jpg",
-      "kicker": "The cost",
-      "headline": "Thirty-six people died.",
-      "body": "Thirty-five aboard and one on the ground. Sixty-two survived. The official cause is still undetermined: a hydrogen leak, ignited by static, with the spark never proven."
+      "asset": "hindenburg-navy",
+      "headline": ["36 DIED"],
+      "kicker": "35 aboard, 1 on the ground, 62 survived",
+      "crop": { "fx": 0.50, "fy": 0.50, "zoom": 1.15 }
     },
     {
-      "template": "plate",
+      "template": "photo",
       "out": "06-aftermath.jpg",
-      "kicker": "Aftermath",
-      "headline": "It ended the airship era.",
-      "body": "No commercial rigid airships were built after 1937. The mooring mast at Lakehurst is still standing."
+      "asset": "hindenburg-wreck",
+      "headline": ["THE END OF", "THE AIRSHIP ERA"],
+      "kicker": "No rigid airship carried passengers again",
+      "crop": { "fx": 0.50, "fy": 0.50, "zoom": 1.04 }
     }
   ],
   "cta": {

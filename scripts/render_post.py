@@ -337,6 +337,74 @@ def paper_texture(canvas: Image.Image, amount: float = 0.012, seed: int = 3) -> 
     return Image.fromarray(np.clip(arr + noise, 0, 255).astype(np.uint8), "RGB")
 
 
+def render_photo_slide(cfg, manifest, item, out_path: Path) -> None:
+    """Full-bleed archival photograph with a short overlay line, cover styling."""
+    palette = cfg["palette"]
+    paper = hex_rgb(palette["paper"])
+    ink = hex_rgb(palette["ink"])
+    accent = hex_rgb(palette["accent"])
+
+    asset = next(a for a in manifest["assets"] if a["id"] == item["asset"])
+    src_path = ROOT / "content" / cfg["slug"] / "assets" / (asset["id"] + Path(asset["file_url"]).suffix)
+    if not src_path.exists():
+        candidates = list(src_path.parent.glob(asset["id"] + ".*"))
+        if not candidates:
+            raise FileNotFoundError(src_path)
+        src_path = candidates[0]
+
+    src = ImageOps.exif_transpose(Image.open(src_path).convert("RGB"))
+    crop = item.get("crop", {})
+    base = crop_to_ratio(src, W, H, crop.get("fx", 0.5), crop.get("fy", 0.5), crop.get("zoom", 1.0))
+    base = apply_contrast(base, item.get("contrast", 1.0))
+    base = warm_duotone(base, 0.58)
+    base = add_grain(base, item.get("grain", 0.018), seed=hash(out_path.name) % 10000)
+    base = vignette(base, 0.30)
+    base = gradient_scrim(base, start_frac=0.46, max_alpha=240)
+
+    canvas = base.convert("RGBA")
+    draw = ImageDraw.Draw(canvas)
+
+    margin = 64
+    f_mark = load_font(SEGOE_SEMI, 25)
+    f_cat = load_font(SEGOE_SEMI, 21)
+    draw_tracked(draw, (margin, 58), cfg["cover"]["wordmark"], f_mark, paper, tracking=3.2)
+    cat = cfg["cover"]["category"]
+    cw = tracked_width(draw, cat, f_cat, tracking=2.6)
+    cat_x = W - margin - cw
+    draw.rectangle([cat_x - 16, 50, W - margin + 16, 92], fill=(*ink, 150))
+    draw_tracked(draw, (cat_x, 62), cat, f_cat, (238, 230, 216), tracking=2.6)
+    draw.line([(margin, 104), (W - margin, 104)], fill=(*paper, 70), width=1)
+
+    headline = item["headline"]
+    if isinstance(headline, str):
+        headline = [headline]
+    kicker = item.get("kicker", "")
+    f_kick = load_font(GEORGIA_ITALIC, 32)
+
+    bottom_pad = 118
+    rule_gap = 22
+    rule_h = 4
+    head_font, head_size = fit_headline(draw, headline, W - margin * 2, 96, 52, GEORGIA_BOLD)
+    line_h = int(head_size * 1.14)
+    head_block_h = line_h * len(headline)
+    kick_h = (f_kick.size + 8) if kicker else 0
+
+    total = head_block_h + rule_gap + rule_h + (22 + kick_h if kicker else 0)
+    y = H - bottom_pad - total
+
+    for line in headline:
+        draw.text((margin, y), line, font=head_font, fill=paper)
+        y += line_h
+
+    y += rule_gap
+    draw.rectangle([margin, y, margin + 132, y + rule_h], fill=accent)
+    y += rule_h + 22
+    if kicker:
+        draw.text((margin, y), kicker, font=f_kick, fill=(226, 216, 200))
+
+    canvas.convert("RGB").save(out_path, "JPEG", quality=JPEG_QUALITY, progressive=True, optimize=True, subsampling=1)
+
+
 def render_plate(cfg, manifest, item, out_path: Path) -> None:
     """Editorial plate: paper background, optional photographic band, a stat or headline.
 
@@ -526,6 +594,8 @@ def main() -> int:
     for item in cfg["interiors"]:
         if item.get("template") == "plate":
             jobs.append((item["out"], lambda p, it=item: render_plate(cfg, manifest, it, p)))
+        elif item.get("template") == "photo":
+            jobs.append((item["out"], lambda p, it=item: render_photo_slide(cfg, manifest, it, p)))
         else:
             jobs.append((item["out"], lambda p, it=item: render_interior(cfg, manifest, it, p)))
 

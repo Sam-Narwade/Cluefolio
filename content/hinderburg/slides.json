@@ -10,43 +10,43 @@
     },
     {
       "file": "02-the-ship.jpg",
-      "role": "plate",
-      "alt": "Editorial slide headlined '97 people were on board', noting 36 passengers and 61 crew on a transatlantic crossing from Frankfurt.",
-      "credit": "",
+      "role": "photo",
+      "alt": "The Hindenburg moored to the tall mast at Lakehurst, its long silver hull stretching across the airfield. Overlay text reads '97 people on board'.",
+      "credit": "US National Archives, NARA 518856. Public domain.",
       "ai": false
     },
     {
       "file": "03-the-gas.jpg",
-      "role": "plate",
-      "alt": "Editorial slide headlined 'It was filled with hydrogen', explaining that the gas provided lift and the outer skin was treated with a flammable dope.",
-      "credit": "",
+      "role": "photo",
+      "alt": "The Hindenburg's passenger lounge, rows of seats and long windows along a curved wall. Overlay text reads 'Filled with hydrogen'.",
+      "credit": "Nationaal Archief, via Wikimedia Commons. No known restrictions.",
       "ai": false
     },
     {
       "file": "04-the-flash.jpg",
-      "role": "plate",
-      "alt": "Editorial slide showing the number 34 and the line 'Seconds from first flame to the ground', with the note that the fire began near the rear upper fin at 7:25 p.m.",
-      "credit": "",
+      "role": "photo",
+      "alt": "Flames consume the Hindenburg's hull as the airship hangs nose-up beside the Lakehurst mast. Overlay text reads '34 seconds'.",
+      "credit": "Photograph: Gus Pasquerella, 1937. Public domain.",
       "ai": false
     },
     {
       "file": "05-the-cost.jpg",
-      "role": "plate",
-      "alt": "Editorial slide headlined 'Thirty-six people died', noting thirty-five aboard and one on the ground, with sixty-two survivors and a cause still officially undetermined.",
-      "credit": "",
+      "role": "photo",
+      "alt": "The burnt framework of the Hindenburg collapsed on the airfield at Lakehurst, seen from a distance. Overlay text reads '36 died'.",
+      "credit": "US Navy, NH 57973. Public domain.",
       "ai": false
     },
     {
       "file": "06-aftermath.jpg",
-      "role": "plate",
-      "alt": "Editorial slide headlined 'It ended the airship era', noting no commercial rigid airships were built after 1937 and the Lakehurst mooring mast still stands.",
-      "credit": "",
+      "role": "photo",
+      "alt": "The Hindenburg's wreckage burning on the ground as figures stand around it. Overlay text reads 'The end of the airship era'.",
+      "credit": "International News Soundphoto, 1937. Public domain.",
       "ai": false
     },
     {
       "file": "07-follow.jpg",
       "role": "cta",
-      "alt": "Dark closing card with the Cluefolio wordmark, the message 'Follow for the machines that changed history, and the failures that ended them', and a button reading FOLLOW @CLUEFOLIO.",
+      "alt": "Dark closing card with the Cluefolio logo and wordmark, the message 'Follow for the machines that changed history, and the failures that ended them', and a button reading FOLLOW @CLUEFOLIO.",
       "credit": "",
       "ai": false
     }
