@@ -93,13 +93,14 @@
       "asset": "johnstown-rations",
       "out": "06-the-relief.jpg",
       "headline": [
-        "CLARA BARTON"
+        "GOING FOR",
+        "RATIONS"
       ],
       "kicker": "The Red Cross ran its first great relief effort",
       "crop": {
-        "fx": 0.5,
-        "fy": 0.45,
-        "zoom": 1.06
+        "fx": 0.29,
+        "fy": 0.52,
+        "zoom": 1.22
       }
     }
   ],

@@ -31,8 +31,23 @@
   "interiors": [
     {
       "template": "photo",
+      "asset": "peshtigo-harbor",
+      "out": "02-lumber-port.jpg",
+      "headline": [
+        "A LUMBER",
+        "PORT"
+      ],
+      "kicker": "Sawmills, yards and a river mouth on Lake Michigan",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.44,
+        "zoom": 1.22
+      }
+    },
+    {
+      "template": "photo",
       "asset": "peshtigo-birdseye",
-      "out": "02-the-town.jpg",
+      "out": "03-the-town.jpg",
       "headline": [
         "THE TOWN",
         "BEFORE"
@@ -47,7 +62,7 @@
     {
       "template": "photo",
       "asset": "peshtigo-illustration",
-      "out": "03-one-night.jpg",
+      "out": "04-one-night.jpg",
       "headline": [
         "ONE NIGHT"
       ],
@@ -61,30 +76,16 @@
     {
       "template": "photo",
       "asset": "peshtigo-river",
-      "out": "04-the-river.jpg",
+      "out": "05-the-river.jpg",
       "headline": [
-        "INTO",
-        "THE RIVER"
+        "THEY RAN",
+        "FOR THE RIVER"
       ],
-      "kicker": "Hundreds stood in the water for hours",
+      "kicker": "Hundreds stood in the water. 1,500 to 2,500 died.",
       "crop": {
         "fx": 0.5,
         "fy": 0.5,
         "zoom": 1.04
-      }
-    },
-    {
-      "template": "photo",
-      "asset": "peshtigo-harbor",
-      "out": "05-the-toll.jpg",
-      "headline": [
-        "THE TOLL"
-      ],
-      "kicker": "1,500 to 2,500 dead — still an estimate",
-      "crop": {
-        "fx": 0.5,
-        "fy": 0.5,
-        "zoom": 1.08
       }
     }
   ],

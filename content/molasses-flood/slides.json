@@ -1,0 +1,33 @@
+{
+  "note": "Per-slide metadata for the publisher.",
+  "slides": [
+    {
+      "file": "01-cover.jpg",
+      "role": "cover",
+      "alt": "An elevated view of the aftermath of the Great Molasses Flood in Boston's North End, showing collapsed buildings, wreckage, and crowds along the waterfront.",
+      "credit": "",
+      "ai": false
+    },
+    {
+      "file": "02-the-wave.jpg",
+      "role": "photo",
+      "alt": "Firefighters wading through molasses and wreckage beneath the elevated railway in Boston's North End.",
+      "credit": "Wreckage under the elevated tracks, Boston, 1919. Public domain.",
+      "ai": false
+    },
+    {
+      "file": "03-the-gallons.jpg",
+      "role": "photo",
+      "alt": "A Boston Post front page headlined Huge Molasses Tank Explodes in North End.",
+      "credit": "The Boston Post, January 16, 1919. Public domain.",
+      "ai": false
+    },
+    {
+      "file": "04-follow.jpg",
+      "role": "cta",
+      "alt": "Dark closing card with the Cluefolio logo and a button reading FOLLOW @CLUEFOLIO.",
+      "credit": "",
+      "ai": false
+    }
+  ]
+}

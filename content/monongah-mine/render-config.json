@@ -13,20 +13,59 @@
     "accent": "#8C2F1E"
   },
   "cover": {
-    "asset": "cover",
+    "asset": "monongah-portal",
     "wordmark": "CLUEFOLIO",
-    "category": "LABOR / DISASTERS",
+    "category": "DISASTERS",
     "headline": [
       "THE WORST MINE",
       "DISASTER IN AMERICA"
     ],
     "dateline": "Monongah, West Virginia  ·  December 6, 1907",
     "crop": {
-      "fx": 0.5,
-      "fy": 0.5,
-      "zoom": 1.16
+      "fx": 0.68,
+      "fy": 0.37,
+      "zoom": 1.66
     },
-    "disclosure": "AI RECONSTRUCTION"
+    "disclosure": ""
   },
-  "interiors": []
+  "interiors": [
+    {
+      "template": "photo",
+      "asset": "monongah-paper-1",
+      "out": "02-four-hundred-dead.jpg",
+      "headline": [
+        "THE FIRST",
+        "COUNT"
+      ],
+      "kicker": "The paper said 400. The official marker says 362.",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.28,
+        "zoom": 1.75
+      }
+    },
+    {
+      "template": "photo",
+      "asset": "monongah-norway-entrance",
+      "out": "03-the-day-shift.jpg",
+      "headline": [
+        "THE DAY",
+        "SHIFT"
+      ],
+      "kicker": "Fairmont coalfield, 1918 — the same work, the same seams",
+      "crop": {
+        "fx": 0.685,
+        "fy": 0.39,
+        "zoom": 1.55
+      }
+    }
+  ],
+  "cta": {
+    "out": "04-follow.jpg",
+    "headline": "Everything you were never told. Every day.",
+    "sub": "Follow so you don't miss it.",
+    "button": "FOLLOW @CLUEFOLIO",
+    "handle": "@cluefolio",
+    "footnote": "Real archival images. Sources in every caption."
+  }
 }

@@ -8,7 +8,7 @@
     "ready": 1,
     "draft": 9,
     "published": 1,
-    "total_images": 40,
+    "total_images": 52,
     "total_story_words": 2305,
     "avg_viral_score": 36.4,
     "ready_numbers": [
@@ -490,31 +490,31 @@
           "ai": false
         },
         {
-          "file": "02-the-town.jpg",
+          "file": "02-lumber-port.jpg",
+          "role": "photo",
+          "alt": "A view of Peshtigo Harbor, Wisconsin in 1871, with wharves, sailing ships and shoreline buildings.",
+          "credit": "Peshtigo Times, 1871. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "03-the-town.jpg",
           "role": "photo",
           "alt": "A bird's eye lithograph of Peshtigo, Wisconsin in 1871, lumber yards and wooden buildings laid out along a river.",
           "credit": "Bird's eye view, T.M. Fowler & Co., 1871. Library of Congress.",
           "ai": false
         },
         {
-          "file": "03-one-night.jpg",
+          "file": "04-one-night.jpg",
           "role": "photo",
           "alt": "An illustration of the Peshtigo fire, flames and smoke sweeping over a settlement.",
           "credit": "Illustration, US Forest Service, 1871.",
           "ai": false
         },
         {
-          "file": "04-the-river.jpg",
+          "file": "05-the-river.jpg",
           "role": "photo",
-          "alt": "An illustration of survivors standing in the Peshtigo River as fire burns the town behind them.",
+          "alt": "An engraving of a family fleeing the Peshtigo fire on horseback and on foot, heading for the river.",
           "credit": "G. J. Tisdale, 1871. Public domain.",
-          "ai": false
-        },
-        {
-          "file": "05-the-toll.jpg",
-          "role": "photo",
-          "alt": "A view of Peshtigo Harbor, Wisconsin in 1871, with buildings and shoreline.",
-          "credit": "Peshtigo Times, 1871. Public domain.",
           "ai": false
         },
         {
@@ -701,7 +701,7 @@
         {
           "file": "06-the-relief.jpg",
           "role": "photo",
-          "alt": "People queueing for rations in Johnstown after the 1889 flood.",
+          "alt": "A stereograph view of people collecting rations in Johnstown after the 1889 flood, shown as a single photograph.",
           "credit": "William Creswell, 1889. Public domain, via Wikimedia Commons.",
           "ai": false
         },
@@ -1042,13 +1042,34 @@
         {
           "file": "01-cover.jpg",
           "role": "cover",
-          "alt": "An editorial reconstruction of a West Virginia coal mine entrance in winter 1907, with dark wooden tipples, smoke, and a narrow tramway between the buildings.",
-          "credit": "Editorial reconstruction by Cluefolio Studio. Not a historical photograph.",
-          "ai": true
+          "alt": "The concrete entrance to Mine No. 8 at Monongah, West Virginia, with a company sign above it.",
+          "credit": "",
+          "ai": false
+        },
+        {
+          "file": "02-four-hundred-dead.jpg",
+          "role": "photo",
+          "alt": "A newspaper front page from December 7, 1907 headlined Four Hundred Dead in Mine Explosion.",
+          "credit": "Victoria Daily Times, December 7, 1907. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "03-the-day-shift.jpg",
+          "role": "photo",
+          "alt": "Miners and coal wagons at the Norway Mine near Fairmont, West Virginia, in 1918.",
+          "credit": "Norway Mine, Fairmont, W.Va., August 1918. National Archives.",
+          "ai": false
+        },
+        {
+          "file": "04-follow.jpg",
+          "role": "cta",
+          "alt": "Dark closing card with the Cluefolio logo and a button reading FOLLOW @CLUEFOLIO.",
+          "credit": "",
+          "ai": false
         }
       ],
       "cover": "01-cover.jpg",
-      "image_count": 1,
+      "image_count": 4,
       "pipeline": {
         "stage": "Visual + copy draft",
         "stage_index": 7,
@@ -1189,12 +1210,54 @@
           "file": "01-cover.jpg",
           "role": "cover",
           "alt": "A towering column of smoke rises over Halifax harbour after the 1917 munitions explosion, with a ship visible in the foreground.",
-          "credit": "Photograph: public domain, via Wikimedia Commons",
+          "credit": "",
+          "ai": false
+        },
+        {
+          "file": "02-the-collision.jpg",
+          "role": "photo",
+          "alt": "The Norwegian ship Imo run aground in Halifax Harbour after the 1917 collision.",
+          "credit": "The Imo, Halifax Harbour, 1917. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "03-the-north-end.jpg",
+          "role": "photo",
+          "alt": "A panorama of wreckage along the Halifax waterfront after the explosion.",
+          "credit": "Looking north toward Pier 8, 1917. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "04-two-thousand.jpg",
+          "role": "photo",
+          "alt": "Snow-covered ground where the north end of Halifax stood, flattened by the explosion.",
+          "credit": "The north end of Halifax after the blast, 1917. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "05-the-wounded.jpg",
+          "role": "photo",
+          "alt": "St. Mary's Hospital in Halifax with its windows blown out after the explosion.",
+          "credit": "St. Mary's Hospital after the explosion, 1917. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "06-thirteen-miles.jpg",
+          "role": "photo",
+          "alt": "A huge column of smoke rising over Halifax Harbour, photographed from thirteen miles away.",
+          "credit": "Thirteen miles from Halifax, December 6, 1917. National Archives.",
+          "ai": false
+        },
+        {
+          "file": "07-follow.jpg",
+          "role": "cta",
+          "alt": "Dark closing card with the Cluefolio logo and a button reading FOLLOW @CLUEFOLIO.",
+          "credit": "",
           "ai": false
         }
       ],
       "cover": "01-cover.jpg",
-      "image_count": 1,
+      "image_count": 7,
       "pipeline": {
         "stage": "Visual + copy draft",
         "stage_index": 7,
@@ -1334,12 +1397,33 @@
           "file": "01-cover.jpg",
           "role": "cover",
           "alt": "An elevated view of the aftermath of the Great Molasses Flood in Boston's North End, showing collapsed buildings, wreckage, and crowds along the waterfront.",
-          "credit": "Photograph: public domain, via Wikimedia Commons",
+          "credit": "",
+          "ai": false
+        },
+        {
+          "file": "02-the-wave.jpg",
+          "role": "photo",
+          "alt": "Firefighters wading through molasses and wreckage beneath the elevated railway in Boston's North End.",
+          "credit": "Wreckage under the elevated tracks, Boston, 1919. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "03-the-gallons.jpg",
+          "role": "photo",
+          "alt": "A Boston Post front page headlined Huge Molasses Tank Explodes in North End.",
+          "credit": "The Boston Post, January 16, 1919. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "04-follow.jpg",
+          "role": "cta",
+          "alt": "Dark closing card with the Cluefolio logo and a button reading FOLLOW @CLUEFOLIO.",
+          "credit": "",
           "ai": false
         }
       ],
       "cover": "01-cover.jpg",
-      "image_count": 1,
+      "image_count": 4,
       "pipeline": {
         "stage": "Visual + copy draft",
         "stage_index": 7,

@@ -23,10 +23,93 @@
     "dateline": "Halifax, Nova Scotia  ·  December 6, 1917",
     "crop": {
       "fx": 0.5,
-      "fy": 0.42,
-      "zoom": 1.0
+      "fy": 0.45,
+      "zoom": 1.02
     },
     "disclosure": ""
   },
-  "interiors": []
+  "interiors": [
+    {
+      "template": "photo",
+      "asset": "halifax-imo",
+      "out": "02-the-collision.jpg",
+      "headline": [
+        "THE",
+        "COLLISION"
+      ],
+      "kicker": "Two ships met in the Narrows at 8:45 that morning",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.52,
+        "zoom": 1.1
+      }
+    },
+    {
+      "template": "photo",
+      "asset": "halifax-foundry",
+      "out": "03-the-north-end.jpg",
+      "headline": [
+        "THE NORTH",
+        "END"
+      ],
+      "kicker": "Flattened in a fraction of a second",
+      "crop": {
+        "fx": 0.42,
+        "fy": 0.5,
+        "zoom": 1.0
+      }
+    },
+    {
+      "template": "photo",
+      "asset": "halifax-dartmouth",
+      "out": "04-two-thousand.jpg",
+      "headline": [
+        "2,000 DIED"
+      ],
+      "kicker": "9,000 injured. 6,000 left homeless.",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.52,
+        "zoom": 1.05
+      }
+    },
+    {
+      "template": "photo",
+      "asset": "halifax-hospital",
+      "out": "05-the-wounded.jpg",
+      "headline": [
+        "THE",
+        "WOUNDED"
+      ],
+      "kicker": "Most injuries came from flying glass",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.5,
+        "zoom": 1.06
+      }
+    },
+    {
+      "template": "photo",
+      "asset": "halifax-distance",
+      "out": "06-thirteen-miles.jpg",
+      "headline": [
+        "SEEN FROM",
+        "13 MILES"
+      ],
+      "kicker": "Boston's relief train arrived the next morning",
+      "crop": {
+        "fx": 0.6,
+        "fy": 0.46,
+        "zoom": 1.28
+      }
+    }
+  ],
+  "cta": {
+    "out": "07-follow.jpg",
+    "headline": "Everything you were never told. Every day.",
+    "sub": "Follow so you don't miss it.",
+    "button": "FOLLOW @CLUEFOLIO",
+    "handle": "@cluefolio",
+    "footnote": "Real archival images. Sources in every caption."
+  }
 }

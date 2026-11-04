@@ -1,0 +1,33 @@
+{
+  "note": "Per-slide metadata for the publisher.",
+  "slides": [
+    {
+      "file": "01-cover.jpg",
+      "role": "cover",
+      "alt": "The concrete entrance to Mine No. 8 at Monongah, West Virginia, with a company sign above it.",
+      "credit": "",
+      "ai": false
+    },
+    {
+      "file": "02-four-hundred-dead.jpg",
+      "role": "photo",
+      "alt": "A newspaper front page from December 7, 1907 headlined Four Hundred Dead in Mine Explosion.",
+      "credit": "Victoria Daily Times, December 7, 1907. Public domain.",
+      "ai": false
+    },
+    {
+      "file": "03-the-day-shift.jpg",
+      "role": "photo",
+      "alt": "Miners and coal wagons at the Norway Mine near Fairmont, West Virginia, in 1918.",
+      "credit": "Norway Mine, Fairmont, W.Va., August 1918. National Archives.",
+      "ai": false
+    },
+    {
+      "file": "04-follow.jpg",
+      "role": "cta",
+      "alt": "Dark closing card with the Cluefolio logo and a button reading FOLLOW @CLUEFOLIO.",
+      "credit": "",
+      "ai": false
+    }
+  ]
+}

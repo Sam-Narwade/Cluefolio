@@ -15,6 +15,51 @@
       "role": "cover",
       "alt_text": "An elevated view of the aftermath of the Great Molasses Flood in Boston's North End, showing collapsed buildings, wreckage, and crowds along the waterfront.",
       "ai_generated": false
+    },
+    {
+      "id": "molasses-wreckage",
+      "title": "Molasses Wreckage",
+      "archive": "Wikimedia Commons",
+      "source_url": "",
+      "file_url": "molasses-wreckage.jpg",
+      "creator": "",
+      "date": "",
+      "license": "Public domain",
+      "credit": "Wreckage under the elevated tracks, Boston, 1919. Public domain.",
+      "depicts": "Firefighters wading through molasses and wreckage beneath the elevated railway in Boston's North End.",
+      "role": "interior",
+      "alt_text": "Firefighters wading through molasses and wreckage beneath the elevated railway in Boston's North End.",
+      "ai_generated": false
+    },
+    {
+      "id": "molasses-post",
+      "title": "Molasses Post",
+      "archive": "Wikimedia Commons",
+      "source_url": "",
+      "file_url": "molasses-post.jpg",
+      "creator": "",
+      "date": "",
+      "license": "Public domain",
+      "credit": "The Boston Post, January 16, 1919. Public domain.",
+      "depicts": "A Boston Post front page headlined Huge Molasses Tank Explodes in North End.",
+      "role": "interior",
+      "alt_text": "A Boston Post front page headlined Huge Molasses Tank Explodes in North End.",
+      "ai_generated": false
+    },
+    {
+      "id": "molasses-globe",
+      "title": "Molasses Globe",
+      "archive": "Wikimedia Commons",
+      "source_url": "",
+      "file_url": "molasses-globe.png",
+      "creator": "",
+      "date": "",
+      "license": "Public domain",
+      "credit": "The Boston Daily Globe, January 16, 1919. Public domain.",
+      "depicts": "A Boston Daily Globe front page headlined Molasses Tank Explosion Injures 50 and Kills 11.",
+      "role": "interior",
+      "alt_text": "A Boston Daily Globe front page headlined Molasses Tank Explosion Injures 50 and Kills 11.",
+      "ai_generated": false
     }
   ]
 }

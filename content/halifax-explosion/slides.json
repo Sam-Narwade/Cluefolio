@@ -1,0 +1,54 @@
+{
+  "note": "Per-slide metadata for the publisher.",
+  "slides": [
+    {
+      "file": "01-cover.jpg",
+      "role": "cover",
+      "alt": "A towering column of smoke rises over Halifax harbour after the 1917 munitions explosion, with a ship visible in the foreground.",
+      "credit": "",
+      "ai": false
+    },
+    {
+      "file": "02-the-collision.jpg",
+      "role": "photo",
+      "alt": "The Norwegian ship Imo run aground in Halifax Harbour after the 1917 collision.",
+      "credit": "The Imo, Halifax Harbour, 1917. Public domain.",
+      "ai": false
+    },
+    {
+      "file": "03-the-north-end.jpg",
+      "role": "photo",
+      "alt": "A panorama of wreckage along the Halifax waterfront after the explosion.",
+      "credit": "Looking north toward Pier 8, 1917. Public domain.",
+      "ai": false
+    },
+    {
+      "file": "04-two-thousand.jpg",
+      "role": "photo",
+      "alt": "Snow-covered ground where the north end of Halifax stood, flattened by the explosion.",
+      "credit": "The north end of Halifax after the blast, 1917. Public domain.",
+      "ai": false
+    },
+    {
+      "file": "05-the-wounded.jpg",
+      "role": "photo",
+      "alt": "St. Mary's Hospital in Halifax with its windows blown out after the explosion.",
+      "credit": "St. Mary's Hospital after the explosion, 1917. Public domain.",
+      "ai": false
+    },
+    {
+      "file": "06-thirteen-miles.jpg",
+      "role": "photo",
+      "alt": "A huge column of smoke rising over Halifax Harbour, photographed from thirteen miles away.",
+      "credit": "Thirteen miles from Halifax, December 6, 1917. National Archives.",
+      "ai": false
+    },
+    {
+      "file": "07-follow.jpg",
+      "role": "cta",
+      "alt": "Dark closing card with the Cluefolio logo and a button reading FOLLOW @CLUEFOLIO.",
+      "credit": "",
+      "ai": false
+    }
+  ]
+}

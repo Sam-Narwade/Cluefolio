@@ -9,31 +9,31 @@
       "ai": false
     },
     {
-      "file": "02-the-town.jpg",
+      "file": "02-lumber-port.jpg",
+      "role": "photo",
+      "alt": "A view of Peshtigo Harbor, Wisconsin in 1871, with wharves, sailing ships and shoreline buildings.",
+      "credit": "Peshtigo Times, 1871. Public domain.",
+      "ai": false
+    },
+    {
+      "file": "03-the-town.jpg",
       "role": "photo",
       "alt": "A bird's eye lithograph of Peshtigo, Wisconsin in 1871, lumber yards and wooden buildings laid out along a river.",
       "credit": "Bird's eye view, T.M. Fowler & Co., 1871. Library of Congress.",
       "ai": false
     },
     {
-      "file": "03-one-night.jpg",
+      "file": "04-one-night.jpg",
       "role": "photo",
       "alt": "An illustration of the Peshtigo fire, flames and smoke sweeping over a settlement.",
       "credit": "Illustration, US Forest Service, 1871.",
       "ai": false
     },
     {
-      "file": "04-the-river.jpg",
+      "file": "05-the-river.jpg",
       "role": "photo",
-      "alt": "An illustration of survivors standing in the Peshtigo River as fire burns the town behind them.",
+      "alt": "An engraving of a family fleeing the Peshtigo fire on horseback and on foot, heading for the river.",
       "credit": "G. J. Tisdale, 1871. Public domain.",
-      "ai": false
-    },
-    {
-      "file": "05-the-toll.jpg",
-      "role": "photo",
-      "alt": "A view of Peshtigo Harbor, Wisconsin in 1871, with buildings and shoreline.",
-      "credit": "Peshtigo Times, 1871. Public domain.",
       "ai": false
     },
     {

@@ -2,19 +2,49 @@
   "slug": "monongah-mine",
   "assets": [
     {
-      "id": "cover",
-      "title": "Editorial reconstruction: Monongah mine entrance, 1907",
-      "archive": "Cluefolio Studio",
+      "id": "monongah-portal",
+      "title": "Monongah Mine No. 8 portal",
+      "archive": "National Archives (NARA)",
       "source_url": "",
-      "file_url": "content/_sources/monongah-ai.jpg",
-      "creator": "Cluefolio Studio (editorial reconstruction)",
-      "date": "",
-      "license": "Original work created for this project. Not a historical photograph. Disclosed as an editorial reconstruction.",
-      "credit": "Editorial reconstruction by Cluefolio Studio. Not a historical photograph.",
-      "depicts": "An editorial reconstruction of a West Virginia coal mine entrance in winter 1907, with dark wooden tipples, smoke, and a narrow tramway between the buildings.",
+      "file_url": "monongah-portal.jpg",
+      "creator": "U.S. Fuel Administration",
+      "date": "1919",
+      "license": "Public domain",
+      "credit": "Concrete portal, Monongah, W.Va. National Archives.",
+      "depicts": "The concrete portal and main entrance of Mine No. 8 at Monongah, West Virginia.",
       "role": "cover",
-      "alt_text": "An editorial reconstruction of a West Virginia coal mine entrance in winter 1907, with dark wooden tipples, smoke, and a narrow tramway between the buildings.",
-      "ai_generated": true
+      "alt_text": "The concrete entrance to Mine No. 8 at Monongah, West Virginia, with a company sign above it.",
+      "ai_generated": false
+    },
+    {
+      "id": "monongah-paper-1",
+      "title": "Monongah Paper 1",
+      "archive": "Wikimedia Commons",
+      "source_url": "",
+      "file_url": "monongah-paper-1.jpg",
+      "creator": "",
+      "date": "",
+      "license": "Public domain",
+      "credit": "Victoria Daily Times, December 7, 1907. Public domain.",
+      "depicts": "A newspaper front page from December 7, 1907 headlined Four Hundred Dead in Mine Explosion.",
+      "role": "interior",
+      "alt_text": "A newspaper front page from December 7, 1907 headlined Four Hundred Dead in Mine Explosion.",
+      "ai_generated": false
+    },
+    {
+      "id": "monongah-norway-entrance",
+      "title": "Monongah Norway Entrance",
+      "archive": "Wikimedia Commons",
+      "source_url": "",
+      "file_url": "monongah-norway-entrance.jpg",
+      "creator": "",
+      "date": "",
+      "license": "Public domain",
+      "credit": "Norway Mine, Fairmont, W.Va., August 1918. National Archives.",
+      "depicts": "Miners and coal wagons at the entrance of the Norway Mine near Fairmont, West Virginia, 1918.",
+      "role": "interior",
+      "alt_text": "Miners and coal wagons at the entrance of the Norway Mine near Fairmont, West Virginia, 1918.",
+      "ai_generated": false
     }
   ]
 }
