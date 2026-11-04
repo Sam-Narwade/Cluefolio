@@ -196,10 +196,10 @@ Every pack pushed to `content/<slug>/` must contain:
 The closing card asks for a follow, so it must earn one. Three parts, no more:
 
 - **Headline:** the promise, in under 10 words. It describes what they get by
-  following, not what the account is. "There's a story like this every day."
-  not "Follow us for history content."
-- **Subline:** the reason to act now, under 8 words. "Follow so the next one
-  finds you."
+  following, not what the account is. Default: **"Everything you were never
+  told. Every day."**
+- **Subline:** the reason to act now, under 8 words. Default: **"Follow so you
+  don't miss it."**
 - **Button:** `FOLLOW @CLUEFOLIO`, unchanged, so it becomes a visual habit.
 
 Never put a paragraph on this slide, never stack two promises, and never ask
@@ -209,9 +209,9 @@ Approved variants to rotate so posts do not read identically:
 
 | Headline | Subline |
 |---|---|
-| There's a story like this every day. | Follow so the next one finds you. |
+| Everything you were never told. Every day. | Follow so you don't miss it. |
+| Murder, mystery, disaster — one a day. | Follow so the next one finds you. |
 | You've never heard the next one. | One story a day. |
-| One a day. All of them true. | Follow before the next one posts. |
 - Caption with the keyword inside the first 125 characters.
 - Alt text describing each slide for screen readers.
 - Source ledger referenced by the pinned comment.
