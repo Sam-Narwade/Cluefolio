@@ -73,7 +73,7 @@ Single images are the weakest format on the platform. Every post is a carousel.
 | 4 | The turn | The moment it became unavoidable |
 | 5 | Human cost | Names, ages, families. Dignity rules apply — no victim imagery |
 | 6 | The consequence | What changed in law, engineering, or safety |
-| 7 | The hook home | Payoff line + "Save this" / "Follow for the next one" |
+| 7 | The hook home | Payoff line + a reason to follow: one promise, one button |
 
 Rules:
 
@@ -190,6 +190,28 @@ Every pack pushed to `content/<slug>/` must contain:
   automatically from the `cta` block in `render-config.json`.
 - A cover tag from the pillar table: MURDER, MYSTERY, DISASTER, SURVIVAL,
   COVER-UP, or WEIRD.
+
+### Slide 7 copy rules
+
+The closing card asks for a follow, so it must earn one. Three parts, no more:
+
+- **Headline:** the promise, in under 10 words. It describes what they get by
+  following, not what the account is. "There's a story like this every day."
+  not "Follow us for history content."
+- **Subline:** the reason to act now, under 8 words. "Follow so the next one
+  finds you."
+- **Button:** `FOLLOW @CLUEFOLIO`, unchanged, so it becomes a visual habit.
+
+Never put a paragraph on this slide, never stack two promises, and never ask
+for a follow twice. One ask, one button, done.
+
+Approved variants to rotate so posts do not read identically:
+
+| Headline | Subline |
+|---|---|
+| There's a story like this every day. | Follow so the next one finds you. |
+| You've never heard the next one. | One story a day. |
+| One a day. All of them true. | Follow before the next one posts. |
 - Caption with the keyword inside the first 125 characters.
 - Alt text describing each slide for screen readers.
 - Source ledger referenced by the pinned comment.

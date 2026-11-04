@@ -299,7 +299,7 @@ def render_interior(cfg, manifest, item, out_path: Path) -> None:
 
     margin = 52
     f_cat = load_font(SEGOE_SEMI, 19)
-    tag = "CLUEFOLIO  ·  " + cfg["cover"]["category"]
+    tag = "CLUEFOLIO  Â·  " + cfg["cover"]["category"]
     tw = tracked_width(draw, tag, f_cat, tracking=2.2)
     pad_x, pad_y = 16, 11
     draw.rectangle(
@@ -423,7 +423,7 @@ def render_plate(cfg, manifest, item, out_path: Path) -> None:
 
     margin = 76
     f_tag = load_font(SEGOE_SEMI, 20)
-    tag = "CLUEFOLIO  ·  " + cfg["cover"]["category"]
+    tag = "CLUEFOLIO  Â·  " + cfg["cover"]["category"]
     draw_tracked(draw, (margin, 62), tag, f_tag, muted, tracking=2.4)
     draw.line([(margin, 98), (W - margin, 98)], fill=rule, width=2)
 
@@ -539,7 +539,7 @@ def render_cta(cfg, item, out_path: Path) -> None:
         draw.ellipse([cx - 13, cy - 13, cx + 13, cy + 13], fill=paper)
 
     f_head = load_font(GEORGIA_BOLD, 62)
-    headline = item.get("headline", "Follow for the disasters the textbooks skip.")
+    headline = item.get("headline", "There's a story like this every day.")
     lines = wrap_to_width(draw, headline, f_head, W - 240)
     y = headline_top
     for line in lines[:4]:
