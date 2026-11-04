@@ -7,7 +7,7 @@
     "total_posts": 11,
     "ready": 2,
     "draft": 9,
-    "total_images": 22,
+    "total_images": 23,
     "total_story_words": 2305,
     "avg_viral_score": 36.4,
     "ready_numbers": [
@@ -109,42 +109,49 @@
         },
         {
           "file": "02-upright.jpg",
-          "role": "before",
-          "alt": "A tall white excursion steamship with two funnels and several decks sits upright at a city dock, seen bow-on so its full height fills the frame.",
+          "role": "photo",
+          "alt": "A tall white excursion steamship with two funnels and several decks sits upright at a city dock. Overlay text reads '2,500 people on board'.",
           "credit": "National Archives and Records Administration, NAID 281840",
           "ai": false
         },
         {
           "file": "03-the-moment.jpg",
-          "role": "witness",
-          "alt": "A dramatic black-and-white newspaper drawing shows a large steamship tilting sharply toward the water as tiny figures scramble on its decks and swim below, watched from a bridge.",
+          "role": "photo",
+          "alt": "A dramatic black-and-white newspaper drawing shows a large steamship tilting sharply toward the water as tiny figures scramble on its decks. Overlay text reads 'Then it went over'.",
           "credit": "Bob Satterfield, The Tacoma Times, July 27, 1915",
           "ai": false
         },
         {
           "file": "04-the-hull.jpg",
-          "role": "scale",
-          "alt": "A huge dark hull fills the frame at water level, seen from a boat on the river. The overturned steamship's curved side rises above the water beside a stone river wall.",
+          "role": "photo",
+          "alt": "A huge dark hull fills the frame at water level, seen from a boat on the river. Overlay text reads '20 feet of water'.",
           "credit": "Max Rigot Selling Co., Chicago, 1915",
           "ai": false
         },
         {
           "file": "05-the-rescue.jpg",
-          "role": "rescue",
-          "alt": "Dozens of people stand on the exposed side of a capsized steamship while small rowboats and launches crowd the water around it. A dense crowd watches from the riverbank.",
+          "role": "photo",
+          "alt": "Dozens of people stand on the exposed side of a capsized steamship while small rowboats crowd the water around it. Overlay text reads '844 died'.",
           "credit": "Library of Congress, Prints & Photographs Division, George Grantham Bain Collection",
           "ai": false
         },
         {
           "file": "06-the-wreck.jpg",
-          "role": "aftermath",
-          "alt": "A wide sepia photograph shows a city river crowded with boats and onlookers, with the exposed hull of a capsized steamship beside a bridge and tall warehouses.",
+          "role": "photo",
+          "alt": "A wide sepia photograph shows a city river crowded with boats and onlookers, with the exposed hull of a capsized steamship beside a bridge. Overlay text reads 'Raised in two weeks'.",
           "credit": "Kaufmann, Weimer & Fabry Co., Library of Congress, Prints & Photographs Division",
+          "ai": false
+        },
+        {
+          "file": "07-follow.jpg",
+          "role": "cta",
+          "alt": "Dark closing card with the Cluefolio logo, the message 'Everything you were never told. Every day.', and a button reading FOLLOW @CLUEFOLIO.",
+          "credit": "",
           "ai": false
         }
       ],
       "cover": "01-cover.jpg",
-      "image_count": 6,
+      "image_count": 7,
       "pipeline": {
         "stage": "Published package ready",
         "stage_index": 11,

@@ -21,28 +21,36 @@
     {
       "asset": "02-upright-nara",
       "out": "02-upright.jpg",
-      "line": "The Eastland, a 265-foot excursion steamer, at her Chicago dock.",
+      "template": "photo",
+      "headline": ["2,500 PEOPLE", "ON BOARD"],
+      "kicker": "Tied to the dock, gangplank still down, at 7 a.m.",
       "crop": { "fx": 0.50, "fy": 0.52, "zoom": 1.02 },
       "grain": 0.030
     },
     {
       "asset": "05-satterfield",
       "out": "03-the-moment.jpg",
-      "line": "Eyewitness drawing of the capsizing, seen from the Clark Street Bridge.",
+      "template": "photo",
+      "headline": ["THEN IT", "WENT OVER"],
+      "kicker": "Eyewitness drawing from the Clark Street Bridge",
       "crop": { "fx": 0.46, "fy": 0.50, "zoom": 1.00 },
       "grain": 0.012
     },
     {
       "asset": "04-firetug-postcard",
       "out": "04-the-hull.jpg",
-      "line": "The hull at water level, photographed from a fire tug.",
+      "template": "photo",
+      "headline": ["20 FEET", "OF WATER"],
+      "kicker": "Shallow enough that hundreds climbed across the hull",
       "crop": { "fx": 0.40, "fy": 0.58, "zoom": 1.00 },
       "grain": 0.028
     },
     {
       "asset": "03-rescue-loc",
       "out": "05-the-rescue.jpg",
-      "line": "Crowds on the riverbank as boats converged on the wreck.",
+      "template": "photo",
+      "headline": ["844 DIED"],
+      "kicker": "590 of them under the age of 25",
       "crop": { "fx": 0.56, "fy": 0.58, "zoom": 1.25 },
       "grain": 0.028,
       "contrast": 1.35
@@ -50,11 +58,19 @@
     {
       "asset": "07-wreck-panorama",
       "out": "06-the-wreck.jpg",
-      "template": "plate",
-      "headline": "The river kept the evidence.",
-      "body": "The Eastland was raised on August 14, 1915. She was later commissioned as the U.S. Navy's USS Wilmette, served until 1945, and was scrapped in 1947.",
+      "template": "photo",
+      "headline": ["RAISED IN", "TWO WEEKS"],
+      "kicker": "Later the USS Wilmette, scrapped in 1947",
       "crop": { "fx": 0.50, "fy": 0.50, "zoom": 1.00 },
       "grain": 0.020
     }
-  ]
+  ],
+  "cta": {
+    "out": "07-follow.jpg",
+    "headline": "Everything you were never told. Every day.",
+    "sub": "Follow so you don't miss it.",
+    "button": "FOLLOW @CLUEFOLIO",
+    "handle": "@cluefolio",
+    "footnote": "Real archival images. Sources in every caption."
+  }
 }
