@@ -101,15 +101,30 @@ Instagram search is a real surface now, and the caption feeds it.
 
 ## 5. Cadence and timing
 
-Five posts per week. Six is better. Fewer than three is invisible.
+**One post per day.** Seven a week, no gaps. The scheduler already runs daily at
+16:30 UTC; the calendar decides what goes out.
 
-| Slot | ET | Rationale |
-|---|---|---|
-| Primary | 11:30 | Lunch scroll, US East |
-| Secondary | 19:30 | Evening scroll, US East + Europe waking |
+| Day | Pillar |
+|---|---|
+| Monday | MURDER |
+| Tuesday | MYSTERY |
+| Wednesday | DISASTER |
+| Thursday | SURVIVAL |
+| Friday | COVER-UP |
+| Saturday | WEIRD |
+| Sunday | MURDER |
 
-Current workflow runs Wednesday only. It must move to **daily** so the calendar
-is the single source of truth and any ready post publishes on its date.
+That is 29% murder, 14% mystery, 14% disaster, 14% survival, 14% cover-up,
+14% weird — close enough to the mix, and rotation never repeats a pillar twice
+in a row.
+
+Primary slot 11:30 ET. Optionally a second post at 19:30 ET once there is a
+buffer; do not start there.
+
+**Buffer rule:** never publish from a buffer below seven finished posts. If the
+buffer runs dry, drop to five posts a week rather than shipping a thin pack.
+An account that posts daily with weak covers dies faster than one that posts
+five times a week with strong ones.
 
 ## 6. Community
 
@@ -152,13 +167,18 @@ from a single enforcement event is larger than any growth they produce.
 
 | Week | Output | Focus |
 |---|---|---|
-| 1 | 5 posts: MURDER, MYSTERY, DISASTER, SURVIVAL, WEIRD | Cover quality. Test three headline shapes. |
-| 2 | 5 posts, one per pillar | Slide-7 save mechanics. Timeline and "what changed" plates. |
-| 3 | 5 posts | Keyword and alt-text discipline. Measure search reach. |
-| 4 | 5 posts | Clone the best performer's structure twice, keeping the pillar mix. |
+| 1 | 7 posts, one per pillar day | Cover quality. Test three headline shapes. |
+| 2 | 7 posts | Slide-7 save mechanics. Timeline and "what changed" plates. |
+| 3 | 7 posts | Keyword and alt-text discipline. Measure search reach. |
+| 4 | 7 posts | Clone the best performer's structure twice, keeping the rotation. |
+| 5 | 2 posts + buffer | Hold the line on quality; do not burn the buffer. |
 
-Twenty posts across six pillars. At five per week, that is one month of
-autonomous publishing, with a weekly approval click on the `production` gate.
+Thirty posts, one month of autonomous daily publishing, with a weekly approval
+click on the `production` gate.
+
+Production order matters: build the buffer **before** switching to daily. The
+first week runs at five posts while the slate is filled, then goes daily once
+seven finished packs are in the repo.
 
 ## 10. Content spec
 

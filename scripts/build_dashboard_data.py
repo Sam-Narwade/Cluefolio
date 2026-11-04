@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """Build the dashboard data file from the curated post packs.
 
 Usage:
@@ -149,7 +149,7 @@ def build() -> dict:
             "studio": "Cluefolio Studio",
             "season": "Season One - American Disasters & Engineering Failures",
             "generated": "2026-11-02",
-            "cadence": "Weekly on Wednesdays, 12:00-13:00 ET. Holiday pause Dec 23 and Dec 30.",
+            "cadence": "Daily at 11:30 ET, one post per pillar day.",
             "total_posts": len(posts),
             "ready": len(ready),
             "draft": len(drafts),
@@ -163,7 +163,7 @@ def build() -> dict:
         "calendar": {
             "season": "Season One - American Disasters & Engineering Failures",
             "note": "Eleven posts through January 2027. Posts 001-002 are ready. Posts 003-011 are drafts until Gate 2.",
-            "cadence": "Weekly on Wednesdays, 12:00-13:00 ET. Dec 23 and Dec 30 skipped for the holidays.",
+            "cadence": "Daily at 11:30 ET. Mon MURDER, Tue MYSTERY, Wed DISASTER, Thu SURVIVAL, Fri COVER-UP, Sat WEIRD, Sun MURDER.",
             "posts": calendar_posts,
         },
         "pipeline_stages": PIPELINE_STAGES,
