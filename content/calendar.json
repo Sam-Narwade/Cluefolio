@@ -11,7 +11,9 @@
       "date": "2026-10-21",
       "display_date": "Oct 21, 2026",
       "weekday": "Wednesday",
-      "status": "ready",
+      "status": "published",
+      "status_label": "Published",
+      "published_at": "2026-11-04 07:06",
       "angle": "A steamship capsized while still secured to its dock, killing 844 people in twenty feet of water, twenty feet from shore.",
       "why": "The strongest single story in the slate: an impossible fact in one sentence, real engineering substance, and an abundant free visual archive.",
       "sources": [
@@ -33,6 +35,8 @@
       "display_date": "Oct 28, 2026",
       "weekday": "Wednesday",
       "status": "ready",
+      "status_label": "Ready to publish",
+      "published_at": "",
       "angle": "The Hindenburg caught fire while landing at Lakehurst, New Jersey. Thirty-six people died in about thirty-four seconds.",
       "why": "An iconic public-domain photograph, a hook that fits in one sentence, and a cause that is still genuinely unresolved.",
       "sources": [
@@ -54,6 +58,8 @@
       "display_date": "Nov 4, 2026",
       "weekday": "Wednesday",
       "status": "draft",
+      "status_label": "Draft - verify at Gate 2",
+      "published_at": "",
       "angle": "On the same night Chicago burned, a wildfire in Wisconsin killed an estimated 1,500 to 2,500 people, the deadliest in American history, and almost nobody remembers it.",
       "why": "The Chicago comparison is a built-in hook and a genuine historical injustice. The purest 'I never knew this' story on the slate.",
       "sources": [
@@ -75,6 +81,8 @@
       "display_date": "Nov 11, 2026",
       "weekday": "Wednesday",
       "status": "draft",
+      "status_label": "Draft - verify at Gate 2",
+      "published_at": "",
       "angle": "A private club's earthen dam failed above Johnstown, Pennsylvania, and killed 2,209 people. The club's members included some of the richest men in America.",
       "why": "Class, negligence, and documented warnings ignored. The clearest accountability story available, and the imagery is strong.",
       "sources": [
@@ -96,6 +104,8 @@
       "display_date": "Nov 18, 2026",
       "weekday": "Wednesday",
       "status": "draft",
+      "status_label": "Draft - verify at Gate 2",
+      "published_at": "",
       "angle": "A Chicago theater fire killed 602 people in about fifteen minutes. Many of the exits were locked, blocked, or opened inward.",
       "why": "A direct safety-failure story with a physical mechanism a reader can picture, and Chicago continuity with Post 001.",
       "sources": [
@@ -117,6 +127,8 @@
       "display_date": "Nov 25, 2026",
       "weekday": "Wednesday",
       "status": "draft",
+      "status_label": "Draft - verify at Gate 2",
+      "published_at": "",
       "angle": "An explosion in a West Virginia mine killed at least 362 men and boys. It led directly to the creation of the federal Bureau of Mines.",
       "why": "Labor history with a concrete policy consequence, and a death toll that is still argued over.",
       "sources": [
@@ -138,6 +150,8 @@
       "display_date": "Dec 2, 2026",
       "weekday": "Wednesday",
       "status": "draft",
+      "status_label": "Draft - verify at Gate 2",
+      "published_at": "",
       "angle": "Two ships collided in Halifax harbour and the munitions cargo detonated, killing about 2,000 people and injuring thousands more.",
       "why": "Enormous scale, a clear chain of events, a strong human-response beat, and a warm US-Canada payoff.",
       "sources": [
@@ -159,6 +173,8 @@
       "display_date": "Dec 9, 2026",
       "weekday": "Wednesday",
       "status": "draft",
+      "status_label": "Draft - verify at Gate 2",
+      "published_at": "",
       "angle": "A storage tank in Boston's North End burst and sent a wall of molasses through the streets, killing 21 people.",
       "why": "The hook is irresistible and the underlying failure, a tank built too thin and never properly tested, is genuinely instructive.",
       "sources": [
@@ -180,6 +196,8 @@
       "display_date": "Dec 16, 2026",
       "weekday": "Wednesday",
       "status": "draft",
+      "status_label": "Draft - verify at Gate 2",
+      "published_at": "",
       "angle": "Factory workers painted watch dials with radium and were told it was safe. Their bodies became the evidence that changed American labor law.",
       "why": "Human, scientific, and legally consequential. It broadens the season beyond disasters into science and labor.",
       "sources": [
@@ -201,6 +219,8 @@
       "display_date": "Jan 6, 2027",
       "weekday": "Wednesday",
       "status": "draft",
+      "status_label": "Draft - verify at Gate 2",
+      "published_at": "",
       "angle": "A Boston nightclub fire killed 492 people. The treatment of its survivors produced the first modern burn protocol.",
       "why": "Held from the Post 001 shortlist. A double payoff: the disaster and the medical legacy that came out of it.",
       "sources": [
@@ -222,6 +242,8 @@
       "display_date": "Jan 13, 2027",
       "weekday": "Wednesday",
       "status": "draft",
+      "status_label": "Draft - verify at Gate 2",
+      "published_at": "",
       "angle": "A circus tent treated with paraffin and gasoline caught fire during a matinee in Hartford, killing 167 people, most of them children.",
       "why": "Devastating and largely forgotten, with a clear materials-failure mechanism and a direct line to modern flame-retardant rules.",
       "sources": [

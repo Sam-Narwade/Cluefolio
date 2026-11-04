@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import json
 import statistics
+from datetime import date
 import sys
 from pathlib import Path
 
@@ -114,14 +115,43 @@ def enrich(post: dict) -> dict:
     return p
 
 
+def load_ledger() -> dict:
+    """Read the publish ledger so the dashboard shows reality, not intent."""
+    path = ROOT / "automation" / "state" / "published.json"
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("published", {})
+    except json.JSONDecodeError:
+        return {}
+
+
+def apply_ledger(post: dict, ledger: dict) -> dict:
+    entry = ledger.get(post["number"])
+    if not entry:
+        return post
+    if entry.get("status") != "published":
+        post["publish_state"] = entry.get("status", "")
+        return post
+    post["status"] = "published"
+    post["status_label"] = "Published"
+    post["published_at"] = (entry.get("published_at") or "").replace("T", " ")[:16]
+    post["instagram_url"] = (entry.get("instagram") or {}).get("permalink", "")
+    post["facebook_url"] = (entry.get("facebook") or {}).get("permalink", "")
+    return post
+
+
 def build() -> dict:
     posts = [enrich(p) for p in POSTS]
     posts.sort(key=lambda p: p["number"])
+    ledger = load_ledger()
+    posts = [apply_ledger(p, ledger) for p in posts]
 
     total_images = sum(p["image_count"] for p in posts)
     total_words = sum(p["story_words"] for p in posts)
     ready = [p for p in posts if p["status"] == "ready"]
-    drafts = [p for p in posts if p["status"] != "ready"]
+    drafts = [p for p in posts if p["status"] not in ("ready", "published")]
+    published = [p for p in posts if p["status"] == "published"]
     avg_score = round(statistics.mean(p["viral_readiness"]["total"] for p in posts), 1)
 
     calendar_posts = []
@@ -136,6 +166,8 @@ def build() -> dict:
             "display_date": p["display_date"],
             "weekday": p["weekday"],
             "status": p["status"],
+            "status_label": p.get("status_label", ""),
+            "published_at": p.get("published_at", ""),
             "angle": p["angle"],
             "why": b.get("why", p["angle"]),
             "sources": p["sources"],
@@ -148,16 +180,18 @@ def build() -> dict:
         "meta": {
             "studio": "Cluefolio Studio",
             "season": "Season One - American Disasters & Engineering Failures",
-            "generated": "2026-11-02",
+            "generated": date.today().isoformat(),
             "cadence": "Daily at 11:30 ET, one post per pillar day.",
             "total_posts": len(posts),
             "ready": len(ready),
             "draft": len(drafts),
+            "published": len(published),
             "total_images": total_images,
             "total_story_words": total_words,
             "avg_viral_score": avg_score,
             "ready_numbers": [p["number"] for p in ready],
-            "next_post": ready[1]["number"] if len(ready) > 1 else (drafts[0]["number"] if drafts else ""),
+            "published_numbers": [p["number"] for p in published],
+            "next_post": ready[0]["number"] if ready else (drafts[0]["number"] if drafts else ""),
         },
         "posts": posts,
         "calendar": {

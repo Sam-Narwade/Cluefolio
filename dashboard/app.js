@@ -1160,12 +1160,37 @@ document.addEventListener('keydown', (event) => {
 
 window.addEventListener('hashchange', render);
 
+/* ---------- live refresh ---------- */
+
+// Poll the compiled payload. Re-render only when something actually changed,
+// so scroll position and open panels are not disturbed every minute.
+let liveSignature = null;
+
+function signatureOf(data) {
+  const meta = data?.meta || {};
+  const posts = (data?.posts || []).map((p) => `${p.number}:${p.status}:${p.image_count}`);
+  return JSON.stringify([meta.generated, meta.published, meta.ready, posts]);
+}
+
+setInterval(async () => {
+  if (lightbox.classList.contains('open')) return;
+  try {
+    await loadData(true);
+    const next = signatureOf(state.data);
+    if (liveSignature && next !== liveSignature) render();
+    liveSignature = next;
+  } catch (err) {
+    /* server restarted or file being rebuilt; try again next tick */
+  }
+}, 60000);
+
 /* ---------- boot ---------- */
 
 (async function boot() {
   view.innerHTML = `<div class="empty"><h2>Loading studio data</h2><p>Reading content/dashboard.json…</p></div>`;
   try {
     await loadData();
+    liveSignature = signatureOf(state.data);
     if (!location.hash) location.hash = '#/overview';
     render();
   } catch (err) {
