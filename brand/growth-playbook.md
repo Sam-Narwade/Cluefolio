@@ -22,15 +22,44 @@ audience makes every subsequent post perform worse.
 
 Not "history facts". That space is saturated with text-on-color garbage.
 
-**Cluefolio is the account that makes you say "how did I never know this?" and
-then shows you the photograph.**
+**Cluefolio is the account that makes you say "how did I never know this?" —
+about murders, disappearances, disasters, buried cases, and the people who
+walked out alive — and then shows you the document or the photograph.**
 
 Three commitments, applied to every post:
 
 1. **One impossible fact in the first line.** No setup, no throat-clearing.
 2. **Authentic imagery only.** The archive is the differentiator. No AI covers.
 3. **A receipt.** Sources in the first comment, every time. This is the trust
-   asset that makes saves and shares safe.
+   asset that makes saves and shares safe — and it is what separates a true
+   crime account that survives from one that gets reported.
+
+## 2.1 Content pillars and mix
+
+Disaster-only is a narrow, saturated lane. Cluefolio runs six pillars, mixed
+every week so the account never reads as single-topic:
+
+| Pillar | Cover tag | Share of slate | Why it earns its slot |
+|---|---|---|---|
+| True crime / murder | MURDER | 25% | Highest save and comment rates; needs the strictest ethics |
+| Unsolved mystery | MYSTERY | 20% | Curiosity gap is the strongest hook we have |
+| Disaster / tragedy | DISASTER | 20% | The existing archive; strongest authentic imagery |
+| Survival / near-miss | SURVIVAL | 15% | Hope beat; widens the audience beyond grim content |
+| Hidden case / cover-up | COVER-UP | 10% | Institutional failure drives shares |
+| Weird / unexplained | WEIRD | 10% | The shareable oddity; keeps the feed from feeling heavy |
+
+Weekly rotation, five posts: **Mon** true crime, **Tue** mystery, **Wed**
+disaster, **Thu** survival, **Fri** hidden case or weird. Never two of the
+same pillar back to back.
+
+True-crime rules, non-negotiable:
+
+- Name the victim, not only the perpetrator. The story is theirs.
+- No crime-scene imagery, no bodies, no blood. Documents, places, portraits.
+- Never name someone as guilty without a conviction. "Charged", "accused",
+  "convicted" are different words and must be used precisely.
+- No detail that exists only to shock.
+- If a family has publicly asked for privacy, the post does not run.
 
 ## 3. Format: the 7-slide carousel
 
@@ -123,20 +152,24 @@ from a single enforcement event is larger than any growth they produce.
 
 | Week | Output | Focus |
 |---|---|---|
-| 1 | 5 posts, 7 slides each | Cover quality. Test three headline shapes. |
-| 2 | 5 posts | Slide-7 save mechanics. Timeline and "what changed" plates. |
+| 1 | 5 posts: MURDER, MYSTERY, DISASTER, SURVIVAL, WEIRD | Cover quality. Test three headline shapes. |
+| 2 | 5 posts, one per pillar | Slide-7 save mechanics. Timeline and "what changed" plates. |
 | 3 | 5 posts | Keyword and alt-text discipline. Measure search reach. |
-| 4 | 5 posts | Clone the best performer's structure twice. |
+| 4 | 5 posts | Clone the best performer's structure twice, keeping the pillar mix. |
 
-Twenty posts. At five per week, that is one month of autonomous publishing,
-with a weekly approval click on the `production` gate.
+Twenty posts across six pillars. At five per week, that is one month of
+autonomous publishing, with a weekly approval click on the `production` gate.
 
 ## 10. Content spec
 
 Every pack pushed to `content/<slug>/` must contain:
 
 - `post-metadata.json` with `status: "ready"` only when the pack is publishable.
-- `images/` with **7 finished slides**, named `01-cover.jpg` … `07-close.jpg`.
+- `images/` with **7 finished slides**, named `01-cover.jpg` … `07-follow.jpg`.
+  Slide 7 is the branded close: logo, wordmark, follow button. It is generated
+  automatically from the `cta` block in `render-config.json`.
+- A cover tag from the pillar table: MURDER, MYSTERY, DISASTER, SURVIVAL,
+  COVER-UP, or WEIRD.
 - Caption with the keyword inside the first 125 characters.
 - Alt text describing each slide for screen readers.
 - Source ledger referenced by the pinned comment.

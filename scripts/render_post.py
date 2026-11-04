@@ -444,15 +444,21 @@ def render_cta(cfg, item, out_path: Path) -> None:
     canvas = paper_texture(Image.new("RGB", (W, H), ink), 0.008, seed=5)
     draw = ImageDraw.Draw(canvas)
 
-    # Brand mark: a ring with a paper dot, drawn once, used everywhere.
-    cx, cy, r = W // 2, 236, 62
-    draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline=accent, width=6)
-    draw.ellipse([cx - 13, cy - 13, cx + 13, cy + 13], fill=paper)
+    # Brand mark. Falls back to a drawn ring if the asset is missing.
+    logo_path = ROOT / "brand" / "logo-mark-light.png"
+    mark_size = 188
+    if logo_path.exists():
+        mark = Image.open(logo_path).convert("RGBA").resize((mark_size, mark_size), Image.LANCZOS)
+        canvas.paste(mark, ((W - mark_size) // 2, 128), mark)
+    else:
+        cx, cy, r = W // 2, 222, 62
+        draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline=accent, width=6)
+        draw.ellipse([cx - 13, cy - 13, cx + 13, cy + 13], fill=paper)
 
     f_mark = load_font(SEGOE_SEMI, 34)
     wordmark = "CLUEFOLIO"
     ww = tracked_width(draw, wordmark, f_mark, tracking=9.0)
-    draw_tracked(draw, (W // 2 - ww / 2, 330), wordmark, f_mark, paper, tracking=9.0)
+    draw_tracked(draw, (W // 2 - ww / 2, 348), wordmark, f_mark, paper, tracking=9.0)
 
     f_head = load_font(GEORGIA_BOLD, 62)
     headline = item.get("headline", "Follow for the disasters the textbooks skip.")
