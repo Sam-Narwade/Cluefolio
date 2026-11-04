@@ -63,9 +63,14 @@ class PipelineTests(unittest.TestCase):
         self.assertIsNone(find_post(self.data, "999"))
 
     def test_select_due(self) -> None:
-        posts = [{"number": "001", "date": "2026-10-21"}, {"number": "002", "date": "2026-10-28"}]
+        posts = [
+            {"number": "001", "date": "2026-10-21", "status": "ready"},
+            {"number": "002", "date": "2026-10-28", "status": "ready"},
+            {"number": "003", "date": "2026-11-04", "status": "draft"},
+        ]
         self.assertEqual(select_due(posts, "2026-10-28")["number"], "002")
         self.assertIsNone(select_due(posts, "2026-11-01"))
+        self.assertIsNone(select_due(posts, "2026-11-04"))
 
     def test_public_url(self) -> None:
         self.assertEqual(

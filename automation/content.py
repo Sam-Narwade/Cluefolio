@@ -38,10 +38,18 @@ def find_post(dashboard: dict, number_or_slug: str) -> dict | None:
     return None
 
 
+def is_publishable(post: dict) -> bool:
+    """A post may only publish itself once its pack is marked ready.
+
+    Drafts and in-review packs must never be picked up by the scheduled run.
+    """
+    return str(post.get("status", "")).strip().lower() == "ready"
+
+
 def select_due(posts: list[dict], on_date: str | None = None) -> dict | None:
     target = on_date or today_et()
     for post in posts:
-        if post.get("date") == target:
+        if post.get("date") == target and is_publishable(post):
             return post
     return None
 

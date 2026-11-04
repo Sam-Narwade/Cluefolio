@@ -18,7 +18,15 @@ from pathlib import Path
 from . import ledger as ledger_store
 from . import notify
 from .config import DEFAULT_LEDGER, DEFAULT_REPORT, ConfigError, Settings, load_dotenv
-from .content import build_plan, find_post, load_dashboard, select_due, today_et, validate_plan
+from .content import (
+    build_plan,
+    find_post,
+    is_publishable,
+    load_dashboard,
+    select_due,
+    today_et,
+    validate_plan,
+)
 from .graph import GraphClient, GraphError
 from .publisher import publish_comment, publish_facebook, publish_instagram
 
@@ -45,6 +53,11 @@ def main(argv: list[str] | None = None) -> int:
     if not post:
         print(reason)
         return 0
+    if args.post and not is_publishable(post):
+        print(
+            f"Warning: post {post['number']} is marked '{post.get('status')}', not 'ready'. "
+            "Publishing because you named it explicitly."
+        )
 
     ledger_path = Path(args.ledger)
     report_path = Path(args.report)
@@ -187,6 +200,13 @@ def _select_post(dashboard: dict, args: argparse.Namespace) -> tuple[dict | None
     on_date = args.date or today_et()
     post = select_due(posts, on_date)
     if not post:
+        waiting = [
+            p for p in posts
+            if p.get("date") == on_date and not is_publishable(p)
+        ]
+        if waiting:
+            note = ", ".join(f"{p['number']} is '{p.get('status')}'" for p in waiting)
+            return None, f"Post scheduled for {on_date} is not ready ({note}). Nothing to do."
         return None, f"No post scheduled for {on_date} (America/New_York). Nothing to do."
     return post, ""
 
