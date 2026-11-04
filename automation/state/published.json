@@ -1,4 +1,37 @@
 {
   "version": 1,
-  "published": {}
+  "published": {
+    "001": {
+      "number": "001",
+      "title": "The Ship That Never Left the Dock",
+      "date": "2026-10-21",
+      "status": "published",
+      "started_at": "2026-11-04T06:19:56+00:00",
+      "instagram": {
+        "media_id": "17970947285963017",
+        "permalink": "https://www.instagram.com/p/DfTzJ-jEl9H/"
+      },
+      "facebook": {
+        "post_id": "1365511623313061_122118476643503608",
+        "photo_ids": [
+          "122118476355503608",
+          "122118476409503608",
+          "122118476457503608",
+          "122118476511503608",
+          "122118476559503608",
+          "122118476607503608"
+        ],
+        "permalink": "https://www.facebook.com/122118476661503608/posts/122118476643503608"
+      },
+      "first_comment": {
+        "instagram": {
+          "comment_id": "17978795870934599"
+        },
+        "facebook": {
+          "comment_id": "122118476643503608_1110216438426671"
+        }
+      },
+      "published_at": "2026-11-04T06:20:56+00:00"
+    }
+  }
 }
