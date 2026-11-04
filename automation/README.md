@@ -100,14 +100,14 @@ python -m automation.publish --due
 
 ## Schedule
 
-`.github/workflows/publish.yml` runs every **Wednesday at 17:00 UTC**:
+`.github/workflows/publish.yml` runs **daily at 16:30 UTC** — 11:30 ET in
+winter, 12:30 ET in summer. The calendar in `content/dashboard.json` is the
+source of truth: the run publishes the post dated today, and only if its
+`status` is `ready`. Every other day is a clean no-op.
 
-- 12:00 EST (November–March)
-- 13:00 EDT (March–November)
-
-That keeps the run inside the brand's 12:00–13:00 ET window. Manual runs are
-available from the Actions tab. `dry_run` defaults to **true** for manual runs.
-GitHub may delay scheduled jobs by a few minutes; that is normal.
+Manual runs are available from the Actions tab. `dry_run` defaults to **true**
+for manual runs. GitHub may delay scheduled jobs by a few minutes; that is
+normal.
 
 The job targets the `production` environment, so a required reviewer must
 approve before any token is used.

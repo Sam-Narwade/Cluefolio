@@ -2,8 +2,9 @@ name: Publish to Meta
 
 on:
   schedule:
-    # Wednesday 17:00 UTC = 12:00 ET (13:00 during daylight time).
-    - cron: "0 17 * * 3"
+    # Daily 16:30 UTC = 11:30 ET in winter, 12:30 ET in summer.
+    # The calendar is the source of truth: a day with no ready post is a no-op.
+    - cron: "30 16 * * *"
   workflow_dispatch:
     inputs:
       post:
