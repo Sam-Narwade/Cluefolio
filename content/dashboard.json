@@ -8,7 +8,7 @@
     "ready": 1,
     "draft": 9,
     "published": 1,
-    "total_images": 23,
+    "total_images": 40,
     "total_story_words": 2305,
     "avg_viral_score": 36.4,
     "ready_numbers": [
@@ -485,13 +485,48 @@
         {
           "file": "01-cover.jpg",
           "role": "cover",
-          "alt": "A black-and-white photograph of the burned ruins of Peshtigo, Wisconsin, after the 1871 fire, with shattered trees, scattered debris, and a few figures in the distance.",
-          "credit": "Photograph: public domain, via Wikimedia Commons",
+          "alt": "The burned ruins of Peshtigo, Wisconsin after the 1871 fire, with shattered trees and debris across the landscape.",
+          "credit": "",
+          "ai": false
+        },
+        {
+          "file": "02-the-town.jpg",
+          "role": "photo",
+          "alt": "A bird's eye lithograph of Peshtigo, Wisconsin in 1871, lumber yards and wooden buildings laid out along a river.",
+          "credit": "Bird's eye view, T.M. Fowler & Co., 1871. Library of Congress.",
+          "ai": false
+        },
+        {
+          "file": "03-one-night.jpg",
+          "role": "photo",
+          "alt": "An illustration of the Peshtigo fire, flames and smoke sweeping over a settlement.",
+          "credit": "Illustration, US Forest Service, 1871.",
+          "ai": false
+        },
+        {
+          "file": "04-the-river.jpg",
+          "role": "photo",
+          "alt": "An illustration of survivors standing in the Peshtigo River as fire burns the town behind them.",
+          "credit": "G. J. Tisdale, 1871. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "05-the-toll.jpg",
+          "role": "photo",
+          "alt": "A view of Peshtigo Harbor, Wisconsin in 1871, with buildings and shoreline.",
+          "credit": "Peshtigo Times, 1871. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "06-follow.jpg",
+          "role": "cta",
+          "alt": "Dark closing card with the Cluefolio logo and a button reading FOLLOW @CLUEFOLIO.",
+          "credit": "",
           "ai": false
         }
       ],
       "cover": "01-cover.jpg",
-      "image_count": 1,
+      "image_count": 6,
       "pipeline": {
         "stage": "Visual + copy draft",
         "stage_index": 7,
@@ -631,13 +666,55 @@
         {
           "file": "01-cover.jpg",
           "role": "cover",
-          "alt": "A large wooden house stands tipped on its side amid flood debris in Johnstown, Pennsylvania, after the 1889 dam failure, with a massive tree trunk driven through its wall.",
-          "credit": "Photograph: public domain, via Wikimedia Commons",
+          "alt": "The Dam Nobody Would Fix",
+          "credit": "",
+          "ai": false
+        },
+        {
+          "file": "02-the-dam.jpg",
+          "role": "photo",
+          "alt": "A photograph of Johnstown's Main Street after the 1889 flood, buildings and debris in the street.",
+          "credit": "E. Benjamin Andrews, 1912. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "03-the-water.jpg",
+          "role": "photo",
+          "alt": "A wide view of wreckage and debris left across Johnstown after the flood.",
+          "credit": "Library of Congress, 1889. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "04-the-dead.jpg",
+          "role": "photo",
+          "alt": "A view down Main Street in Johnstown after the flood, ruined buildings on both sides.",
+          "credit": "Library of Congress, 1889. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "05-no-liability.jpg",
+          "role": "photo",
+          "alt": "A view west from Main Street across the flooded and wrecked town.",
+          "credit": "Library of Congress, 1889. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "06-the-relief.jpg",
+          "role": "photo",
+          "alt": "People queueing for rations in Johnstown after the 1889 flood.",
+          "credit": "William Creswell, 1889. Public domain, via Wikimedia Commons.",
+          "ai": false
+        },
+        {
+          "file": "07-follow.jpg",
+          "role": "cta",
+          "alt": "Dark closing card with the Cluefolio logo and a button reading FOLLOW @CLUEFOLIO.",
+          "credit": "",
           "ai": false
         }
       ],
       "cover": "01-cover.jpg",
-      "image_count": 1,
+      "image_count": 7,
       "pipeline": {
         "stage": "Visual + copy draft",
         "stage_index": 7,
@@ -777,13 +854,55 @@
         {
           "file": "01-cover.jpg",
           "role": "cover",
-          "alt": "A black-and-white photograph of the Iroquois Theatre entrance in Chicago, with a striped canopy over the sidewalk and a crowd gathered outside.",
-          "credit": "Photograph: public domain, via Wikimedia Commons",
+          "alt": "The Doors That Opened Inward",
+          "credit": "",
+          "ai": false
+        },
+        {
+          "file": "02-the-theatre.jpg",
+          "role": "photo",
+          "alt": "The ornate foyer of the Iroquois Theatre in Chicago, photographed in 1904.",
+          "credit": "Unknown photographer, 1904. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "03-the-stage.jpg",
+          "role": "photo",
+          "alt": "A photograph of the Iroquois Theatre after the fire, with smoke damage and debris.",
+          "credit": "Allen Ayrault Green, 1903. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "04-the-exits.jpg",
+          "role": "photo",
+          "alt": "A cutaway newspaper diagram of the Iroquois Theatre showing the exits and stairways.",
+          "credit": "Newspaper diagram, 1904. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "05-fifteen-minutes.jpg",
+          "role": "photo",
+          "alt": "A panoramic photograph of the Iroquois Theatre after the fire, crowds and wreckage in the street.",
+          "credit": "Henry Albert Ericson, 1903. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "06-602-died.jpg",
+          "role": "photo",
+          "alt": "A newspaper cartoon by John T. McCutcheon about the Iroquois Theatre fire.",
+          "credit": "John T. McCutcheon, Chicago Tribune, 1904. Public domain.",
+          "ai": false
+        },
+        {
+          "file": "07-follow.jpg",
+          "role": "cta",
+          "alt": "Dark closing card with the Cluefolio logo and a button reading FOLLOW @CLUEFOLIO.",
+          "credit": "",
           "ai": false
         }
       ],
       "cover": "01-cover.jpg",
-      "image_count": 1,
+      "image_count": 7,
       "pipeline": {
         "stage": "Visual + copy draft",
         "stage_index": 7,

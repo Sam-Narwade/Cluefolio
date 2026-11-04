@@ -1,0 +1,54 @@
+{
+  "note": "Per-slide metadata for the publisher.",
+  "slides": [
+    {
+      "file": "01-cover.jpg",
+      "role": "cover",
+      "alt": "The Dam Nobody Would Fix",
+      "credit": "",
+      "ai": false
+    },
+    {
+      "file": "02-the-dam.jpg",
+      "role": "photo",
+      "alt": "A photograph of Johnstown's Main Street after the 1889 flood, buildings and debris in the street.",
+      "credit": "E. Benjamin Andrews, 1912. Public domain.",
+      "ai": false
+    },
+    {
+      "file": "03-the-water.jpg",
+      "role": "photo",
+      "alt": "A wide view of wreckage and debris left across Johnstown after the flood.",
+      "credit": "Library of Congress, 1889. Public domain.",
+      "ai": false
+    },
+    {
+      "file": "04-the-dead.jpg",
+      "role": "photo",
+      "alt": "A view down Main Street in Johnstown after the flood, ruined buildings on both sides.",
+      "credit": "Library of Congress, 1889. Public domain.",
+      "ai": false
+    },
+    {
+      "file": "05-no-liability.jpg",
+      "role": "photo",
+      "alt": "A view west from Main Street across the flooded and wrecked town.",
+      "credit": "Library of Congress, 1889. Public domain.",
+      "ai": false
+    },
+    {
+      "file": "06-the-relief.jpg",
+      "role": "photo",
+      "alt": "People queueing for rations in Johnstown after the 1889 flood.",
+      "credit": "William Creswell, 1889. Public domain, via Wikimedia Commons.",
+      "ai": false
+    },
+    {
+      "file": "07-follow.jpg",
+      "role": "cta",
+      "alt": "Dark closing card with the Cluefolio logo and a button reading FOLLOW @CLUEFOLIO.",
+      "credit": "",
+      "ai": false
+    }
+  ]
+}

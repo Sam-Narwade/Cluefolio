@@ -15,6 +15,66 @@
       "role": "cover",
       "alt_text": "A black-and-white photograph of the burned ruins of Peshtigo, Wisconsin, after the 1871 fire, with shattered trees, scattered debris, and a few figures in the distance.",
       "ai_generated": false
+    },
+    {
+      "id": "peshtigo-birdseye",
+      "title": "Peshtigo Birdseye",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/peshtigo-birdseye.jpg",
+      "file_url": "https://commons.wikimedia.org/wiki/Special:FilePath/peshtigo-birdseye.jpg",
+      "creator": "",
+      "date": "",
+      "license": "Public domain",
+      "credit": "Bird's eye view, T.M. Fowler & Co., 1871. Library of Congress.",
+      "depicts": "A bird's eye lithograph of Peshtigo, Wisconsin in 1871, lumber yards and wooden buildings laid out along a river.",
+      "role": "interior",
+      "alt_text": "A bird's eye lithograph of Peshtigo, Wisconsin in 1871, lumber yards and wooden buildings laid out along a river.",
+      "ai_generated": false
+    },
+    {
+      "id": "peshtigo-illustration",
+      "title": "Peshtigo Illustration",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/peshtigo-illustration.jpg",
+      "file_url": "https://commons.wikimedia.org/wiki/Special:FilePath/peshtigo-illustration.jpg",
+      "creator": "",
+      "date": "",
+      "license": "Public domain",
+      "credit": "Illustration, US Forest Service, 1871.",
+      "depicts": "An illustration of the Peshtigo fire, flames and smoke sweeping over a settlement.",
+      "role": "interior",
+      "alt_text": "An illustration of the Peshtigo fire, flames and smoke sweeping over a settlement.",
+      "ai_generated": false
+    },
+    {
+      "id": "peshtigo-river",
+      "title": "Peshtigo River",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/peshtigo-river.jpg",
+      "file_url": "https://commons.wikimedia.org/wiki/Special:FilePath/peshtigo-river.jpg",
+      "creator": "",
+      "date": "",
+      "license": "Public domain",
+      "credit": "G. J. Tisdale, 1871. Public domain.",
+      "depicts": "An illustration of survivors standing in the Peshtigo River as fire burns the town behind them.",
+      "role": "interior",
+      "alt_text": "An illustration of survivors standing in the Peshtigo River as fire burns the town behind them.",
+      "ai_generated": false
+    },
+    {
+      "id": "peshtigo-harbor",
+      "title": "Peshtigo Harbor",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/peshtigo-harbor.jpg",
+      "file_url": "https://commons.wikimedia.org/wiki/Special:FilePath/peshtigo-harbor.jpg",
+      "creator": "",
+      "date": "",
+      "license": "Public domain",
+      "credit": "Peshtigo Times, 1871. Public domain.",
+      "depicts": "A view of Peshtigo Harbor, Wisconsin in 1871, with buildings and shoreline.",
+      "role": "interior",
+      "alt_text": "A view of Peshtigo Harbor, Wisconsin in 1871, with buildings and shoreline.",
+      "ai_generated": false
     }
   ]
 }

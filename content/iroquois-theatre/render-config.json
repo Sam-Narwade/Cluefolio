@@ -15,7 +15,7 @@
   "cover": {
     "asset": "cover",
     "wordmark": "CLUEFOLIO",
-    "category": "DISASTERS / SAFETY",
+    "category": "DISASTERS",
     "headline": [
       "THE DOORS THAT",
       "OPENED INWARD"
@@ -28,5 +28,87 @@
     },
     "disclosure": ""
   },
-  "interiors": []
+  "interiors": [
+    {
+      "template": "photo",
+      "asset": "iroquois-foyer",
+      "out": "02-the-theatre.jpg",
+      "headline": [
+        "THE NEW",
+        "THEATRE"
+      ],
+      "kicker": "Advertised as fireproof. About 2,000 seats, many of them children.",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.5,
+        "zoom": 1.04
+      }
+    },
+    {
+      "template": "photo",
+      "asset": "iroquois-dpla",
+      "out": "03-the-stage.jpg",
+      "headline": [
+        "A STAGE LIGHT",
+        "CAUGHT FIRE"
+      ],
+      "kicker": "A muslin curtain went up during the second act",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.5,
+        "zoom": 1.06
+      }
+    },
+    {
+      "template": "photo",
+      "asset": "iroquois-diagram",
+      "out": "04-the-exits.jpg",
+      "headline": [
+        "THE EXITS",
+        "OPENED INWARD"
+      ],
+      "kicker": "Some opened inward. Some were locked or blocked.",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.5,
+        "zoom": 1.02
+      }
+    },
+    {
+      "template": "photo",
+      "asset": "iroquois-panorama",
+      "out": "05-fifteen-minutes.jpg",
+      "headline": [
+        "15 MINUTES"
+      ],
+      "kicker": "The fire was out in minutes. The killing took fifteen.",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.5,
+        "zoom": 1.02
+      }
+    },
+    {
+      "template": "photo",
+      "asset": "iroquois-cartoon",
+      "out": "06-602-died.jpg",
+      "headline": [
+        "602 DIED"
+      ],
+      "kicker": "No sprinklers, no alarm, and no fire drill",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.5,
+        "zoom": 1.04
+      }
+    }
+  ],
+  "cta": {
+    "out": "07-follow.jpg",
+    "headline": "Everything you were never told. Every day.",
+    "sub": "Follow so you don't miss it.",
+    "button": "FOLLOW @CLUEFOLIO",
+    "handle": "@cluefolio",
+    "footnote": "Real archival images. Sources in every caption."
+  }
 }

@@ -1,0 +1,54 @@
+{
+  "note": "Per-slide metadata for the publisher.",
+  "slides": [
+    {
+      "file": "01-cover.jpg",
+      "role": "cover",
+      "alt": "The Doors That Opened Inward",
+      "credit": "",
+      "ai": false
+    },
+    {
+      "file": "02-the-theatre.jpg",
+      "role": "photo",
+      "alt": "The ornate foyer of the Iroquois Theatre in Chicago, photographed in 1904.",
+      "credit": "Unknown photographer, 1904. Public domain.",
+      "ai": false
+    },
+    {
+      "file": "03-the-stage.jpg",
+      "role": "photo",
+      "alt": "A photograph of the Iroquois Theatre after the fire, with smoke damage and debris.",
+      "credit": "Allen Ayrault Green, 1903. Public domain.",
+      "ai": false
+    },
+    {
+      "file": "04-the-exits.jpg",
+      "role": "photo",
+      "alt": "A cutaway newspaper diagram of the Iroquois Theatre showing the exits and stairways.",
+      "credit": "Newspaper diagram, 1904. Public domain.",
+      "ai": false
+    },
+    {
+      "file": "05-fifteen-minutes.jpg",
+      "role": "photo",
+      "alt": "A panoramic photograph of the Iroquois Theatre after the fire, crowds and wreckage in the street.",
+      "credit": "Henry Albert Ericson, 1903. Public domain.",
+      "ai": false
+    },
+    {
+      "file": "06-602-died.jpg",
+      "role": "photo",
+      "alt": "A newspaper cartoon by John T. McCutcheon about the Iroquois Theatre fire.",
+      "credit": "John T. McCutcheon, Chicago Tribune, 1904. Public domain.",
+      "ai": false
+    },
+    {
+      "file": "07-follow.jpg",
+      "role": "cta",
+      "alt": "Dark closing card with the Cluefolio logo and a button reading FOLLOW @CLUEFOLIO.",
+      "credit": "",
+      "ai": false
+    }
+  ]
+}

@@ -28,5 +28,72 @@
     },
     "disclosure": ""
   },
-  "interiors": []
+  "interiors": [
+    {
+      "template": "photo",
+      "asset": "peshtigo-birdseye",
+      "out": "02-the-town.jpg",
+      "headline": [
+        "THE TOWN",
+        "BEFORE"
+      ],
+      "kicker": "Peshtigo, Wisconsin, September 1871",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.55,
+        "zoom": 1.02
+      }
+    },
+    {
+      "template": "photo",
+      "asset": "peshtigo-illustration",
+      "out": "03-one-night.jpg",
+      "headline": [
+        "ONE NIGHT"
+      ],
+      "kicker": "October 8, 1871 — the same night Chicago burned",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.5,
+        "zoom": 1.05
+      }
+    },
+    {
+      "template": "photo",
+      "asset": "peshtigo-river",
+      "out": "04-the-river.jpg",
+      "headline": [
+        "INTO",
+        "THE RIVER"
+      ],
+      "kicker": "Hundreds stood in the water for hours",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.5,
+        "zoom": 1.04
+      }
+    },
+    {
+      "template": "photo",
+      "asset": "peshtigo-harbor",
+      "out": "05-the-toll.jpg",
+      "headline": [
+        "THE TOLL"
+      ],
+      "kicker": "1,500 to 2,500 dead — still an estimate",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.5,
+        "zoom": 1.08
+      }
+    }
+  ],
+  "cta": {
+    "out": "06-follow.jpg",
+    "headline": "Everything you were never told. Every day.",
+    "sub": "Follow so you don't miss it.",
+    "button": "FOLLOW @CLUEFOLIO",
+    "handle": "@cluefolio",
+    "footnote": "Real archival images. Sources in every caption."
+  }
 }

@@ -28,5 +28,87 @@
     },
     "disclosure": ""
   },
-  "interiors": []
+  "interiors": [
+    {
+      "template": "photo",
+      "asset": "johnstown-mainst",
+      "out": "02-the-dam.jpg",
+      "headline": [
+        "MAY 31,",
+        "1889"
+      ],
+      "kicker": "A private club's dam gave way above the town",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.5,
+        "zoom": 1.04
+      }
+    },
+    {
+      "template": "photo",
+      "asset": "johnstown-debris",
+      "out": "03-the-water.jpg",
+      "headline": [
+        "THE DAM",
+        "GAVE WAY"
+      ],
+      "kicker": "Patched, not rebuilt, with the spillway partly blocked",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.5,
+        "zoom": 1.1
+      }
+    },
+    {
+      "template": "photo",
+      "asset": "johnstown-lookdown",
+      "out": "04-the-dead.jpg",
+      "headline": [
+        "2,209 DIED"
+      ],
+      "kicker": "The deadliest flood in America at the time",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.5,
+        "zoom": 1.06
+      }
+    },
+    {
+      "template": "photo",
+      "asset": "johnstown-lookwest",
+      "out": "05-no-liability.jpg",
+      "headline": [
+        "NO ONE",
+        "WAS LIABLE"
+      ],
+      "kicker": "Carnegie, Frick and Mellon belonged to the club",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.5,
+        "zoom": 1.04
+      }
+    },
+    {
+      "template": "photo",
+      "asset": "johnstown-rations",
+      "out": "06-the-relief.jpg",
+      "headline": [
+        "CLARA BARTON"
+      ],
+      "kicker": "The Red Cross ran its first great relief effort",
+      "crop": {
+        "fx": 0.5,
+        "fy": 0.45,
+        "zoom": 1.06
+      }
+    }
+  ],
+  "cta": {
+    "out": "07-follow.jpg",
+    "headline": "Everything you were never told. Every day.",
+    "sub": "Follow so you don't miss it.",
+    "button": "FOLLOW @CLUEFOLIO",
+    "handle": "@cluefolio",
+    "footnote": "Real archival images. Sources in every caption."
+  }
 }
